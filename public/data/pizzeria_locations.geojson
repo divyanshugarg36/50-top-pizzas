@@ -1422,6 +1422,2400 @@
         "location_index": 0,
         "total_locations": 1
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2405572,
+          40.8350175
+        ]
+      },
+      "properties": {
+        "city": "Amsterdam",
+        "pizzeria_name": "Vincenzo Capuano",
+        "address": "Via Bisignano, 14",
+        "url": "https://www.50toppizza.it/referenza/vincenzo-capuano-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8931759,
+          52.3549191
+        ]
+      },
+      "properties": {
+        "city": "Amsterdam",
+        "pizzeria_name": "DOPE",
+        "address": "indirizzo: Eerste van der Helststraat 66, 1072 NZ Amsterdam",
+        "url": "https://www.50toppizza.it/referenza/dope/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8703251,
+          52.3694096
+        ]
+      },
+      "properties": {
+        "city": "Amsterdam",
+        "pizzeria_name": "nNea",
+        "address": "indirizzo: Bilderdijkstraat 92HS, 1053 KX Amsterdam",
+        "url": "https://www.50toppizza.it/referenza/nnea-4/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.870394,
+          52.36934
+        ]
+      },
+      "properties": {
+        "city": "Amsterdam",
+        "pizzeria_name": "nNea",
+        "address": "take away: Bilderdijkstraat 94-A, 1053 KX Amsterdam, Paesi Bassi",
+        "url": "https://www.50toppizza.it/referenza/nnea-4/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8613515,
+          52.3611068
+        ]
+      },
+      "properties": {
+        "city": "Amsterdam",
+        "pizzeria_name": "Pizza Project",
+        "address": "indirizzo:  Wilhelminastraat 153HS, 1054 WC Amsterdam",
+        "url": "https://www.50toppizza.it/referenza/pizza-project-3/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8948864,
+          52.3466429
+        ]
+      },
+      "properties": {
+        "city": "Amsterdam",
+        "pizzeria_name": "Pizza Project",
+        "address": "altre sedi: Maasstraat 18, 1078 HC Amsterdam, Paesi Bassi",
+        "url": "https://www.50toppizza.it/referenza/pizza-project-3/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2405572,
+          40.8350175
+        ]
+      },
+      "properties": {
+        "city": "Berlin",
+        "pizzeria_name": "Vincenzo Capuano",
+        "address": "Via Bisignano, 14",
+        "url": "https://www.50toppizza.it/referenza/vincenzo-capuano-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4714048,
+          52.5173601
+        ]
+      },
+      "properties": {
+        "city": "Berlin",
+        "pizzeria_name": "Futura Neapolitan Pizza",
+        "address": "straße 91, 10247 Berlin",
+        "url": "https://www.50toppizza.it/referenza/futura-neapolitan-pizza-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4260727,
+          52.4911451
+        ]
+      },
+      "properties": {
+        "city": "Berlin",
+        "pizzeria_name": "Gazzo",
+        "address": "straße 57, 12047 Berlin",
+        "url": "https://www.50toppizza.it/referenza/gazzo/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4189759,
+          52.5434148
+        ]
+      },
+      "properties": {
+        "city": "Berlin",
+        "pizzeria_name": "Gemello",
+        "address": "straße 6/6a, 10437 Berlin",
+        "url": "https://www.50toppizza.it/referenza/gemello/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.427467,
+          52.4747954
+        ]
+      },
+      "properties": {
+        "city": "Berlin",
+        "pizzeria_name": "La Stella Nera",
+        "address": "straße 18, 12053 Berlin",
+        "url": "https://www.50toppizza.it/referenza/la-stella-nera/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.338341,
+          52.4736922
+        ]
+      },
+      "properties": {
+        "city": "Berlin",
+        "pizzeria_name": "Malafemmena",
+        "address": "straße 85, 12159 Berlin",
+        "url": "https://www.50toppizza.it/referenza/malafemmena-4/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4154036,
+          52.5403362
+        ]
+      },
+      "properties": {
+        "city": "Berlin",
+        "pizzeria_name": "Malafemmena",
+        "address": "altre sedi: Danziger Str. 16, 10435 Berlin-Distretto di Pankow, Germania",
+        "url": "https://www.50toppizza.it/referenza/malafemmena-4/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4209315,
+          52.5426817
+        ]
+      },
+      "properties": {
+        "city": "Berlin",
+        "pizzeria_name": "Mamida",
+        "address": "straße 80a, 10437 Berlin",
+        "url": "https://www.50toppizza.it/referenza/mamida-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1839553,
+          25.8354113
+        ]
+      },
+      "properties": {
+        "city": "Florence",
+        "pizzeria_name": "‘O Munaciello",
+        "address": "indirizzo: 6425 Biscayne Blvd #105, Miami",
+        "url": "https://www.50toppizza.it/referenza/o-munaciello-3/",
+        "location_index": 0,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2466999,
+          43.7675871
+        ]
+      },
+      "properties": {
+        "city": "Florence",
+        "pizzeria_name": "‘O Munaciello",
+        "address": "Via Maffia, 31r",
+        "url": "https://www.50toppizza.it/referenza/o-munaciello-3/",
+        "location_index": 1,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1713766,
+          26.7080794
+        ]
+      },
+      "properties": {
+        "city": "Florence",
+        "pizzeria_name": "‘O Munaciello",
+        "address": "Via Maffia, 31r",
+        "url": "https://www.50toppizza.it/referenza/o-munaciello-3/",
+        "location_index": 2,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.2311815,
+          25.7502965
+        ]
+      },
+      "properties": {
+        "city": "Florence",
+        "pizzeria_name": "‘O Munaciello",
+        "address": "Via Maffia, 31r",
+        "url": "https://www.50toppizza.it/referenza/o-munaciello-3/",
+        "location_index": 3,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0942569,
+          51.5049375
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "‘O ver",
+        "address": "indirizzo: 44-46 Southwark St, London SE1 1UN",
+        "url": "https://www.50toppizza.it/referenza/o-ver-4/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1328395,
+          51.5090092
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "‘O ver",
+        "address": "altre sedi: 1 NORRIS STREET, ST JAMES'S MARKET LONDON SW1Y 4RJ",
+        "url": "https://www.50toppizza.it/referenza/o-ver-4/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0651385,
+          51.4634959
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "081 Pizzeria",
+        "address": "indirizzo: 66 Peckham Rye, London SE15 4JR",
+        "url": "https://www.50toppizza.it/referenza/081-pizzeria-6/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0808087,
+          51.5248758
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "081 Pizzeria",
+        "address": "altre sedi: 46 Great Eastern Street, Londra EC2A 3EP, Regno Unito",
+        "url": "https://www.50toppizza.it/referenza/081-pizzeria-6/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1265011,
+          51.5072655
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "50 Kalò",
+        "address": "indirizzo: 7 Northumberland Ave, London WC2N 5BY",
+        "url": "https://www.50toppizza.it/referenza/50-kalo-5/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1448825,
+          51.5415543
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "A’Do’RE’ fritto",
+        "address": "indirizzo: Unit M196, 2nd floor",
+        "url": "https://www.50toppizza.it/referenza/adore-fritto/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1291203,
+          51.4305782
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "Bravi Ragazzi",
+        "address": "indirizzo: 2a Sunnyhill Rd, London SW16 2UH",
+        "url": "https://www.50toppizza.it/referenza/bravi-ragazzi-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3391534,
+          48.8671904
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "Daroco",
+        "address": "Rue Vivienne, 75002 Paris",
+        "url": "https://www.50toppizza.it/referenza/daroco-3/",
+        "location_index": 0,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2777618,
+          48.851536
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "Daroco",
+        "address": "altre sedi: 3 Place Clément Ader, 75016 Paris, Francia Manette Street, Londres W1D 4AL",
+        "url": "https://www.50toppizza.it/referenza/daroco-3/",
+        "location_index": 1,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1305193,
+          51.5147776
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "Daroco",
+        "address": "altre sedi: 3 Place Clément Ader, 75016 Paris, Francia Manette Street, Londres W1D 4AL",
+        "url": "https://www.50toppizza.it/referenza/daroco-3/",
+        "location_index": 2,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0994015,
+          51.5604019
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "DoppioZero",
+        "address": "indirizzo: 4b Gillespie Rd, Finsbury Park",
+        "url": "https://www.50toppizza.it/referenza/doppiozero-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1781187,
+          51.5574001
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "L’Antica Pizzeria",
+        "address": "indirizzo: 66 Heath Street, London NW3 1DN",
+        "url": "https://www.50toppizza.it/referenza/lantica-pizzeria-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2561992,
+          51.4921574
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "Napoli on the Road",
+        "address": "indirizzo: 9A Devonshire Road, Chiswick",
+        "url": "https://www.50toppizza.it/referenza/napoli-on-the-road-4/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3047184,
+          51.4595349
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "Napoli on the Road",
+        "address": "altre sedi: 12 Red Lion Street, Richmond, Regno Unito",
+        "url": "https://www.50toppizza.it/referenza/napoli-on-the-road-4/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0877049,
+          51.5486669
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "Oi Vita Pizzeria",
+        "address": "indirizzo: 67 Newington Green Rd, London N1 4RN",
+        "url": "https://www.50toppizza.it/referenza/oi-vita-pizzeria-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0154439,
+          51.5698539
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "Papi’s Munchies Pizza",
+        "address": "indirizzo: The North Star, 24 Browning Rd",
+        "url": "https://www.50toppizza.it/referenza/papis-munchies-pizza/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0804757,
+          51.5619465
+        ]
+      },
+      "properties": {
+        "city": "London",
+        "pizzeria_name": "Vicoli di Napoli",
+        "address": "indirizzo: 125 Stoke Newington Church St, London N16 0JX",
+        "url": "https://www.50toppizza.it/referenza/vicoli-di-napoli-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6980693,
+          40.4176254
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Araldo",
+        "address": "indirizzo: C. de los Madrazo, 5",
+        "url": "https://www.50toppizza.it/referenza/araldo-4/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7041837,
+          40.4302129
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Araldo",
+        "address": "Calle de Sandoval, 12",
+        "url": "https://www.50toppizza.it/referenza/araldo-4/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6708368,
+          40.4295257
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Baldoria",
+        "address": "indirizzo: C. de José Ortega y Gasset, 100",
+        "url": "https://www.50toppizza.it/referenza/baldoria-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7107839,
+          40.4396756
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Fratelli Figurato",
+        "address": "indirizzo: Avenida de Filipinas, 14",
+        "url": "https://www.50toppizza.it/referenza/fratelli-figurato-4/",
+        "location_index": 0,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.697915,
+          40.4389459
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Fratelli Figurato",
+        "address": "Calle de Larra, 13",
+        "url": "https://www.50toppizza.it/referenza/fratelli-figurato-4/",
+        "location_index": 1,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7004437,
+          40.427839
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Fratelli Figurato",
+        "address": "Calle de Larra, 13",
+        "url": "https://www.50toppizza.it/referenza/fratelli-figurato-4/",
+        "location_index": 2,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6754497,
+          40.4409846
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Fratelli Figurato",
+        "address": "take away: C. de Zabaleta, 1, Chamartín, 28002 Madrid, Spagna",
+        "url": "https://www.50toppizza.it/referenza/fratelli-figurato-4/",
+        "location_index": 3,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.71005,
+          40.43498
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Morso",
+        "address": "indirizzo: C. de Galileo, 56",
+        "url": "https://www.50toppizza.it/referenza/morso-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7087573,
+          40.4368957
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Noi Due",
+        "address": "indirizzo: C. de Vallehermoso, 59",
+        "url": "https://www.50toppizza.it/referenza/noi-due/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7020785,
+          40.4302202
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Pizza Radical",
+        "address": "Calle de Hartzenbusch, 8",
+        "url": "https://www.50toppizza.it/referenza/pizza-radical-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7101549,
+          40.4104164
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Pizzeria Rifugio",
+        "address": "indirizzo: C. del Humilladero, 5",
+        "url": "https://www.50toppizza.it/referenza/pizzeria-rifugio/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6956321,
+          40.4449144
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Reginella",
+        "address": "Calle de Modesto Lafuente, 76",
+        "url": "https://www.50toppizza.it/referenza/reginella/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6783408,
+          40.4255961
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Reginella",
+        "address": "Calle del Gral. Pardiñas, 24",
+        "url": "https://www.50toppizza.it/referenza/reginella/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6950572,
+          40.424402
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Totò e Peppino",
+        "address": "indirizzo: C. de Fernando VI, 29",
+        "url": "https://www.50toppizza.it/referenza/toto-e-peppino/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.671702,
+          40.4068705
+        ]
+      },
+      "properties": {
+        "city": "Madrid",
+        "pizzeria_name": "Totò e Peppino",
+        "address": "altre sedi: Av. del Mediterráneo, 21, Retiro, 28007 Madrid, Spagna",
+        "url": "https://www.50toppizza.it/referenza/toto-e-peppino/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3232466,
+          48.8482196
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Anima",
+        "address": "Rue du Cherche-Midi, 75006 Paris",
+        "url": "https://www.50toppizza.it/referenza/anima-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3452516,
+          48.8890601
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Bobby",
+        "address": "Rue Lambert, 75018 Parigi",
+        "url": "https://www.50toppizza.it/referenza/bobby/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2926389,
+          48.8359714
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Da Valentina",
+        "address": "Rue Desnouettes, 75015 Paris",
+        "url": "https://www.50toppizza.it/referenza/da-valentina/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3494848,
+          48.8645587
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Dalmata",
+        "address": "Rue Tiquetonne, 75002 Parigi",
+        "url": "https://www.50toppizza.it/referenza/dalmata-4/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3748799,
+          48.8531875
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Dalmata",
+        "address": "Rue de Charonne, 75011 Paris",
+        "url": "https://www.50toppizza.it/referenza/dalmata-4/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3391534,
+          48.8671904
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Daroco",
+        "address": "Rue Vivienne, 75002 Paris",
+        "url": "https://www.50toppizza.it/referenza/daroco-3/",
+        "location_index": 0,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2777618,
+          48.851536
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Daroco",
+        "address": "altre sedi: 3 Place Clément Ader, 75016 Paris, Francia Manette Street, Londres W1D 4AL",
+        "url": "https://www.50toppizza.it/referenza/daroco-3/",
+        "location_index": 1,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1305193,
+          51.5147776
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Daroco",
+        "address": "altre sedi: 3 Place Clément Ader, 75016 Paris, Francia Manette Street, Londres W1D 4AL",
+        "url": "https://www.50toppizza.it/referenza/daroco-3/",
+        "location_index": 2,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3469467,
+          48.8815864
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Faggio",
+        "address": "Rue Marguerite de Rochechouart, 75009 Parigi",
+        "url": "https://www.50toppizza.it/referenza/faggio-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3383642,
+          48.8752444
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Fimmina",
+        "address": "Rue Laffitte, 75009 Paris",
+        "url": "https://www.50toppizza.it/referenza/fimmina/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2946085,
+          48.8478029
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Fratelli Castellano",
+        "address": "Rue Fondary, 75015 Parigi",
+        "url": "https://www.50toppizza.it/referenza/fratelli-castellano-2/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3190914,
+          48.8490844
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Fratelli Castellano",
+        "address": "Rue Pierre Leroux, Paris",
+        "url": "https://www.50toppizza.it/referenza/fratelli-castellano-2/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3044773,
+          48.8336107
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Guillaume Grasso",
+        "address": "Rue Brancion, 75015 Parigi",
+        "url": "https://www.50toppizza.it/referenza/guillaume-grasso-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3404855,
+          48.8632076
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Iovine’s",
+        "address": "Rue du Colonel Driant, 75001 Paris",
+        "url": "https://www.50toppizza.it/referenza/iovines-2/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3285329,
+          48.8723513
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Iovine’s",
+        "address": "Rue Boudreau, 75009 Paris",
+        "url": "https://www.50toppizza.it/referenza/iovines-2/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3285422,
+          48.8420927
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "La Manifattura",
+        "address": "indirizzo: 106 Boulevard Du Montparnasse, 75014 Paris",
+        "url": "https://www.50toppizza.it/referenza/la-manifattura-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3596857,
+          48.865163
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "La Vittoria",
+        "address": "Rue du Temple, 75003 Paris",
+        "url": "https://www.50toppizza.it/referenza/la-vittoria/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3803627,
+          48.8534378
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Louie Louie",
+        "address": "Rue de Charonne, 75011 Parigi",
+        "url": "https://www.50toppizza.it/referenza/louie-louie-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3818384,
+          48.8647346
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Oobatz",
+        "address": "Avenue Jean Aicard, 75011 Paris",
+        "url": "https://www.50toppizza.it/referenza/oobatz/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3180263,
+          48.8828069
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Prima",
+        "address": "Rue des Dames, 75017 Parigi",
+        "url": "https://www.50toppizza.it/referenza/prima-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2929584,
+          48.8838232
+        ]
+      },
+      "properties": {
+        "city": "Paris",
+        "pizzeria_name": "Roco",
+        "address": "Rue Guillaume Tell, 75017 Paris",
+        "url": "https://www.50toppizza.it/referenza/roco-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3366421,
+          44.4941422
+        ]
+      },
+      "properties": {
+        "city": "Bologna",
+        "pizzeria_name": "‘O Fiore Mio Pizze di Strada",
+        "address": "Piazza Malpighi, 8e",
+        "url": "https://www.50toppizza.it/referenza/o-fiore-mio-pizze-di-strada-4/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1907871,
+          45.475111
+        ]
+      },
+      "properties": {
+        "city": "Bologna",
+        "pizzeria_name": "‘O Fiore Mio Pizze di Strada",
+        "address": "Via Montebello, 25",
+        "url": "https://www.50toppizza.it/referenza/o-fiore-mio-pizze-di-strada-4/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3432042,
+          44.4894653
+        ]
+      },
+      "properties": {
+        "city": "Bologna",
+        "pizzeria_name": "Corten",
+        "address": "Via Garibaldi, 5h",
+        "url": "https://www.50toppizza.it/referenza/corten-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.342944,
+          44.500307
+        ]
+      },
+      "properties": {
+        "city": "Bologna",
+        "pizzeria_name": "Forno Brisa",
+        "address": "Via Galliera, 34d",
+        "url": "https://www.50toppizza.it/referenza/forno-brisa-4/",
+        "location_index": 0,
+        "total_locations": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3475282,
+          44.4886749
+        ]
+      },
+      "properties": {
+        "city": "Bologna",
+        "pizzeria_name": "Forno Brisa",
+        "address": "Via Castiglione, 43",
+        "url": "https://www.50toppizza.it/referenza/forno-brisa-4/",
+        "location_index": 1,
+        "total_locations": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3315497,
+          44.4978094
+        ]
+      },
+      "properties": {
+        "city": "Bologna",
+        "pizzeria_name": "Forno Brisa",
+        "address": "Via Castiglione, 43",
+        "url": "https://www.50toppizza.it/referenza/forno-brisa-4/",
+        "location_index": 2,
+        "total_locations": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3667635,
+          44.4823767
+        ]
+      },
+      "properties": {
+        "city": "Bologna",
+        "pizzeria_name": "Forno Brisa",
+        "address": "Via Castiglione, 43",
+        "url": "https://www.50toppizza.it/referenza/forno-brisa-4/",
+        "location_index": 3,
+        "total_locations": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3423623,
+          44.5093092
+        ]
+      },
+      "properties": {
+        "city": "Bologna",
+        "pizzeria_name": "Forno Brisa",
+        "address": "Via Castiglione, 43",
+        "url": "https://www.50toppizza.it/referenza/forno-brisa-4/",
+        "location_index": 4,
+        "total_locations": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3309875,
+          44.4955577
+        ]
+      },
+      "properties": {
+        "city": "Bologna",
+        "pizzeria_name": "Il Rovescio",
+        "address": "Via Pietralata, 75a",
+        "url": "https://www.50toppizza.it/referenza/il-rovescio-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3687642,
+          44.4854386
+        ]
+      },
+      "properties": {
+        "city": "Bologna",
+        "pizzeria_name": "Span",
+        "address": "Via Laura Bassi Veratti, 1h",
+        "url": "https://www.50toppizza.it/referenza/span-2/",
+        "location_index": 0,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3728888,
+          44.4932329
+        ]
+      },
+      "properties": {
+        "city": "Bologna",
+        "pizzeria_name": "Span",
+        "address": "Via Giuseppe Massarenti, 91c",
+        "url": "https://www.50toppizza.it/referenza/span-2/",
+        "location_index": 1,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3439926,
+          44.4969284
+        ]
+      },
+      "properties": {
+        "city": "Bologna",
+        "pizzeria_name": "Span",
+        "address": "Via Giuseppe Massarenti, 91c",
+        "url": "https://www.50toppizza.it/referenza/span-2/",
+        "location_index": 2,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4846381,
+          41.9012999
+        ]
+      },
+      "properties": {
+        "city": "Chicago",
+        "pizzeria_name": "Piccolo Buco",
+        "address": "Via del Lavatore, 91",
+        "url": "https://www.50toppizza.it/referenza/piccolo-buco-4/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.9542016,
+          41.8533615
+        ]
+      },
+      "properties": {
+        "city": "Chicago",
+        "pizzeria_name": "Piccolo Buco",
+        "address": "altre sedi: 1818 Oakbrook Center, Oak Brook, IL 60523, Stati Uniti",
+        "url": "https://www.50toppizza.it/referenza/piccolo-buco-4/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6635875,
+          41.9426406
+        ]
+      },
+      "properties": {
+        "city": "Chicago",
+        "pizzeria_name": "Coda di Volpe",
+        "address": "indirizzo: 3335 N Southport Ave, Chicago",
+        "url": "https://www.50toppizza.it/referenza/coda-di-volpe-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6343819,
+          41.9106119
+        ]
+      },
+      "properties": {
+        "city": "Chicago",
+        "pizzeria_name": "Gallucci",
+        "address": "indirizzo: 1551 N Wells St, Chicago",
+        "url": "https://www.50toppizza.it/referenza/gallucci-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6899815,
+          41.9615113
+        ]
+      },
+      "properties": {
+        "city": "Chicago",
+        "pizzeria_name": "Jimmy’s Pizza Cafe",
+        "address": "indirizzo: 2434 W Montrose Ave, Chicago",
+        "url": "https://www.50toppizza.it/referenza/jimmys-pizza-cafe-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6643284,
+          41.9218791
+        ]
+      },
+      "properties": {
+        "city": "Chicago",
+        "pizzeria_name": "Pequod’s Pizza",
+        "address": "indirizzo: 2207 N Clybourn Ave, Chicago",
+        "url": "https://www.50toppizza.it/referenza/pequods-pizza-2/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.7827416,
+          42.0362874
+        ]
+      },
+      "properties": {
+        "city": "Chicago",
+        "pizzeria_name": "Pequod’s Pizza",
+        "address": "altre sedi: 8520 Fernald Ave, Morton Grove, IL 60053, Stati Uniti",
+        "url": "https://www.50toppizza.it/referenza/pequods-pizza-2/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6164505,
+          41.8905699
+        ]
+      },
+      "properties": {
+        "city": "Chicago",
+        "pizzeria_name": "Robert’s",
+        "address": "indirizzo: 465 N McClurg Ct, Chicago",
+        "url": "https://www.50toppizza.it/referenza/roberts-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6735805,
+          41.9631952
+        ]
+      },
+      "properties": {
+        "city": "Chicago",
+        "pizzeria_name": "Spacca Napoli Pizzeria",
+        "address": "indirizzo: 1769 W Sunnyside Ave, Chicago",
+        "url": "https://www.50toppizza.it/referenza/spacca-napoli-pizzeria-5/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0656554,
+          33.4491726
+        ]
+      },
+      "properties": {
+        "city": "Los Angeles",
+        "pizzeria_name": "Pizzeria Bianco",
+        "address": "indirizzo: 623 E Adams St, Phoenix",
+        "url": "https://www.50toppizza.it/referenza/pizzeria-bianco-4/",
+        "location_index": 0,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.037036,
+          33.5076061
+        ]
+      },
+      "properties": {
+        "city": "Los Angeles",
+        "pizzeria_name": "Pizzeria Bianco",
+        "address": "altre sedi: 4743 N 20th St, Phoenix, Arizona, Stati Uniti 1320 E 7th St, Los Angeles, California, Stati Uniti 4404 North Central Avenue, Phoenix, Arizona, Stati Uniti",
+        "url": "https://www.50toppizza.it/referenza/pizzeria-bianco-4/",
+        "location_index": 1,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2403361,
+          34.036008
+        ]
+      },
+      "properties": {
+        "city": "Los Angeles",
+        "pizzeria_name": "Pizzeria Bianco",
+        "address": "altre sedi: 4743 N 20th St, Phoenix, Arizona, Stati Uniti 1320 E 7th St, Los Angeles, California, Stati Uniti 4404 North Central Avenue, Phoenix, Arizona, Stati Uniti",
+        "url": "https://www.50toppizza.it/referenza/pizzeria-bianco-4/",
+        "location_index": 2,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0743192,
+          33.5006076
+        ]
+      },
+      "properties": {
+        "city": "Los Angeles",
+        "pizzeria_name": "Pizzeria Bianco",
+        "address": "altre sedi: 4743 N 20th St, Phoenix, Arizona, Stati Uniti 1320 E 7th St, Los Angeles, California, Stati Uniti 4404 North Central Avenue, Phoenix, Arizona, Stati Uniti",
+        "url": "https://www.50toppizza.it/referenza/pizzeria-bianco-4/",
+        "location_index": 3,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3834224,
+          34.054945
+        ]
+      },
+      "properties": {
+        "city": "Los Angeles",
+        "pizzeria_name": "Pizzeria Sei",
+        "address": "indirizzo: 8781 W Pico Blvd, Los Angeles",
+        "url": "https://www.50toppizza.it/referenza/pizzeria-sei-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1839553,
+          25.8354113
+        ]
+      },
+      "properties": {
+        "city": "Miami",
+        "pizzeria_name": "‘O Munaciello",
+        "address": "indirizzo: 6425 Biscayne Blvd #105, Miami",
+        "url": "https://www.50toppizza.it/referenza/o-munaciello-3/",
+        "location_index": 0,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2466999,
+          43.7675871
+        ]
+      },
+      "properties": {
+        "city": "Miami",
+        "pizzeria_name": "‘O Munaciello",
+        "address": "Via Maffia, 31r",
+        "url": "https://www.50toppizza.it/referenza/o-munaciello-3/",
+        "location_index": 1,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1713766,
+          26.7080794
+        ]
+      },
+      "properties": {
+        "city": "Miami",
+        "pizzeria_name": "‘O Munaciello",
+        "address": "Via Maffia, 31r",
+        "url": "https://www.50toppizza.it/referenza/o-munaciello-3/",
+        "location_index": 2,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.2311815,
+          25.7502965
+        ]
+      },
+      "properties": {
+        "city": "Miami",
+        "pizzeria_name": "‘O Munaciello",
+        "address": "Via Maffia, 31r",
+        "url": "https://www.50toppizza.it/referenza/o-munaciello-3/",
+        "location_index": 3,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1312716,
+          25.7868413
+        ]
+      },
+      "properties": {
+        "city": "Miami",
+        "pizzeria_name": "La Leggenda",
+        "address": "indirizzo: 224 Española Wy, Miami Beach",
+        "url": "https://www.50toppizza.it/referenza/la-leggenda-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0003545,
+          40.6818259
+        ]
+      },
+      "properties": {
+        "city": "Miami",
+        "pizzeria_name": "Lucali",
+        "address": "indirizzo: 575 Henry St, Brooklyn",
+        "url": "https://www.50toppizza.it/referenza/lucali-3/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1439972,
+          25.7951993
+        ]
+      },
+      "properties": {
+        "city": "Miami",
+        "pizzeria_name": "Lucali",
+        "address": "altre sedi: 1930 Bay Rd, Miami Beach, FL 33139, Stati Uniti",
+        "url": "https://www.50toppizza.it/referenza/lucali-3/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.193118,
+          25.787766
+        ]
+      },
+      "properties": {
+        "city": "Miami",
+        "pizzeria_name": "Miami Slice",
+        "address": "indirizzo: 1335 NE Miami Ct, Miami",
+        "url": "https://www.50toppizza.it/referenza/miami-slice-2/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.1603834,
+          36.1387904
+        ]
+      },
+      "properties": {
+        "city": "Miami",
+        "pizzeria_name": "Miami Slice",
+        "address": "altre sedi: 2777 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "url": "https://www.50toppizza.it/referenza/miami-slice-2/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9846138,
+          40.7420916
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Audace",
+        "address": "indirizzo: 365 Park Ave S, New York",
+        "url": "https://www.50toppizza.it/referenza/audace/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9810133,
+          40.6752235
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Brooklyn DOP",
+        "address": "indirizzo: 237 5th Ave, Brooklyn",
+        "url": "https://www.50toppizza.it/referenza/brooklyn-dop/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9867251,
+          40.7627189
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Don Antonio",
+        "address": "indirizzo: 309 West 50th Street, New York",
+        "url": "https://www.50toppizza.it/referenza/don-antonio-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0034162,
+          40.7316437
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "John’s of Bleecker Street",
+        "address": "indirizzo: 278 Bleecker St, New York",
+        "url": "https://www.50toppizza.it/referenza/johns-of-bleecker-street-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0047364,
+          40.709052
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Kesté",
+        "address": "indirizzo: 77 Fulton St, New York",
+        "url": "https://www.50toppizza.it/referenza/keste-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0003545,
+          40.6818259
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Lucali",
+        "address": "indirizzo: 575 Henry St, Brooklyn",
+        "url": "https://www.50toppizza.it/referenza/lucali-3/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1439972,
+          25.7951993
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Lucali",
+        "address": "altre sedi: 1930 Bay Rd, Miami Beach, FL 33139, Stati Uniti",
+        "url": "https://www.50toppizza.it/referenza/lucali-3/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9578916,
+          40.7115487
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "L’industrie Pizzeria",
+        "address": "indirizzo: 254 S 2nd St, Brooklyn",
+        "url": "https://www.50toppizza.it/referenza/lindustrie-pizzeria-2/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0048593,
+          40.7331201
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "L’industrie Pizzeria",
+        "address": "Street New York, New York 10014",
+        "url": "https://www.50toppizza.it/referenza/lindustrie-pizzeria-2/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9676664,
+          40.8008272
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Mama’s Too",
+        "address": "roadway, New York",
+        "url": "https://www.50toppizza.it/referenza/mamas-too/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0039618,
+          40.7332936
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Mama’s Too",
+        "address": "altre sedi: 325 Bleecker St, New York, NY 10014, Stati Uniti",
+        "url": "https://www.50toppizza.it/referenza/mamas-too/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.898262,
+          40.6991258
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Mano’s Pizzeria",
+        "address": "indirizzo: 62-98 Forest Ave, Ridgewood",
+        "url": "https://www.50toppizza.it/referenza/manos-pizzeria-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9207959,
+          40.7628422
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "MILKFLOWER",
+        "address": "indirizzo: 34-12 31st Ave, Astoria",
+        "url": "https://www.50toppizza.it/referenza/milkflower/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9171997,
+          40.7026272
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Ops",
+        "address": "indirizzo: 346 Himrod Street, Brooklyn",
+        "url": "https://www.50toppizza.it/referenza/ops-5/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.996826,
+          40.721055
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Pasquale Jones",
+        "address": "indirizzo: 187 Mulberry St, New York",
+        "url": "https://www.50toppizza.it/referenza/pasquale-jones-5/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9777185,
+          40.6808311
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Pizza Secret",
+        "address": "indirizzo: 72 5th Avenue, Brooklyn",
+        "url": "https://www.50toppizza.it/referenza/pizza-secret-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9915595,
+          40.7332782
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Ribalta",
+        "address": "indirizzo: 48 E 12th St, New York",
+        "url": "https://www.50toppizza.it/referenza/ribalta-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9552292,
+          40.7264499
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Salsa",
+        "address": "indirizzo: 40 Clifford Place, Brooklyn",
+        "url": "https://www.50toppizza.it/referenza/salsa-3/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.859582,
+          40.712864
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Salsa",
+        "address": "altre sedi: 63-118 Woodhaven Blvd, Rego Park, New York 11374, Stati Uniti",
+        "url": "https://www.50toppizza.it/referenza/salsa-3/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9543782,
+          40.774657
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "San Matteo",
+        "address": "indirizzo: 1559 2nd Ave, New York",
+        "url": "https://www.50toppizza.it/referenza/san-matteo-2/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9499501,
+          40.7797754
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "San Matteo",
+        "address": "altre sedi: 1716 2nd Ave, NYC, New York, Stati Uniti",
+        "url": "https://www.50toppizza.it/referenza/san-matteo-2/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9916209,
+          40.715792
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Scarr’s Pizza",
+        "address": "indirizzo: 35 Orchard St, New York",
+        "url": "https://www.50toppizza.it/referenza/scarrs-pizza/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0013736,
+          40.7279437
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Song’ E Napule",
+        "address": "indirizzo: 132 W Houston St, New York",
+        "url": "https://www.50toppizza.it/referenza/song-e-napule-5/",
+        "location_index": 0,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1055976,
+          40.8273292
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Song’ E Napule",
+        "address": "altre sedi: 106 Park Ave, Rutherford, NJ 07070, Stati Uniti 464 Amsterdam Ave, Manhattan, NYC, New York, NY 10024, Stati Uniti",
+        "url": "https://www.50toppizza.it/referenza/song-e-napule-5/",
+        "location_index": 1,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9770248,
+          40.7854626
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Song’ E Napule",
+        "address": "altre sedi: 106 Park Ave, Rutherford, NJ 07070, Stati Uniti 464 Amsterdam Ave, Manhattan, NYC, New York, NY 10024, Stati Uniti",
+        "url": "https://www.50toppizza.it/referenza/song-e-napule-5/",
+        "location_index": 2,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9853891,
+          40.7410386
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Stretch Pizza",
+        "address": "indirizzo: 331 Park Ave S, New York",
+        "url": "https://www.50toppizza.it/referenza/stretch-pizza-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9885731,
+          40.7217331
+        ]
+      },
+      "properties": {
+        "city": "New York",
+        "pizzeria_name": "Una Pizza Napoletana",
+        "address": "indirizzo: 175 Orchard St, New York",
+        "url": "https://www.50toppizza.it/referenza/una-pizza-napoletana-5/",
+        "location_index": 0,
+        "total_locations": 1
+      }
     }
   ]
 }

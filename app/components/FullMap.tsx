@@ -20,9 +20,19 @@ interface MapProps {
   cityData?: Record<string, { pizzerias: Pizzeria[] }>;
   selectedCity?: string;
   selectedLocation?: string | null;
+  autoTriggerLocation?: boolean;
+  maxDistance?: number;
+  onNearestPizzeriasUpdate?: (pizzerias: Array<{
+    name: string;
+    city: string;
+    distance: number;
+    location: Location;
+    url: string;
+    markerKey: string;
+  }>) => void;
 }
 
-export const FullMap=({ cityData, selectedCity, selectedLocation }: MapProps) =>{
+export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLocation, maxDistance = 30, onNearestPizzeriasUpdate }: MapProps) =>{
   const mapRef = useRef<L.Map | null>(null);
   const markersRef = useRef<L.Marker[]>([]);
   const markersMapRef = useRef<Map<string, L.Marker>>(new Map());
@@ -32,6 +42,7 @@ export const FullMap=({ cityData, selectedCity, selectedLocation }: MapProps) =>
 
   const [locating, setLocating] = useState(false);
   const [locationError, setLocationError] = useState<string | null>(null);
+  const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
 
   // Initialize map once
   useEffect(() => {
@@ -157,17 +168,17 @@ export const FullMap=({ cityData, selectedCity, selectedLocation }: MapProps) =>
     }
   }, [selectedLocation]);
 
-  // Handle show my location
-  const handleShowMyLocation = () => {
-    if (!mapRef.current) return;
-
-    setLocating(true);
-    setLocationError(null);
+  // Auto-trigger location if permission is already granted
+  useEffect(() => {
+    if (!autoTriggerLocation || !mapRef.current || !cityData) return;
 
     if ('geolocation' in navigator) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
+
+          // Save user location
+          setUserLocation({ lat: latitude, lng: longitude });
 
           // Remove old user location marker if exists
           if (userLocationMarkerRef.current) {
@@ -192,6 +203,123 @@ export const FullMap=({ cityData, selectedCity, selectedLocation }: MapProps) =>
             animate: true,
             duration: 1
           });
+
+          // Find nearest pizzerias
+          findNearestPizzerias(latitude, longitude);
+        },
+        (error) => {
+          console.log('Could not auto-fetch location:', error);
+        }
+      );
+    }
+  }, [autoTriggerLocation, cityData]);
+
+  // Re-calculate nearest pizzerias when maxDistance changes
+  useEffect(() => {
+    if (!userLocation || !cityData) return;
+    findNearestPizzerias(userLocation.lat, userLocation.lng);
+  }, [maxDistance]);
+
+  // Calculate distance between two coordinates (Haversine formula)
+  const calculateDistance = (lat1: number, lon1: number, lat2: number, lon2: number): number => {
+    const R = 6371; // Earth's radius in km
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a =
+      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+      Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c;
+  };
+
+  // Find nearest pizzerias
+  const findNearestPizzerias = (userLat: number, userLng: number) => {
+    if (!cityData) return;
+
+    const pizzeriasWithDistance: Array<{
+      name: string;
+      city: string;
+      distance: number;
+      location: Location;
+      url: string;
+      markerKey: string;
+    }> = [];
+
+    Object.entries(cityData).forEach(([cityName, cityInfo]) => {
+      if (!cityInfo || !cityInfo.pizzerias) return;
+
+      cityInfo.pizzerias.forEach(pizzeria => {
+        if (!pizzeria || !pizzeria.locations) return;
+
+        pizzeria.locations.forEach((location, idx) => {
+          if (!location || !location.lat || !location.lng) return;
+
+          const distance = calculateDistance(userLat, userLng, location.lat, location.lng);
+          pizzeriasWithDistance.push({
+            name: pizzeria.name,
+            city: cityName,
+            distance,
+            location,
+            url: pizzeria.url,
+            markerKey: `${cityName}-${pizzeria.name}-${idx}`
+          });
+        });
+      });
+    });
+
+    // Sort by distance and filter by maxDistance, then take all results
+    const nearest = pizzeriasWithDistance
+      .filter(p => p.distance <= maxDistance)
+      .sort((a, b) => a.distance - b.distance);
+
+    // Send to parent component
+    if (onNearestPizzeriasUpdate) {
+      onNearestPizzeriasUpdate(nearest);
+    }
+  };
+
+  // Handle show my location
+  const handleShowMyLocation = () => {
+    if (!mapRef.current) return;
+
+    setLocating(true);
+    setLocationError(null);
+
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+
+          // Save user location
+          setUserLocation({ lat: latitude, lng: longitude });
+
+          // Remove old user location marker if exists
+          if (userLocationMarkerRef.current) {
+            userLocationMarkerRef.current.remove();
+          }
+
+          // Create blue marker for user location
+          const userIcon = L.divIcon({
+            className: 'user-location-marker',
+            html: '<div style="background: #3b82f6; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 8px rgba(59, 130, 246, 0.6);"></div>',
+            iconSize: [22, 22],
+            iconAnchor: [11, 11],
+          });
+
+          // Add user location marker
+          userLocationMarkerRef.current = L.marker([latitude, longitude], { icon: userIcon })
+            .addTo(mapRef.current!)
+            .bindPopup('<div style="padding: 8px;"><strong>📍 Your Location</strong></div>');
+
+          // Center map on user location
+          mapRef.current!.setView([latitude, longitude], 13, {
+            animate: true,
+            duration: 1
+          });
+
+          // Find nearest pizzerias
+          findNearestPizzerias(latitude, longitude);
 
           setLocating(false);
         },

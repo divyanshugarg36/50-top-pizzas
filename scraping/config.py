@@ -13,6 +13,5 @@ HEADERS = {
 # Rate limiting (seconds between requests)
 RATE_LIMIT = 0.5
 
-# Data output paths
-DATA_DIR = 'data'
-PUBLIC_DATA_DIR = 'public/data'
+# Data output path (single source of truth for Next.js)
+DATA_DIR = 'public/data'

@@ -18,14 +18,13 @@ Interactive map showcasing the world's best pizzerias from [50 Top Pizza](https:
 ├── app/              # Next.js app router
 │   ├── components/   # React components
 │   └── page.tsx      # Main page
-├── public/data/      # Scraped pizzeria data (JSON)
+├── public/data/      # Scraped pizzeria data (JSON) - single source of truth
 ├── scraping/         # Python web scraper
 │   ├── __init__.py
 │   ├── __main__.py
 │   ├── cli.py        # Command-line interface
 │   ├── config.py     # Configuration
 │   └── scraper.py    # Main scraping logic
-├── data/             # Source data files
 ├── venv/             # Python virtual environment
 └── node_modules/     # Node dependencies
 ```
@@ -105,9 +104,7 @@ python -m scraping.cli --fetch-cities
 
 ### Output
 
-Data is automatically saved to:
-- `data/` - Source data directory
-- `public/data/` - Next.js public folder (used by the app)
+Data is automatically saved to `public/data/` (single source of truth):
 
 Files generated:
 - `pizzeria_by_city.json` - Pizzerias organized by city
@@ -137,10 +134,22 @@ deactivate
 
 ## 📊 Current Dataset
 
-- **5 cities** scraped (Barcelona, Lisbon, Roma, Mannheim, San Francisco)
-- **61 pizzerias** with locations
-- **79 total locations** mapped
+- **16 cities** scraped across Europe, Italy, and North America
+- **148 pizzerias** with locations
+- **212 total locations** mapped
 - **591 cities available** to scrape
+
+### Major Cities Covered
+- 🇺🇸 USA: New York, Chicago, Los Angeles, Miami, San Francisco
+- 🇬🇧 UK: London
+- 🇫🇷 France: Paris
+- 🇪🇸 Spain: Barcelona, Madrid
+- 🇩🇪 Germany: Berlin, Mannheim
+- 🇮🇹 Italy: Roma, Bologna, Florence
+- 🇵🇹 Portugal: Lisbon
+- 🇳🇱 Netherlands: Amsterdam
+
+See [SCRAPED_CITIES.md](./SCRAPED_CITIES.md) for detailed tracking.
 
 ## 🚢 Deploy
 

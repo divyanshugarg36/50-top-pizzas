@@ -12,7 +12,7 @@ import re
 from urllib.parse import urljoin
 import os
 
-from .config import BASE_URL, HEADERS, RATE_LIMIT, DATA_DIR, PUBLIC_DATA_DIR
+from .config import BASE_URL, HEADERS, RATE_LIMIT, DATA_DIR
 
 
 def get_all_cities():
@@ -167,18 +167,12 @@ def extract_pizzeria_details(pizzeria_url):
 
 def save_data(data_by_city):
     """Save to JSON and GeoJSON"""
-    # Ensure data directories exist
+    # Ensure data directory exists
     os.makedirs(DATA_DIR, exist_ok=True)
-    os.makedirs(PUBLIC_DATA_DIR, exist_ok=True)
 
     # Save city-organized data
     output_path = f'{DATA_DIR}/pizzeria_by_city.json'
     with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(data_by_city, f, indent=2, ensure_ascii=False)
-
-    # Also save to public folder
-    public_path = f'{PUBLIC_DATA_DIR}/pizzeria_by_city.json'
-    with open(public_path, 'w', encoding='utf-8') as f:
         json.dump(data_by_city, f, indent=2, ensure_ascii=False)
 
     # Create GeoJSON
@@ -208,11 +202,8 @@ def save_data(data_by_city):
                     }
                     geojson['features'].append(feature)
 
-    # Save GeoJSON to both locations
+    # Save GeoJSON
     with open(f'{DATA_DIR}/pizzeria_locations.geojson', 'w', encoding='utf-8') as f:
-        json.dump(geojson, f, indent=2, ensure_ascii=False)
-
-    with open(f'{PUBLIC_DATA_DIR}/pizzeria_locations.geojson', 'w', encoding='utf-8') as f:
         json.dump(geojson, f, indent=2, ensure_ascii=False)
 
 

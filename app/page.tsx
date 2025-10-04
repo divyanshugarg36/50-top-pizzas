@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Select from 'react-select';
 import {FullMap } from './components/FullMap';
 
 interface Location {
@@ -31,8 +32,20 @@ export default function Home() {
   const [selectedPizzeria, setSelectedPizzeria] = useState<string | null>(null);
   const [expandedPizzeria, setExpandedPizzeria] = useState<string | null>(null);
   const [stats, setStats] = useState<string>('Loading data...');
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [activeTab, setActiveTab] = useState<'all' | 'nearest'>('all');
+  const [nearestPizzerias, setNearestPizzerias] = useState<Array<{
+    name: string;
+    city: string;
+    distance: number;
+    location: Location;
+    url: string;
+    markerKey: string;
+  }>>([]);
+  const [autoTriggerLocation, setAutoTriggerLocation] = useState(false);
+  const [maxDistance, setMaxDistance] = useState(30); // km
 
-  // Load data
+  // Load data and check for location permissions
   useEffect(() => {
     Promise.all([
       fetch('/data/pizzeria_by_city.json').then(r => r.json()),
@@ -41,6 +54,16 @@ export default function Home() {
       .then(([scrapedData, cities]) => {
         setCityData(scrapedData);
         setAllCities(cities || Object.keys(scrapedData).map(name => ({ name, value: name })));
+
+        // Check if we already have location permission
+        if ('geolocation' in navigator && 'permissions' in navigator) {
+          navigator.permissions.query({ name: 'geolocation' }).then((result) => {
+            if (result.state === 'granted') {
+              // We have permission, trigger auto location in map
+              setAutoTriggerLocation(true);
+            }
+          });
+        }
       })
       .catch(error => {
         console.error('Error loading data:', error);
@@ -217,58 +240,230 @@ export default function Home() {
     );
   };
 
+  const renderNearestList = () => {
+    if (nearestPizzerias.length === 0) {
+      return (
+        <div className="flex flex-col items-center justify-center h-full text-center p-8 text-gray-500">
+          <p className="text-lg mb-2">📍 No location set</p>
+          <p>Click the location button on the map to find nearest pizzerias.</p>
+        </div>
+      );
+    }
+
+    const filteredPizzerias = nearestPizzerias.filter(p => p.distance <= maxDistance);
+
+    return (
+      <>
+        {/* Distance Filter */}
+        <div className="mb-4 pb-4 border-b border-gray-200">
+          <label className="block text-xs font-semibold text-gray-600 mb-2 uppercase">
+            Max Distance: {maxDistance} km
+          </label>
+          <input
+            type="range"
+            min="5"
+            max="100"
+            step="5"
+            value={maxDistance}
+            onChange={(e) => setMaxDistance(Number(e.target.value))}
+            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-red-600"
+          />
+          <div className="flex justify-between text-xs text-gray-500 mt-1">
+            <span>5 km</span>
+            <span>100 km</span>
+          </div>
+        </div>
+
+        {/* Results count */}
+        <div className="mb-3 text-sm text-gray-600">
+          {filteredPizzerias.length} pizzeria{filteredPizzerias.length !== 1 ? 's' : ''} within {maxDistance} km
+        </div>
+
+        {/* List */}
+        <div className="space-y-2">
+          {filteredPizzerias.length === 0 ? (
+            <div className="text-center p-8 text-gray-500">
+              <p>No pizzerias found within {maxDistance} km.</p>
+              <p className="text-sm mt-2">Try increasing the distance range.</p>
+            </div>
+          ) : (
+            filteredPizzerias.map((pizzeria, index) => {
+          const isSelected = selectedPizzeria === pizzeria.markerKey;
+
+          return (
+            <div
+              key={pizzeria.markerKey}
+              onClick={() => setSelectedPizzeria(pizzeria.markerKey)}
+              className={`bg-white border rounded-lg p-3 cursor-pointer transition-all hover:shadow-md ${
+                isSelected ? 'border-red-600 shadow-lg bg-red-50' : 'border-gray-200'
+              }`}
+            >
+              <div className="flex items-start gap-3">
+                {/* Rank Badge */}
+                <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm ${
+                  index === 0 ? 'bg-yellow-400' :
+                  index === 1 ? 'bg-gray-300' :
+                  index === 2 ? 'bg-orange-400' :
+                  'bg-gray-400'
+                }`}>
+                  {index + 1}
+                </div>
+
+                {/* Pizzeria Info */}
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-red-600 font-semibold text-sm mb-1 truncate">
+                    {pizzeria.name}
+                  </h3>
+                  <div className="flex gap-2 flex-wrap mb-1">
+                    <span className="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-0.5 rounded">
+                      📍 {pizzeria.city}
+                    </span>
+                    <span className="inline-block bg-blue-100 text-blue-700 text-xs px-2 py-0.5 rounded font-semibold">
+                      {pizzeria.distance.toFixed(1)} km
+                    </span>
+                  </div>
+                  {pizzeria.location.address && (
+                    <p className="text-xs text-gray-500 truncate">
+                      {pizzeria.location.address}
+                    </p>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        })
+          )}
+        </div>
+      </>
+    );
+  };
+
   return (
     <div className="flex h-screen">
       {/* Sidebar */}
-      <div className="w-96 bg-white flex flex-col border-r border-gray-200">
-        {/* Header */}
-        <div className="bg-red-600 text-white p-5">
-          <h1 className="text-2xl font-bold mb-1">🍕 50 Top Pizza</h1>
-          <p className="text-sm opacity-90">Explore the world&apos;s best pizzerias</p>
-        </div>
+      <div className={`bg-white flex flex-col border-r border-gray-200 transition-all duration-300 ${
+        sidebarCollapsed ? 'w-0' : 'w-96'
+      }`}>
+        {!sidebarCollapsed && (
+          <>
+            {/* Header */}
+            <div className="bg-red-600 text-white p-5">
+              <h1 className="text-2xl font-bold mb-1">🍕 50 Top Pizza</h1>
+              <p className="text-sm opacity-90">Explore the world&apos;s best pizzerias</p>
+            </div>
 
-        {/* City Selector */}
-        <div className="p-4 bg-gray-50 border-b border-gray-200">
-          <label className="block text-xs font-semibold text-gray-600 mb-2 uppercase">
-            Select City
-          </label>
-          <select
-            value={selectedCity}
-            onChange={(e) => handleCityChange(e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded-md text-sm bg-white cursor-pointer"
-          >
-            <option value="">All Cities</option>
-            {allCities.sort((a, b) => a.name.localeCompare(b.name)).map((city) => {
-              const isScraped = cityData[city.name];
-              return (
-                <option
-                  key={city.name}
-                  value={city.name}
-                  className={!isScraped ? 'text-gray-400' : ''}
-                >
-                  {city.name} {isScraped ? `(${cityData[city.name].pizzerias.length})` : '(Not scraped)'}
-                </option>
-              );
-            })}
-          </select>
-        </div>
+            {/* Tabs */}
+            <div className="flex border-b border-gray-200 bg-gray-50">
+              <button
+                onClick={() => setActiveTab('all')}
+                className={`flex-1 px-4 py-3 text-sm font-semibold transition-all ${
+                  activeTab === 'all'
+                    ? 'bg-white text-red-600 border-b-2 border-red-600'
+                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                }`}
+              >
+                All Pizzerias
+              </button>
+              <button
+                onClick={() => setActiveTab('nearest')}
+                className={`flex-1 px-4 py-3 text-sm font-semibold transition-all ${
+                  activeTab === 'nearest'
+                    ? 'bg-white text-red-600 border-b-2 border-red-600'
+                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                }`}
+              >
+                Nearest ({nearestPizzerias.length})
+              </button>
+            </div>
 
-        {/* Stats */}
-        <div className="p-4 bg-gray-50 border-b border-gray-200 text-sm text-gray-600">
-          {stats}
-        </div>
+            {/* City Selector - Only show for "All" tab */}
+            {activeTab === 'all' && (
+              <div className="p-4 bg-gray-50 border-b border-gray-200">
+                <label className="block text-xs font-semibold text-gray-600 mb-2 uppercase">
+                  Select City
+                </label>
+                <Select
+                  value={selectedCity ? { value: selectedCity, label: selectedCity } : null}
+                  onChange={(option) => handleCityChange(option?.value || '')}
+                  options={[
+                    { value: '', label: 'All Cities' },
+                    ...allCities.sort((a, b) => a.name.localeCompare(b.name)).map((city) => {
+                      const isScraped = cityData[city.name];
+                      return {
+                        value: city.name,
+                        label: `${city.name} ${isScraped ? `(${cityData[city.name].pizzerias.length})` : '(Not scraped)'}`,
+                      };
+                    })
+                  ]}
+                  isClearable
+                  placeholder="Search cities..."
+                  className="text-sm"
+                  styles={{
+                    control: (base) => ({
+                      ...base,
+                      minHeight: '38px',
+                      borderColor: '#d1d5db',
+                      '&:hover': { borderColor: '#9ca3af' }
+                    }),
+                    option: (base, state) => ({
+                      ...base,
+                      fontSize: '14px',
+                      cursor: 'pointer',
+                      color: '#1f2937',
+                      backgroundColor: state.isSelected ? '#dc2626' : state.isFocused ? '#fee2e2' : 'white'
+                    }),
+                    singleValue: (base) => ({
+                      ...base,
+                      color: '#1f2937'
+                    }),
+                    input: (base) => ({
+                      ...base,
+                      color: '#1f2937'
+                    })
+                  }}
+                />
+              </div>
+            )}
 
-        {/* Pizzeria List */}
-        <div className="flex-1 overflow-y-auto p-4">
-          {renderPizzeriaList()}
-        </div>
+            {/* Stats */}
+            <div className="p-4 bg-gray-50 border-b border-gray-200 text-sm text-gray-600">
+              {stats}
+            </div>
+
+            {/* Content - Conditional based on active tab */}
+            <div className="flex-1 overflow-y-auto p-4">
+              {activeTab === 'all' ? renderPizzeriaList() : renderNearestList()}
+            </div>
+          </>
+        )}
       </div>
+
+      {/* Collapse/Expand Button */}
+      <button
+        onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
+        className="absolute left-0 top-1/2 -translate-y-1/2 bg-red-600 text-white p-2 rounded-r-md shadow-lg hover:bg-red-700 transition-all z-[1000]"
+        style={{ left: sidebarCollapsed ? '0' : '384px' }}
+      >
+        <svg
+          className={`w-5 h-5 transition-transform ${sidebarCollapsed ? '' : 'rotate-180'}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
 
       {/* Map */}
       <FullMap
         cityData={cityData}
         selectedCity={selectedCity}
         selectedLocation={selectedPizzeria}
+        autoTriggerLocation={autoTriggerLocation}
+        maxDistance={maxDistance}
+        onNearestPizzeriasUpdate={(pizzerias) => {
+          setNearestPizzerias(pizzerias);
+        }}
       />
     </div>
   );
