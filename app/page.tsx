@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Map from './components/Map';
+import {FullMap } from './components/FullMap';
 
 interface Location {
   address: string | null;
@@ -265,11 +265,10 @@ export default function Home() {
       </div>
 
       {/* Map */}
-      <Map
+      <FullMap
         cityData={cityData}
         selectedCity={selectedCity}
         selectedLocation={selectedPizzeria}
-        onPizzeriaSelect={handlePizzeriaClick}
       />
     </div>
   );
