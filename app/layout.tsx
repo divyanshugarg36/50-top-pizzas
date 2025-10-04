@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   description: "Explore the world's best pizzerias from 50 Top Pizza on an interactive map. Find nearest pizzerias, browse by city, and discover top-rated pizza locations.",
 };
 
+// Disable static generation (map requires client-side rendering)
+export const dynamic = 'force-dynamic';
+
 export default function RootLayout({
   children,
 }: Readonly<{
