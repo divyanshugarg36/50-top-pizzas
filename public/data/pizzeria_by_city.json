@@ -2010,5 +2010,1777 @@
         ]
       }
     ]
+  },
+  "Brussels": {
+    "pizzerias": [
+      {
+        "name": "La Bottega della Pizza",
+        "url": "https://www.50toppizza.it/referenza/la-bottega-della-pizza-3/",
+        "locations": [
+          {
+            "address": "Rue de Rollebeek 31, 1000 Bruxelles",
+            "lat": 50.8417253,
+            "lng": 4.3532667
+          },
+          {
+            "address": "Avenue Ducpétiaux, Saint",
+            "lat": 50.8230157,
+            "lng": 4.3494297
+          }
+        ]
+      },
+      {
+        "name": "La Piola Pizza",
+        "url": "https://www.50toppizza.it/referenza/la-piola-pizza-4/",
+        "locations": [
+          {
+            "address": "indirizzo: Pl. Saint-Josse 8, 1210 Saint-Josse-ten-Noode",
+            "lat": 50.8494279,
+            "lng": 4.374104
+          },
+          {
+            "address": "Rue du Fossé aux Loups 50, Bruxelles",
+            "lat": 50.8499341,
+            "lng": 4.3562806
+          },
+          {
+            "address": "Rue du Fossé aux Loups 50, Bruxelles",
+            "lat": 50.8069556,
+            "lng": 4.3716748
+          }
+        ]
+      },
+      {
+        "name": "‘naPizzà",
+        "url": "https://www.50toppizza.it/referenza/napizza-4/",
+        "locations": [
+          {
+            "address": "indirizzo: Place Van Meyel 6, 1040 Etterbeek",
+            "lat": 50.8370792,
+            "lng": 4.3889654
+          }
+        ]
+      }
+    ]
+  },
+  "Copenhagen": {
+    "pizzerias": [
+      {
+        "name": "Bæst",
+        "url": "https://www.50toppizza.it/referenza/baest-4/",
+        "locations": [
+          {
+            "address": "indirizzo: Guldbergsgade 29, 2200 København",
+            "lat": 55.6914619,
+            "lng": 12.5546935
+          }
+        ]
+      },
+      {
+        "name": "Little Brother",
+        "url": "https://www.50toppizza.it/referenza/little-brother/",
+        "locations": [
+          {
+            "address": "indirizzo: Nørre Farimagsgade 57, 1364 Copenaghen",
+            "lat": 55.6847229,
+            "lng": 12.5674632
+          }
+        ]
+      },
+      {
+        "name": "MaMeMi",
+        "url": "https://www.50toppizza.it/referenza/mamemi-2/",
+        "locations": [
+          {
+            "address": "indirizzo: Mysundegade 28, 1668 Copenaghen",
+            "lat": 55.6679043,
+            "lng": 12.5479282
+          }
+        ]
+      },
+      {
+        "name": "Pizzeria Luca",
+        "url": "https://www.50toppizza.it/referenza/pizzeria-luca-8/",
+        "locations": [
+          {
+            "address": "indirizzo: Gammel Strand 42, 1200 Copenaghen",
+            "lat": 55.6777624,
+            "lng": 12.5781859
+          },
+          {
+            "address": "altre sedi: Gammel Jernbanevej 20, 2800 Kongens Lyngby, Danimarca",
+            "lat": 55.7688763,
+            "lng": 12.5050696
+          }
+        ]
+      },
+      {
+        "name": "Surt",
+        "url": "https://www.50toppizza.it/referenza/surt-4/",
+        "locations": [
+          {
+            "address": "indirizzo: Bag Elefanterne 2, 1799 Copenaghen",
+            "lat": 55.6674685,
+            "lng": 12.5315329
+          }
+        ]
+      }
+    ]
+  },
+  "Mexico City": {
+    "pizzerias": [
+      {
+        "name": "Ardente",
+        "url": "https://www.50toppizza.it/referenza/ardente-3/",
+        "locations": [
+          {
+            "address": "indirizzo: Laredo 13, Col. Hipódromo",
+            "lat": 19.413075,
+            "lng": -99.1709795
+          },
+          {
+            "address": "altre sedi: Blvrd de la Luz 777, Jardines del Pedregal, 01900 Ciudad de México, CDMX, Messico",
+            "lat": 19.3089056,
+            "lng": -99.2092772
+          }
+        ]
+      }
+    ]
+  },
+  "Tokyo": {
+    "pizzerias": [
+      {
+        "name": "L’INSIEME",
+        "url": "https://www.50toppizza.it/referenza/linsieme-2/",
+        "locations": [
+          {
+            "address": "indirizzo: 1 Chome-31-7 Kameido, Koto City",
+            "lat": 35.6947101,
+            "lng": 139.8256317
+          }
+        ]
+      },
+      {
+        "name": "La Tripletta",
+        "url": "https://www.50toppizza.it/referenza/la-tripletta-5/",
+        "locations": [
+          {
+            "address": "indirizzo: 3 Chome-13-12 Koyama, Shinagawa City",
+            "lat": 35.6202886,
+            "lng": 139.705546
+          }
+        ]
+      },
+      {
+        "name": "MASSIMOTTAVIO",
+        "url": "https://www.50toppizza.it/referenza/massimottavio-3/",
+        "locations": [
+          {
+            "address": "indirizzo: 4 Chome-4-4 Eifuku, Suginami City",
+            "lat": 35.6769773,
+            "lng": 139.6426699
+          }
+        ]
+      },
+      {
+        "name": "Pizza Strada",
+        "url": "https://www.50toppizza.it/referenza/pizza-strada-5/",
+        "locations": [
+          {
+            "address": "indirizzo: NS Azabujuban Building 1F, 3-6-2 Azabujuban",
+            "lat": 35.653296,
+            "lng": 139.734723
+          }
+        ]
+      },
+      {
+        "name": "RistoPizza by Napoli sta ca",
+        "url": "https://www.50toppizza.it/referenza/ristopizza-by-napoli-sta-ca/",
+        "locations": [
+          {
+            "address": "indirizzo: Azabudai Hills Tower Plaza 3F, 1-3-1 Azabudai",
+            "lat": 35.6609166,
+            "lng": 139.7405604
+          }
+        ]
+      },
+      {
+        "name": "The Pizza Bar on 38th",
+        "url": "https://www.50toppizza.it/referenza/the-pizza-bar-on-38th-5/",
+        "locations": [
+          {
+            "address": "indirizzo: 2 Chome-1-1 Nihonbashi Muromachi, Chuo City",
+            "lat": 35.6815015,
+            "lng": 139.7735148
+          }
+        ]
+      }
+    ]
+  },
+  "Vienna": {
+    "pizzerias": [
+      {
+        "name": "Piazza Colombo",
+        "url": "https://www.50toppizza.it/referenza/piazza-colombo/",
+        "locations": [
+          {
+            "address": "indirizzo: Columbuspl. 5, 1100 Wien",
+            "lat": 48.1823515,
+            "lng": 16.3740479
+          }
+        ]
+      },
+      {
+        "name": "Sette",
+        "url": "https://www.50toppizza.it/referenza/sette/",
+        "locations": [
+          {
+            "address": "indirizzo: Schottenfeldgasse 7, 1070 Wien",
+            "lat": 48.1976473,
+            "lng": 16.3437446
+          }
+        ]
+      },
+      {
+        "name": "Via Toledo",
+        "url": "https://www.50toppizza.it/referenza/via-toledo/",
+        "locations": [
+          {
+            "address": "indirizzo: Laudongasse 13, 1080 Wien",
+            "lat": 48.2132026,
+            "lng": 16.3513492
+          }
+        ]
+      }
+    ]
+  },
+  "Aarau": {
+    "pizzerias": [
+      {
+        "name": "Ninni",
+        "url": "https://www.50toppizza.it/referenza/ninni/",
+        "locations": [
+          {
+            "address": "indirizzo: Pelzgasse 33, 5000 Aarau",
+            "lat": 47.3922964,
+            "lng": 8.0443824
+          }
+        ]
+      }
+    ]
+  },
+  "Abano Terme (PD)": {
+    "pizzerias": [
+      {
+        "name": "Al Tabaco",
+        "url": "https://www.50toppizza.it/referenza/al-tabaco/",
+        "locations": [
+          {
+            "address": "Via Romana, 5",
+            "lat": 45.357196,
+            "lng": 11.8113477
+          }
+        ]
+      }
+    ]
+  },
+  "Acerra (NA)": {
+    "pizzerias": [
+      {
+        "name": "Gaetano Paolella Pizzeria",
+        "url": "https://www.50toppizza.it/referenza/gaetano-paolella-pizzeria-4/",
+        "locations": [
+          {
+            "address": "Corso della Resistenza, 187",
+            "lat": 40.9477733,
+            "lng": 14.3662093
+          }
+        ]
+      }
+    ]
+  },
+  "Acireale (CT)": {
+    "pizzerias": [
+      {
+        "name": "Frumento",
+        "url": "https://www.50toppizza.it/referenza/frumento-4/",
+        "locations": [
+          {
+            "address": "Piazza Giuseppe Mazzini, 95024 Acireale CT",
+            "lat": 37.611855,
+            "lng": 15.1648017
+          },
+          {
+            "address": "Piazza S. Francesco d’Assisi 14, Catania Corso Umberto I 13",
+            "lat": 37.503078,
+            "lng": 15.084668
+          },
+          {
+            "address": "Piazza S. Francesco d’Assisi 14, Catania Corso Umberto I 13",
+            "lat": 36.8563716,
+            "lng": 14.7605704
+          }
+        ]
+      },
+      {
+        "name": "In un angolo di mondo",
+        "url": "https://www.50toppizza.it/referenza/in-un-angolo-di-mondo-2/",
+        "locations": [
+          {
+            "address": "Via Nazionale per Catania, 180",
+            "lat": 37.5818786,
+            "lng": 15.1693574
+          }
+        ]
+      }
+    ]
+  },
+  "Acri (CS)": {
+    "pizzerias": [
+      {
+        "name": "Oliva Pizzamore",
+        "url": "https://www.50toppizza.it/referenza/oliva-pizzamore-4/",
+        "locations": [
+          {
+            "address": "Via Don Francesco Maria Greco, 5",
+            "lat": 39.4924254,
+            "lng": 16.383839
+          }
+        ]
+      },
+      {
+        "name": "Vadolì",
+        "url": "https://www.50toppizza.it/referenza/vadoli-3/",
+        "locations": [
+          {
+            "address": "Via Salvatore Scervini, 21",
+            "lat": 39.4947282,
+            "lng": 16.3803912
+          }
+        ]
+      }
+    ]
+  },
+  "Adeje": {
+    "pizzerias": [
+      {
+        "name": "La Trattoria by Il Bocconcino",
+        "url": "https://www.50toppizza.it/referenza/la-trattoria-by-il-bocconcino/",
+        "locations": [
+          {
+            "address": "indirizzo: Av. Virgen de Guadalupe, 21",
+            "lat": 28.0982545,
+            "lng": -16.7482385
+          }
+        ]
+      }
+    ]
+  },
+  "Adelaide": {
+    "pizzerias": [
+      {
+        "name": "Est Ovest",
+        "url": "https://www.50toppizza.it/referenza/est-ovest/",
+        "locations": [
+          {
+            "address": "indirizzo: Shop 1/111 Angas Street, Adelaide SA 5000",
+            "lat": -34.9301582,
+            "lng": 138.6051019
+          }
+        ]
+      }
+    ]
+  },
+  "Adrogué": {
+    "pizzerias": [
+      {
+        "name": "Ti Amo",
+        "url": "https://www.50toppizza.it/referenza/ti-amo-4/",
+        "locations": [
+          {
+            "address": "indirizzo: Diag. Toll 1420, B1846 Adrogué",
+            "lat": -34.8007248,
+            "lng": -58.3848622
+          }
+        ]
+      }
+    ]
+  },
+  "Agrigento": {
+    "pizzerias": [
+      {
+        "name": "Granofino",
+        "url": "https://www.50toppizza.it/referenza/granofino-2/",
+        "locations": [
+          {
+            "address": "Viale Leonardo Sciascia, 82",
+            "lat": 37.2772313,
+            "lng": 13.6102021
+          }
+        ]
+      },
+      {
+        "name": "Sitári",
+        "url": "https://www.50toppizza.it/referenza/sitari/",
+        "locations": [
+          {
+            "address": "Viale Leonardo Sciascia, 284",
+            "lat": 37.2710169,
+            "lng": 13.6264258
+          }
+        ]
+      }
+    ]
+  },
+  "Agropoli (SA)": {
+    "pizzerias": [
+      {
+        "name": "Gusto Pizza Society",
+        "url": "https://www.50toppizza.it/referenza/gusto-pizza-society-2/",
+        "locations": [
+          {
+            "address": "Via S. Marco, 156",
+            "lat": 40.3605177,
+            "lng": 14.9996408
+          }
+        ]
+      }
+    ]
+  },
+  "Aguascalientes": {
+    "pizzerias": [
+      {
+        "name": "La Nonna",
+        "url": "https://www.50toppizza.it/referenza/la-nonna-2/",
+        "locations": [
+          {
+            "address": "indirizzo: Gral. Ignacio Allende 252, Zona Centro",
+            "lat": 21.8809258,
+            "lng": -102.2998091
+          }
+        ]
+      }
+    ]
+  },
+  "Alano di Piave (BL)": {
+    "pizzerias": [
+      {
+        "name": "Da Ezio",
+        "url": "https://www.50toppizza.it/referenza/da-ezio-2/",
+        "locations": [
+          {
+            "address": "indirizzo: P.za Licini, 2",
+            "lat": 45.9090655,
+            "lng": 11.9130677
+          }
+        ]
+      }
+    ]
+  },
+  "Alassio (SV)": {
+    "pizzerias": [
+      {
+        "name": "18.97",
+        "url": "https://www.50toppizza.it/referenza/18-97-2/",
+        "locations": [
+          {
+            "address": "Via Antonio Gramsci, 2",
+            "lat": 44.0090164,
+            "lng": 8.1753563
+          }
+        ]
+      }
+    ]
+  },
+  "Alberobello (BA)": {
+    "pizzerias": [
+      {
+        "name": "Sintesi",
+        "url": "https://www.50toppizza.it/referenza/sintesi/",
+        "locations": [
+          {
+            "address": "indirizzo: Largo Martellotta, 75",
+            "lat": 40.7831459,
+            "lng": 17.2380603
+          }
+        ]
+      }
+    ]
+  },
+  "Alcamo (TP)": {
+    "pizzerias": [
+      {
+        "name": "Monelle",
+        "url": "https://www.50toppizza.it/referenza/monelle-2/",
+        "locations": [
+          {
+            "address": "Piazza Ciullo, 24",
+            "lat": 37.9802696,
+            "lng": 12.9647418
+          }
+        ]
+      }
+    ]
+  },
+  "Alessandria": {
+    "pizzerias": [
+      {
+        "name": "Il Pizz’ino",
+        "url": "https://www.50toppizza.it/referenza/il-pizzino-4/",
+        "locations": [
+          {
+            "address": "Via Ferrara, 16",
+            "lat": 44.9132388,
+            "lng": 8.6144188
+          }
+        ]
+      }
+    ]
+  },
+  "Alicante": {
+    "pizzerias": [
+      {
+        "name": "Infraganti",
+        "url": "https://www.50toppizza.it/referenza/infraganti-2/",
+        "locations": [
+          {
+            "address": "Calle San Fernando, 29",
+            "lat": 38.3431225,
+            "lng": -0.4842807
+          },
+          {
+            "address": "altre sedi: C. Sor Valentina García González, 30001, Murcia, Spagna Plaza de la Constitución, 1, Elche de la Sierra, Spagna Muchavista Ctra Benimagrell 7, El Campello",
+            "lat": 37.9839566,
+            "lng": -1.1274965
+          },
+          {
+            "address": "altre sedi: C. Sor Valentina García González, 30001, Murcia, Spagna Plaza de la Constitución, 1, Elche de la Sierra, Spagna Muchavista Ctra Benimagrell 7, El Campello",
+            "lat": 38.4487461,
+            "lng": -2.0458968
+          },
+          {
+            "address": "altre sedi: C. Sor Valentina García González, 30001, Murcia, Spagna Plaza de la Constitución, 1, Elche de la Sierra, Spagna Muchavista Ctra Benimagrell 7, El Campello",
+            "lat": 38.3871095,
+            "lng": -0.4102194
+          }
+        ]
+      }
+    ]
+  },
+  "Aljezur": {
+    "pizzerias": [
+      {
+        "name": "Arte Bianca",
+        "url": "https://www.50toppizza.it/referenza/arte-bianca-4/",
+        "locations": [
+          {
+            "address": "indirizzo: Rua da Mareta, 8650-372 Sagres",
+            "lat": 37.0097328,
+            "lng": -8.9366704
+          },
+          {
+            "address": "altre sedi: Rua 25 de Abril 114, 8670-088 Aljezur, Portugal Hotel Vale Da Telha, Urbanização Vale da Telha, 8670-156 Aljezur, Portugal",
+            "lat": 37.3143194,
+            "lng": -8.80384
+          },
+          {
+            "address": "altre sedi: Rua 25 de Abril 114, 8670-088 Aljezur, Portugal Hotel Vale Da Telha, Urbanização Vale da Telha, 8670-156 Aljezur, Portugal",
+            "lat": 37.3034536,
+            "lng": -8.8494888
+          }
+        ]
+      }
+    ]
+  },
+  "Alpharetta": {
+    "pizzerias": [
+      {
+        "name": "Antico Pizza",
+        "url": "https://www.50toppizza.it/referenza/antico-pizza/",
+        "locations": [
+          {
+            "address": "indirizzo: 1093 Hemphill Ave NW, Atlanta",
+            "lat": 33.7846617,
+            "lng": -84.4056354
+          },
+          {
+            "address": "altre sedi: 2605 Circle 75 Pkwy, Atlanta, GA 30339, Stati Uniti 3185 Avalon Blvd Alpharetta, GA 30009 4650 Hugh Howell Rd Building 500, Suite 530 Tucker, GA 30084",
+            "lat": 33.8888125,
+            "lng": -84.4677371
+          },
+          {
+            "address": "altre sedi: 2605 Circle 75 Pkwy, Atlanta, GA 30339, Stati Uniti 3185 Avalon Blvd Alpharetta, GA 30009 4650 Hugh Howell Rd Building 500, Suite 530 Tucker, GA 30084",
+            "lat": 34.0713614,
+            "lng": -84.2767148
+          },
+          {
+            "address": "altre sedi: 2605 Circle 75 Pkwy, Atlanta, GA 30339, Stati Uniti 3185 Avalon Blvd Alpharetta, GA 30009 4650 Hugh Howell Rd Building 500, Suite 530 Tucker, GA 30084",
+            "lat": 33.8504418,
+            "lng": -84.1987275
+          }
+        ]
+      }
+    ]
+  },
+  "Altamura (BA)": {
+    "pizzerias": [
+      {
+        "name": "Pizzeria Levante",
+        "url": "https://www.50toppizza.it/referenza/pizzeria-levante-2/",
+        "locations": [
+          {
+            "address": "Viale Martiri del 1799, 94",
+            "lat": 40.8234741,
+            "lng": 16.5591815
+          }
+        ]
+      }
+    ]
+  },
+  "Altavilla Milicia (PA)": {
+    "pizzerias": [
+      {
+        "name": "Saccharum",
+        "url": "https://www.50toppizza.it/referenza/saccharum/",
+        "locations": [
+          {
+            "address": "Via Marina Della Bruca 1 90010 Altavilla Milicia, Italy",
+            "lat": 38.03934,
+            "lng": 13.5477958
+          }
+        ]
+      }
+    ]
+  },
+  "Alvignano (CE)": {
+    "pizzerias": [
+      {
+        "name": "Pizzeria Elite Rossi",
+        "url": "https://www.50toppizza.it/referenza/pizzeria-elite-rossi-4/",
+        "locations": [
+          {
+            "address": "Corso Umberto I°, 168",
+            "lat": 41.2449213,
+            "lng": 14.3373366
+          },
+          {
+            "address": "Via Tortona, 21",
+            "lat": 45.4528089,
+            "lng": 9.1664163
+          }
+        ]
+      }
+    ]
+  },
+  "Amalfi (SA)": {
+    "pizzerias": [
+      {
+        "name": "Carlo Fiamma Pizza e Cantina",
+        "url": "https://www.50toppizza.it/referenza/carlo-fiamma-pizza-e-cantina/",
+        "locations": [
+          {
+            "address": "indirizzo: Largo della Zecca, 3",
+            "lat": 40.6344809,
+            "lng": 14.6039162
+          }
+        ]
+      }
+    ]
+  },
+  "Amersfoort": {
+    "pizzerias": [
+      {
+        "name": "Bombari",
+        "url": "https://www.50toppizza.it/referenza/bombari/",
+        "locations": [
+          {
+            "address": "indirizzo: Stationsstraat 42, 3811 MJ Amersfoort",
+            "lat": 52.1530286,
+            "lng": 5.377711
+          }
+        ]
+      }
+    ]
+  },
+  "Ancona": {
+    "pizzerias": [
+      {
+        "name": "Avalon",
+        "url": "https://www.50toppizza.it/referenza/avalon/",
+        "locations": [
+          {
+            "address": "Via Matteotti, 165",
+            "lat": 43.6182155,
+            "lng": 13.517482
+          },
+          {
+            "address": "Via Sacco e Vanzetti, 13",
+            "lat": 43.576971,
+            "lng": 13.5091789
+          }
+        ]
+      },
+      {
+        "name": "Farinando",
+        "url": "https://www.50toppizza.it/referenza/farinando-2/",
+        "locations": [
+          {
+            "address": "Viale della Vittoria, 52",
+            "lat": 43.6153277,
+            "lng": 13.5317333
+          }
+        ]
+      }
+    ]
+  },
+  "Ankara": {
+    "pizzerias": [
+      {
+        "name": "MOZZ.",
+        "url": "https://www.50toppizza.it/referenza/mozz-2/",
+        "locations": [
+          {
+            "address": "indirizzo:  Beytepe, Plevne Cd. No:10/AB",
+            "lat": 39.9378756,
+            "lng": 32.8782773
+          }
+        ]
+      }
+    ]
+  },
+  "Antwerp": {
+    "pizzerias": [
+      {
+        "name": "La Pizza è Bella",
+        "url": "https://www.50toppizza.it/referenza/la-pizza-e-bella-2/",
+        "locations": [
+          {
+            "address": "indirizzo: Oever 2, 2000 Antwerpen",
+            "lat": 51.2182592,
+            "lng": 4.3968573
+          },
+          {
+            "address": "Rue Froissart 43, 1040 Etterbeek",
+            "lat": 50.83871,
+            "lng": 4.3822831
+          },
+          {
+            "address": "Rue Froissart 43, 1040 Etterbeek",
+            "lat": 50.8417989,
+            "lng": 4.3538564
+          }
+        ]
+      }
+    ]
+  },
+  "Apollosa (BN)": {
+    "pizzerias": [
+      {
+        "name": "Il Pascià",
+        "url": "https://www.50toppizza.it/referenza/il-pascia-4/",
+        "locations": [
+          {
+            "address": "Via Epitaffio 18/A 82030 Apollosa, Italy",
+            "lat": 41.0874943,
+            "lng": 14.7410604
+          }
+        ]
+      }
+    ]
+  },
+  "Aprilia (LT)": {
+    "pizzerias": [
+      {
+        "name": "Velo Pizzaioli Popolari",
+        "url": "https://www.50toppizza.it/referenza/velo-pizzeria/",
+        "locations": [
+          {
+            "address": "Via Cesare Battisti, 42",
+            "lat": 41.4696099,
+            "lng": 12.9025899
+          },
+          {
+            "address": "Via Aldo Moro, 41d",
+            "lat": 41.5875986,
+            "lng": 12.646001
+          }
+        ]
+      }
+    ]
+  },
+  "Arezzo": {
+    "pizzerias": [
+      {
+        "name": "‘O Scugnizzo",
+        "url": "https://www.50toppizza.it/referenza/o-scugnizzo-4/",
+        "locations": [
+          {
+            "address": "Via de' Redi, 9",
+            "lat": 43.46388,
+            "lng": 11.8809059
+          }
+        ]
+      }
+    ]
+  },
+  "Arielli (CH)": {
+    "pizzerias": [
+      {
+        "name": "Giangi",
+        "url": "https://www.50toppizza.it/referenza/giangi-2/",
+        "locations": [
+          {
+            "address": "Via Valle, 27",
+            "lat": 42.2571558,
+            "lng": 14.3147691
+          }
+        ]
+      }
+    ]
+  },
+  "Arlington": {
+    "pizzerias": [
+      {
+        "name": "A Modo Mio",
+        "url": "https://www.50toppizza.it/referenza/a-modo-mio-3/",
+        "locations": [
+          {
+            "address": "indirizzo: 5555 Langston Boulevard, Arlington",
+            "lat": 38.895989,
+            "lng": -77.140322
+          }
+        ]
+      }
+    ]
+  },
+  "Arpaia (BN)": {
+    "pizzerias": [
+      {
+        "name": "Pizzeria Di Stora",
+        "url": "https://www.50toppizza.it/referenza/pizzeria-di-stora-2/",
+        "locations": [
+          {
+            "address": "Via Roma, 205",
+            "lat": 41.0351653,
+            "lng": 14.5430232
+          }
+        ]
+      }
+    ]
+  },
+  "Asbury Park": {
+    "pizzerias": [
+      {
+        "name": "Porta",
+        "url": "https://www.50toppizza.it/referenza/porta-2/",
+        "locations": [
+          {
+            "address": "indirizzo: 135 Newark Ave, Jersey City",
+            "lat": 40.7201531,
+            "lng": -74.0437491
+          },
+          {
+            "address": "altre sedi: 911 Kingsley Street, Asbury Park, NJ 07712, Stati Uniti 499 Bloomfield Ave, Montclair, NJ 07042, Stati Uniti",
+            "lat": 40.2202485,
+            "lng": -74.002391
+          },
+          {
+            "address": "altre sedi: 911 Kingsley Street, Asbury Park, NJ 07712, Stati Uniti 499 Bloomfield Ave, Montclair, NJ 07042, Stati Uniti",
+            "lat": 40.814729,
+            "lng": -74.2182175
+          }
+        ]
+      }
+    ]
+  },
+  "Ascoli Piceno": {
+    "pizzerias": [
+      {
+        "name": "È Bona Furia",
+        "url": "https://www.50toppizza.it/referenza/e-bona-furia-3/",
+        "locations": [
+          {
+            "address": "Via Dino Angelini, 63100 Ascoli Piceno",
+            "lat": 42.8538387,
+            "lng": 13.5713784
+          }
+        ]
+      },
+      {
+        "name": "Pizzeria La Scaletta",
+        "url": "https://www.50toppizza.it/referenza/pizzeria-la-scaletta-4/",
+        "locations": [
+          {
+            "address": "Via Napoli, 137",
+            "lat": 42.8498766,
+            "lng": 13.5978427
+          }
+        ]
+      }
+    ]
+  },
+  "Asti": {
+    "pizzerias": [
+      {
+        "name": "Vicolo Battisti",
+        "url": "https://www.50toppizza.it/referenza/vicolo-battisti/",
+        "locations": [
+          {
+            "address": "Via Cesare Battisti, 14a",
+            "lat": 44.9007655,
+            "lng": 8.2057149
+          }
+        ]
+      }
+    ]
+  },
+  "Asti (AT)": {
+    "pizzerias": [
+      {
+        "name": "CRust",
+        "url": "https://www.50toppizza.it/referenza/crust-3/",
+        "locations": [
+          {
+            "address": "Corso S. Maurizio, 18",
+            "lat": 45.069526,
+            "lng": 7.6942916
+          },
+          {
+            "address": "Piazza Roma, 12",
+            "lat": 44.899206,
+            "lng": 8.201529
+          }
+        ]
+      }
+    ]
+  },
+  "Asunción": {
+    "pizzerias": [
+      {
+        "name": "Grosso",
+        "url": "https://www.50toppizza.it/referenza/grosso/",
+        "locations": [
+          {
+            "address": "viadores del Chaco, Asunción 001529",
+            "lat": -25.2844194,
+            "lng": -57.5679173
+          },
+          {
+            "address": "altre sedi: Quesada 5050, Asunción 1411, Paraguay",
+            "lat": -25.2951572,
+            "lng": -57.5807409
+          }
+        ]
+      }
+    ]
+  },
+  "Athens": {
+    "pizzerias": [
+      {
+        "name": "Ma Che Vuoi",
+        "url": "https://www.50toppizza.it/referenza/ma-che-vuoi/",
+        "locations": [
+          {
+            "address": "indirizzo: Kalamiotou 15, Athina 105 60",
+            "lat": 37.9771555,
+            "lng": 23.7288858
+          }
+        ]
+      },
+      {
+        "name": "Napul’è",
+        "url": "https://www.50toppizza.it/referenza/napule-3/",
+        "locations": [
+          {
+            "address": "indirizzo: Vasileos Konstantinou 43, Vari 166 72",
+            "lat": 37.8273739,
+            "lng": 23.8040078
+          }
+        ]
+      },
+      {
+        "name": "Odori",
+        "url": "https://www.50toppizza.it/referenza/odori-3/",
+        "locations": [
+          {
+            "address": "indirizzo: Skouleniou 2, Athina 105 61",
+            "lat": 37.9791866,
+            "lng": 23.7296966
+          }
+        ]
+      },
+      {
+        "name": "Ovio",
+        "url": "https://www.50toppizza.it/referenza/ovio-3/",
+        "locations": [
+          {
+            "address": "indirizzo: Apollonos 4, Athina 105 57",
+            "lat": 37.9748616,
+            "lng": 23.73272
+          }
+        ]
+      }
+    ]
+  },
+  "Atlanta": {
+    "pizzerias": [
+      {
+        "name": "Antico Pizza",
+        "url": "https://www.50toppizza.it/referenza/antico-pizza/",
+        "locations": [
+          {
+            "address": "indirizzo: 1093 Hemphill Ave NW, Atlanta",
+            "lat": 33.7846617,
+            "lng": -84.4056354
+          },
+          {
+            "address": "altre sedi: 2605 Circle 75 Pkwy, Atlanta, GA 30339, Stati Uniti 3185 Avalon Blvd Alpharetta, GA 30009 4650 Hugh Howell Rd Building 500, Suite 530 Tucker, GA 30084",
+            "lat": 33.8888125,
+            "lng": -84.4677371
+          },
+          {
+            "address": "altre sedi: 2605 Circle 75 Pkwy, Atlanta, GA 30339, Stati Uniti 3185 Avalon Blvd Alpharetta, GA 30009 4650 Hugh Howell Rd Building 500, Suite 530 Tucker, GA 30084",
+            "lat": 34.0713614,
+            "lng": -84.2767148
+          },
+          {
+            "address": "altre sedi: 2605 Circle 75 Pkwy, Atlanta, GA 30339, Stati Uniti 3185 Avalon Blvd Alpharetta, GA 30009 4650 Hugh Howell Rd Building 500, Suite 530 Tucker, GA 30084",
+            "lat": 33.8504418,
+            "lng": -84.1987275
+          }
+        ]
+      }
+    ]
+  },
+  "Atri (TE)": {
+    "pizzerias": [
+      {
+        "name": "Castellum Vetus 2.0",
+        "url": "https://www.50toppizza.it/referenza/castellum-vetus-2-0/",
+        "locations": [
+          {
+            "address": "Piazza della cooperazione, 1",
+            "lat": 42.6302084,
+            "lng": 13.9879561
+          }
+        ]
+      }
+    ]
+  },
+  "Atripalda (AV)": {
+    "pizzerias": [
+      {
+        "name": "Pizzeria Balbi",
+        "url": "https://www.50toppizza.it/referenza/pizzeria-balbi-2/",
+        "locations": [
+          {
+            "address": "Via Salita Palazzo, 83042 Atripalda AV",
+            "lat": 40.9192139,
+            "lng": 14.8354683
+          }
+        ]
+      }
+    ]
+  },
+  "Auckland": {
+    "pizzerias": [
+      {
+        "name": "Dante’s Pizzeria by Enis Baçova",
+        "url": "https://www.50toppizza.it/referenza/dantes-pizzeria-by-enis-bacova/",
+        "locations": [
+          {
+            "address": "indirizzo: 136 Ponsonby Rd, Ponsonby",
+            "lat": -36.8561968,
+            "lng": 174.7462693
+          },
+          {
+            "address": "altre sedi: 2/40 Hurstmere Road, Takapuna, Auckland 0622, Nuova Zelanda 215 Kepa Rd, Mission Bay, Auckland 1071, Nuova Zelanda",
+            "lat": -36.7876595,
+            "lng": 174.772477
+          },
+          {
+            "address": "altre sedi: 2/40 Hurstmere Road, Takapuna, Auckland 0622, Nuova Zelanda 215 Kepa Rd, Mission Bay, Auckland 1071, Nuova Zelanda",
+            "lat": -36.8606169,
+            "lng": 174.8295754
+          }
+        ]
+      },
+      {
+        "name": "Napoli Contemporanea",
+        "url": "https://www.50toppizza.it/referenza/napoli-contemporanea/",
+        "locations": [
+          {
+            "address": "indirizzo: 297 Parnell Road, Auckland",
+            "lat": -36.8568138,
+            "lng": 174.7811897
+          }
+        ]
+      }
+    ]
+  },
+  "Ave Montclair": {
+    "pizzerias": [
+      {
+        "name": "Porta",
+        "url": "https://www.50toppizza.it/referenza/porta-2/",
+        "locations": [
+          {
+            "address": "indirizzo: 135 Newark Ave, Jersey City",
+            "lat": 40.7201531,
+            "lng": -74.0437491
+          },
+          {
+            "address": "altre sedi: 911 Kingsley Street, Asbury Park, NJ 07712, Stati Uniti 499 Bloomfield Ave, Montclair, NJ 07042, Stati Uniti",
+            "lat": 40.2202485,
+            "lng": -74.002391
+          },
+          {
+            "address": "altre sedi: 911 Kingsley Street, Asbury Park, NJ 07712, Stati Uniti 499 Bloomfield Ave, Montclair, NJ 07042, Stati Uniti",
+            "lat": 40.814729,
+            "lng": -74.2182175
+          }
+        ]
+      }
+    ]
+  },
+  "Avellino": {
+    "pizzerias": [
+      {
+        "name": "Vincenzo Capuano",
+        "url": "https://www.50toppizza.it/referenza/vincenzo-capuano-4/",
+        "locations": [
+          {
+            "address": "Via Bisignano, 14",
+            "lat": 40.8350175,
+            "lng": 14.2405572
+          }
+        ]
+      },
+      {
+        "name": "Capaldo Forno Contemporaneo",
+        "url": "https://www.50toppizza.it/referenza/capaldo-forno-contemporaneo/",
+        "locations": [
+          {
+            "address": "Via Luigi Amabile, 78",
+            "lat": 40.91655,
+            "lng": 14.7929425
+          }
+        ]
+      },
+      {
+        "name": "Il Testone #pizzastore",
+        "url": "https://www.50toppizza.it/referenza/il-testone-pizzastore-4/",
+        "locations": [
+          {
+            "address": "Corso Umberto I, 127",
+            "lat": 40.9147782,
+            "lng": 14.7985483
+          }
+        ]
+      }
+    ]
+  },
+  "Aversa (CE)": {
+    "pizzerias": [
+      {
+        "name": "Vincenzo Capuano",
+        "url": "https://www.50toppizza.it/referenza/vincenzo-capuano-4/",
+        "locations": [
+          {
+            "address": "Via Bisignano, 14",
+            "lat": 40.8350175,
+            "lng": 14.2405572
+          }
+        ]
+      },
+      {
+        "name": "Carlo Sammarco Pizzeria",
+        "url": "https://www.50toppizza.it/referenza/carlo-sammarco-pizzeria-2/",
+        "locations": [
+          {
+            "address": "Via Antonio Gramsci, 60",
+            "lat": 40.9517073,
+            "lng": 14.2132506
+          }
+        ]
+      },
+      {
+        "name": "Isabella De Cham Pizza Fritta",
+        "url": "https://www.50toppizza.it/referenza/isabella-de-cham-pizza-fritta-4/",
+        "locations": [
+          {
+            "address": "Via Arena della Sanità, 27",
+            "lat": 40.857427,
+            "lng": 14.2533229
+          },
+          {
+            "address": "Via Tiziano, 4",
+            "lat": 40.9670156,
+            "lng": 14.207472
+          }
+        ]
+      },
+      {
+        "name": "La Contrada",
+        "url": "https://www.50toppizza.it/referenza/la-contrada-4/",
+        "locations": [
+          {
+            "address": "Piazza G.Marconi, 14",
+            "lat": 40.9761782,
+            "lng": 14.2015984
+          }
+        ]
+      },
+      {
+        "name": "Trunch",
+        "url": "https://www.50toppizza.it/referenza/trunch/",
+        "locations": [
+          {
+            "address": "Piazza Vittorio Emanuele III, 17",
+            "lat": 40.9727193,
+            "lng": 14.2087109
+          }
+        ]
+      }
+    ]
+  },
+  "Avezzano (AQ)": {
+    "pizzerias": [
+      {
+        "name": "Granocielo",
+        "url": "https://www.50toppizza.it/referenza/granocielo-4/",
+        "locations": [
+          {
+            "address": "Via Camillo Corradini, 78",
+            "lat": 42.0342966,
+            "lng": 13.4227763
+          }
+        ]
+      }
+    ]
+  },
+  "Balaton": {
+    "pizzerias": [
+      {
+        "name": "Digó",
+        "url": "https://www.50toppizza.it/referenza/digo-3/",
+        "locations": [
+          {
+            "address": "indirizzo: Budapest, Kazinczy u. 32",
+            "lat": 47.4983298,
+            "lng": 19.062146
+          },
+          {
+            "address": "altre sedi: Budapest, Állatkerti krt. 3, 1146 Ungheria Balatonakarattya, Koppány sor 6, 8172 Ungheria Szigliget, Kisfaludy u. 22, 8264 Ungheria",
+            "lat": 47.5183965,
+            "lng": 19.0794162
+          },
+          {
+            "address": "altre sedi: Budapest, Állatkerti krt. 3, 1146 Ungheria Balatonakarattya, Koppány sor 6, 8172 Ungheria Szigliget, Kisfaludy u. 22, 8264 Ungheria",
+            "lat": 47.0146221,
+            "lng": 18.1544775
+          },
+          {
+            "address": "altre sedi: Budapest, Állatkerti krt. 3, 1146 Ungheria Balatonakarattya, Koppány sor 6, 8172 Ungheria Szigliget, Kisfaludy u. 22, 8264 Ungheria",
+            "lat": 46.8038081,
+            "lng": 17.4346209
+          }
+        ]
+      }
+    ]
+  },
+  "Baltimore": {
+    "pizzerias": [
+      {
+        "name": "Angeli’s Pizzeria",
+        "url": "https://www.50toppizza.it/referenza/angelis-pizzeria-2/",
+        "locations": [
+          {
+            "address": "indirizzo: 413 South High Street, Baltimore",
+            "lat": 39.2853897,
+            "lng": -76.6010148
+          },
+          {
+            "address": "altre sedi: 1035 S Charles St, Baltimore, MD 21230, Stati Uniti 1203 W Mt Royal Ave, Baltimore, MD 21217, United States 5716 York Rd, Govans (Baltimore), MD 21212, United States",
+            "lat": 39.2774041,
+            "lng": -76.6142038
+          },
+          {
+            "address": "altre sedi: 1035 S Charles St, Baltimore, MD 21230, Stati Uniti 1203 W Mt Royal Ave, Baltimore, MD 21217, United States 5716 York Rd, Govans (Baltimore), MD 21212, United States",
+            "lat": 39.3067187,
+            "lng": -76.6195537
+          },
+          {
+            "address": "altre sedi: 1035 S Charles St, Baltimore, MD 21230, Stati Uniti 1203 W Mt Royal Ave, Baltimore, MD 21217, United States 5716 York Rd, Govans (Baltimore), MD 21212, United States",
+            "lat": 39.3598553,
+            "lng": -76.6101768
+          }
+        ]
+      }
+    ]
+  },
+  "Bandung": {
+    "pizzerias": [
+      {
+        "name": "Beintema’s",
+        "url": "https://www.50toppizza.it/referenza/beintemas-3/",
+        "locations": [
+          {
+            "address": "indirizzo: Jl. Banyak Niaga Kulon No.7, Cipeundeuy",
+            "lat": -6.8727448,
+            "lng": 107.4680265
+          }
+        ]
+      }
+    ]
+  },
+  "Bangkok": {
+    "pizzerias": [
+      {
+        "name": "L’OLIVA",
+        "url": "https://www.50toppizza.it/referenza/loliva-2/",
+        "locations": [
+          {
+            "address": "indirizzo: #4 Sukhimvit Soi 36, Subsoi 2",
+            "lat": 13.7216126,
+            "lng": 100.5765474
+          }
+        ]
+      },
+      {
+        "name": "Massilia",
+        "url": "https://www.50toppizza.it/referenza/massilia-2/",
+        "locations": [
+          {
+            "address": "indirizzo: 15/1 Soi Ruamrudee Community, Lumphini",
+            "lat": 13.7400519,
+            "lng": 100.5494581
+          },
+          {
+            "address": "altre sedi: ซอย Sukhumvit 49, Khlong Tan Nuea, Watthana, Bangkok 10110, Thailandia",
+            "lat": 13.7282251,
+            "lng": 100.5756996
+          }
+        ]
+      },
+      {
+        "name": "Pizzeria Mazzie",
+        "url": "https://www.50toppizza.it/referenza/pizzeria-mazzie-5/",
+        "locations": [
+          {
+            "address": "indirizzo: 17 Soi Sukhumvit 63 Park Lane mall Ekkamai, Bangkok",
+            "lat": 13.7231235,
+            "lng": 100.5844693
+          }
+        ]
+      },
+      {
+        "name": "Starita",
+        "url": "https://www.50toppizza.it/referenza/starita-3/",
+        "locations": [
+          {
+            "address": "Via Materdei, 27",
+            "lat": 40.8558709,
+            "lng": 14.2464032
+          },
+          {
+            "address": "Via Giovanni Gherardini, 1",
+            "lat": 45.4766703,
+            "lng": 9.1701675
+          },
+          {
+            "address": "Via Giovanni Gherardini, 1",
+            "lat": 45.0669578,
+            "lng": 7.6807837
+          },
+          {
+            "address": "Via Giovanni Gherardini, 1",
+            "lat": 13.7347249,
+            "lng": 100.5806617
+          }
+        ]
+      }
+    ]
+  },
+  "Barberino Tavarnelle (FI)": {
+    "pizzerias": [
+      {
+        "name": "‘A Puteca Tavarnelle",
+        "url": "https://www.50toppizza.it/referenza/a-puteca-tavarnelle/",
+        "locations": [
+          {
+            "address": "Via Roma, 61",
+            "lat": 43.5618737,
+            "lng": 11.1743446
+          }
+        ]
+      }
+    ]
+  },
+  "Bari": {
+    "pizzerias": [
+      {
+        "name": "Vincenzo Capuano",
+        "url": "https://www.50toppizza.it/referenza/vincenzo-capuano-4/",
+        "locations": [
+          {
+            "address": "Via Bisignano, 14",
+            "lat": 40.8350175,
+            "lng": 14.2405572
+          }
+        ]
+      },
+      {
+        "name": "Giotto",
+        "url": "https://www.50toppizza.it/referenza/giotto-2/",
+        "locations": [
+          {
+            "address": "Via Orfeo Mazzitelli, 178",
+            "lat": 41.1045537,
+            "lng": 16.8529573
+          }
+        ]
+      },
+      {
+        "name": "Panificio Adriatico",
+        "url": "https://www.50toppizza.it/referenza/panificio-adriatico-3/",
+        "locations": [
+          {
+            "address": "Via Nicola de Giosa, 113",
+            "lat": 41.1203852,
+            "lng": 16.8737512
+          }
+        ]
+      }
+    ]
+  },
+  "Baselga di Piné (TN)": {
+    "pizzerias": [
+      {
+        "name": "La Talpa 3.0",
+        "url": "https://www.50toppizza.it/referenza/la-talpa-3-0-4/",
+        "locations": [
+          {
+            "address": "Via della Crós, 7",
+            "lat": 46.1271817,
+            "lng": 11.2496236
+          }
+        ]
+      }
+    ]
+  },
+  "Bassano del Grappa (VI)": {
+    "pizzerias": [
+      {
+        "name": "Feeling Pizza",
+        "url": "https://www.50toppizza.it/referenza/feeling-pizza/",
+        "locations": [
+          {
+            "address": "Via Jacopo da Ponte, 11",
+            "lat": 45.7672516,
+            "lng": 11.7362545
+          }
+        ]
+      },
+      {
+        "name": "Premiata Fabbrica Pizza",
+        "url": "https://www.50toppizza.it/referenza/premiata-fabbrica-pizza-3/",
+        "locations": [
+          {
+            "address": "Via Angarano, 5",
+            "lat": 45.7674476,
+            "lng": 11.7306294
+          }
+        ]
+      }
+    ]
+  },
+  "Baveno (VB)": {
+    "pizzerias": [
+      {
+        "name": "Fiore di Latte",
+        "url": "https://www.50toppizza.it/referenza/fiore-di-latte/",
+        "locations": [
+          {
+            "address": "Via G. Verdi, 5",
+            "lat": 45.9291299,
+            "lng": 8.4798414
+          }
+        ]
+      }
+    ]
+  },
+  "Beaverton": {
+    "pizzerias": [
+      {
+        "name": "Hapa Pizza",
+        "url": "https://www.50toppizza.it/referenza/hapa-pizza/",
+        "locations": [
+          {
+            "address": "roadway St, Beaverton",
+            "lat": 45.4876617,
+            "lng": -122.8072189
+          }
+        ]
+      }
+    ]
+  },
+  "Beijing": {
+    "pizzerias": [
+      {
+        "name": "Bottega",
+        "url": "https://www.50toppizza.it/referenza/bottega-5/",
+        "locations": [
+          {
+            "address": "indirizzo: 1/F Jinshang Building No.20 Xinyuanli West Chaoyang District Beijing, China",
+            "lat": 39.889848,
+            "lng": 116.364617
+          },
+          {
+            "address": null,
+            "lat": 39.917754,
+            "lng": 116.452567
+          },
+          {
+            "address": null,
+            "lat": 31.1882599,
+            "lng": 121.43687
+          },
+          {
+            "address": null,
+            "lat": 31.23644,
+            "lng": 121.44811
+          }
+        ]
+      }
+    ]
+  },
+  "Belgrade": {
+    "pizzerias": [
+      {
+        "name": "Majstor I Margarita",
+        "url": "https://www.50toppizza.it/referenza/majstor-i-margarita-4/",
+        "locations": [
+          {
+            "address": "indirizzo: Vuka Karadzića 12, Centar",
+            "lat": 44.8175263,
+            "lng": 20.4554688
+          },
+          {
+            "address": "altre sedi: Bulevar kralja Aleksandra 248a, Beograd, Serbia",
+            "lat": 44.7979054,
+            "lng": 20.4928191
+          }
+        ]
+      },
+      {
+        "name": "Pietra",
+        "url": "https://www.50toppizza.it/referenza/pietra-3/",
+        "locations": [
+          {
+            "address": "indirizzo: Kumanovska 6, Beograd 11111",
+            "lat": 44.8053445,
+            "lng": 20.4735526
+          },
+          {
+            "address": "altre sedi: Omladinskih brigada 86e, Beograd 11070, Serbia Mali Kalemegdan bb, Beograd 11000, Serbia",
+            "lat": 44.8222284,
+            "lng": 20.4114858
+          },
+          {
+            "address": "altre sedi: Omladinskih brigada 86e, Beograd 11070, Serbia Mali Kalemegdan bb, Beograd 11000, Serbia",
+            "lat": 44.8258438,
+            "lng": 20.4517551
+          }
+        ]
+      }
+    ]
+  },
+  "Bend": {
+    "pizzerias": [
+      {
+        "name": "Ken’s Artisan Pizza",
+        "url": "https://www.50toppizza.it/referenza/kens-artisan-pizza-5/",
+        "locations": [
+          {
+            "address": "indirizzo: 304 Southeast 28th Avenue, Portland",
+            "lat": 45.5205907,
+            "lng": -122.6371031
+          },
+          {
+            "address": "altre sedi: 1033 Northwest Bond Street, Bend, Oregon, Stati Uniti",
+            "lat": 44.0595993,
+            "lng": -121.3119573
+          }
+        ]
+      }
+    ]
+  },
+  "Benevento": {
+    "pizzerias": [
+      {
+        "name": "La Pampanini",
+        "url": "https://www.50toppizza.it/referenza/la-pampanini/",
+        "locations": [
+          {
+            "address": "Via S. Pasquale, 8",
+            "lat": 41.1334077,
+            "lng": 14.7804588
+          },
+          {
+            "address": "Via Tonina Ferrelli, 2",
+            "lat": 41.127531,
+            "lng": 14.7859624
+          }
+        ]
+      }
+    ]
+  },
+  "Bento Gonçalves": {
+    "pizzerias": [
+      {
+        "name": "Otto e Mezzo Pizza Verace",
+        "url": "https://www.50toppizza.it/referenza/otto-e-mezzo-pizza-verace-2/",
+        "locations": [
+          {
+            "address": "indirizzo: Rua Brasília, 329 - Botafogo",
+            "lat": -29.1795948,
+            "lng": -51.513632
+          }
+        ]
+      }
+    ]
+  },
+  "Bergamo": {
+    "pizzerias": [
+      {
+        "name": "Da Mimmo",
+        "url": "https://www.50toppizza.it/referenza/da-mimmo-4/",
+        "locations": [
+          {
+            "address": "Via Bartolomeo Colleoni, 17",
+            "lat": 45.7050915,
+            "lng": 9.6610487
+          }
+        ]
+      },
+      {
+        "name": "Nasti dal 1967",
+        "url": "https://www.50toppizza.it/referenza/nasti-dal-1967-4/",
+        "locations": [
+          {
+            "address": "Via Zambonate, 25",
+            "lat": 45.6926246,
+            "lng": 9.6662741
+          }
+        ]
+      }
+    ]
+  },
+  "Berkeley": {
+    "pizzerias": [
+      {
+        "name": "Pizzeria Da Laura",
+        "url": "https://www.50toppizza.it/referenza/pizzeria-da-laura-2/",
+        "locations": [
+          {
+            "address": "indirizzo: 2049 Shattuck Ave., Berkeley",
+            "lat": 37.8713342,
+            "lng": -122.2680799
+          }
+        ]
+      },
+      {
+        "name": "Rose Pizzeria",
+        "url": "https://www.50toppizza.it/referenza/rose-pizzeria/",
+        "locations": [
+          {
+            "address": "indirizzo: 1960 University Avenue, Berkeley",
+            "lat": 37.871608,
+            "lng": -122.271479
+          }
+        ]
+      }
+    ]
+  },
+  "Bern": {
+    "pizzerias": [
+      {
+        "name": "Più",
+        "url": "https://www.50toppizza.it/referenza/piu/",
+        "locations": [
+          {
+            "address": "indirizzo: Kasernenstrasse 95, 8004 Zürich",
+            "lat": 47.3770067,
+            "lng": 8.5349649
+          },
+          {
+            "address": "altre sedi: Hardstrasse 259, 8005 Zürich, Svizzera Kornhauspl. 18, 3011 Bern, Svizzera Postpl. 1, 6300 Zug, Svizzera",
+            "lat": 47.3886778,
+            "lng": 8.5201773
+          },
+          {
+            "address": "altre sedi: Hardstrasse 259, 8005 Zürich, Svizzera Kornhauspl. 18, 3011 Bern, Svizzera Postpl. 1, 6300 Zug, Svizzera",
+            "lat": 46.9487304,
+            "lng": 7.4472694
+          },
+          {
+            "address": "altre sedi: Hardstrasse 259, 8005 Zürich, Svizzera Kornhauspl. 18, 3011 Bern, Svizzera Postpl. 1, 6300 Zug, Svizzera",
+            "lat": 47.1679256,
+            "lng": 8.516433
+          }
+        ]
+      }
+    ]
+  },
+  "Bilbao": {
+    "pizzerias": [
+      {
+        "name": "Demaio",
+        "url": "https://www.50toppizza.it/referenza/demaio-3/",
+        "locations": [
+          {
+            "address": "Calle San Francisco 10, 48003",
+            "lat": 43.2552864,
+            "lng": -2.9260174
+          },
+          {
+            "address": "altre sedi: Done Bikendi Kalea, 1, Abando, 48001 Bilbao, Bizkaia, Spagna",
+            "lat": 43.2639117,
+            "lng": -2.92822
+          }
+        ]
+      }
+    ]
+  },
+  "Bivio (IS)": {
+    "pizzerias": [
+      {
+        "name": "Basilico e Pepe",
+        "url": "https://www.50toppizza.it/referenza/basilico-e-pepe/",
+        "locations": [
+          {
+            "address": "indirizzo: SR627, 86070 Bivio",
+            "lat": 41.5945134,
+            "lng": 14.1430559
+          }
+        ]
+      }
+    ]
+  },
+  "Bogotá": {
+    "pizzerias": [
+      {
+        "name": "Pizzardi Artigianale",
+        "url": "https://www.50toppizza.it/referenza/pizzardi-artigianale/",
+        "locations": [
+          {
+            "address": "indirizzo: Cl. 81 #11-17, Bogotá",
+            "lat": 4.6650132,
+            "lng": -74.0536734
+          }
+        ]
+      }
+    ]
   }
 }

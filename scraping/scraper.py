@@ -11,8 +11,11 @@ import time
 import re
 from urllib.parse import urljoin
 import os
+import signal
+import sys
 
 from .config import BASE_URL, HEADERS, RATE_LIMIT, DATA_DIR
+from . import progress as progress_module
 
 
 def get_all_cities():
@@ -207,12 +210,13 @@ def save_data(data_by_city):
         json.dump(geojson, f, indent=2, ensure_ascii=False)
 
 
-def scrape_cities(cities_to_scrape):
+def scrape_cities(cities_to_scrape, progress=None):
     """
     Main scraping function
 
     Args:
         cities_to_scrape: List of city names or 'all'
+        progress: Optional progress object (used for auto-scraping)
     """
 
     # Get all cities
@@ -238,6 +242,10 @@ def scrape_cities(cities_to_scrape):
     else:
         print("\n✓ Starting fresh (no existing data found)")
 
+    # Load or initialize progress
+    if progress is None:
+        progress = progress_module.load_progress()
+
     for i, city in enumerate(all_cities):
         city_name = city['name']
         print(f"\n[{i+1}/{len(all_cities)}] {city_name}")
@@ -247,6 +255,7 @@ def scrape_cities(cities_to_scrape):
 
         if not pizzerias:
             print(f"    No pizzerias found, skipping")
+            progress_module.mark_city_scraped(progress, city_name, 0, 0)
             continue
 
         city_data = {'pizzerias': []}
@@ -273,7 +282,13 @@ def scrape_cities(cities_to_scrape):
 
             # Save after each city
             save_data(data_by_city)
-            print(f"    ✓ Saved {len(city_data['pizzerias'])} pizzerias")
+
+            # Update progress
+            pizzeria_count = len(city_data['pizzerias'])
+            location_count = sum(len(p['locations']) for p in city_data['pizzerias'])
+            progress_module.mark_city_scraped(progress, city_name, pizzeria_count, location_count)
+
+            print(f"    ✓ Saved {pizzeria_count} pizzerias")
 
         time.sleep(RATE_LIMIT)
 
@@ -291,4 +306,122 @@ def scrape_cities(cities_to_scrape):
 
     print(f"Total pizzerias: {total_pizzerias}")
     print(f"Total locations: {total_locations}")
+    print(f"{'='*60}")
+
+
+def auto_scrape_cities():
+    """
+    Auto-scrape all pending cities one by one
+    Saves progress after each city so it can be interrupted safely
+    """
+    print("Starting auto-scrape mode...")
+    print("Press Ctrl+C to stop (progress will be saved)\n")
+
+    # Setup signal handler for graceful shutdown
+    interrupted = {'flag': False}
+
+    def signal_handler(sig, frame):
+        print("\n\n🛑 Interrupted by user. Saving progress...")
+        interrupted['flag'] = True
+
+    signal.signal(signal.SIGINT, signal_handler)
+
+    # Load progress and get all cities
+    progress = progress_module.load_progress()
+    all_cities = get_all_cities()
+
+    # Mark all cities as known (pending if not scraped)
+    for city in all_cities:
+        progress_module.mark_city_pending(progress, city['name'])
+
+    # Get pending cities
+    pending_cities = progress_module.get_pending_cities(progress, all_cities)
+
+    if not pending_cities:
+        print("✅ All cities have been scraped!")
+        print(f"Total: {progress['stats']['scraped_cities']} cities")
+        return
+
+    print(f"Found {len(pending_cities)} cities to scrape")
+    print(f"Already scraped: {progress['stats']['scraped_cities']}")
+    print("="*60)
+
+    # Load existing data
+    data_by_city = {}
+    existing_file = f'{DATA_DIR}/pizzeria_by_city.json'
+    if os.path.exists(existing_file):
+        with open(existing_file, 'r', encoding='utf-8') as f:
+            data_by_city = json.load(f)
+
+    # Scrape each pending city
+    for i, city in enumerate(pending_cities):
+        if interrupted['flag']:
+            break
+
+        city_name = city['name']
+        print(f"\n[{i+1}/{len(pending_cities)}] {city_name}")
+
+        try:
+            # Search for pizzerias
+            pizzerias = search_city(city_name)
+
+            if not pizzerias:
+                print(f"    No pizzerias found, skipping")
+                progress_module.mark_city_scraped(progress, city_name, 0, 0)
+                continue
+
+            city_data = {'pizzerias': []}
+
+            # Get details for each pizzeria
+            for j, pizzeria in enumerate(pizzerias):
+                if interrupted['flag']:
+                    break
+
+                print(f"    [{j+1}/{len(pizzerias)}] {pizzeria['name']}...")
+
+                details = extract_pizzeria_details(pizzeria['url'])
+
+                if details and details['locations']:
+                    pizzeria_data = {
+                        'name': pizzeria['name'],
+                        'url': pizzeria['url'],
+                        'locations': details['locations']
+                    }
+                    city_data['pizzerias'].append(pizzeria_data)
+                    print(f"        {len(details['locations'])} location(s)")
+
+                time.sleep(RATE_LIMIT)
+
+            if city_data['pizzerias']:
+                data_by_city[city_name] = city_data
+
+                # Save after each city
+                save_data(data_by_city)
+
+                # Update progress
+                pizzeria_count = len(city_data['pizzerias'])
+                location_count = sum(len(p['locations']) for p in city_data['pizzerias'])
+                progress_module.mark_city_scraped(progress, city_name, pizzeria_count, location_count)
+
+                print(f"    ✓ Saved {pizzeria_count} pizzerias")
+
+            time.sleep(RATE_LIMIT)
+
+        except Exception as e:
+            print(f"    ⚠ Error scraping {city_name}: {e}")
+            continue
+
+    # Final summary
+    progress = progress_module.load_progress()
+    print(f"\n{'='*60}")
+    if interrupted['flag']:
+        print("Scraping interrupted by user")
+    else:
+        print("Auto-scraping complete!")
+
+    print(f"\nProgress:")
+    print(f"  Scraped cities: {progress['stats']['scraped_cities']}")
+    print(f"  Pending cities: {progress['stats']['pending_cities']}")
+    print(f"  Total pizzerias: {progress['stats']['total_pizzerias']}")
+    print(f"  Total locations: {progress['stats']['total_locations']}")
     print(f"{'='*60}")

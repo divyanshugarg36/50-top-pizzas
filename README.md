@@ -49,7 +49,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 🕷️ Scraping Data
 
-Want to add more cities? Use the built-in Python scraper!
+Want to add more cities? Use the built-in Python scraper with smart progress tracking!
 
 ### Prerequisites
 
@@ -78,27 +78,63 @@ pip install -r requirements.txt
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
+#### Auto-Scrape All Cities (Recommended ✨)
+
+Automatically scrapes all pending cities one by one. Can be safely interrupted with Ctrl+C - progress is saved after each city!
+
+```bash
+python -m scraping.cli --auto-scrape
+```
+
+This command:
+- ✅ Tracks which cities have been scraped
+- ✅ Resumes from where it left off if interrupted
+- ✅ Saves progress after each city
+- ✅ Shows real-time statistics
+
+#### View Progress
+
+Check how many cities have been scraped:
+
+```bash
+python -m scraping.cli --progress
+```
+
 #### Scrape Specific Cities
 
 ```bash
 python -m scraping.cli Roma Naples Milan
 ```
 
-#### Scrape All Cities (⚠️ takes several hours!)
+#### Scrape All Cities (Legacy)
 
 ```bash
 python -m scraping.cli all
 ```
 
-#### List Available Cities
+#### Reset Progress (Re-scrape Everything)
+
+Use this when the 50 Top Pizza website is updated:
 
 ```bash
-python -m scraping.cli --list-cities
+python -m scraping.cli --reset
 ```
 
-#### Fetch and Save City List
+#### Sync Progress with Existing Data
+
+If you already have scraped data, sync it with the progress tracker:
 
 ```bash
+python -m scraping.cli --sync
+```
+
+#### Other Commands
+
+```bash
+# List available cities
+python -m scraping.cli --list-cities
+
+# Fetch and save city list
 python -m scraping.cli --fetch-cities
 ```
 
@@ -110,6 +146,7 @@ Files generated:
 - `pizzeria_by_city.json` - Pizzerias organized by city
 - `pizzeria_locations.geojson` - Geographic data for mapping
 - `all_cities.json` - List of all available cities
+- `cities_progress.json` - Scraping progress tracker
 
 ### Troubleshooting
 
@@ -168,7 +205,10 @@ npm run lint         # Run ESLint
 
 # Scraper
 source venv/bin/activate
-python -m scraping.cli --help  # Show all scraper commands
+python -m scraping.cli --help          # Show all scraper commands
+python -m scraping.cli --auto-scrape   # Auto-scrape all pending cities
+python -m scraping.cli --progress      # View progress
+python -m scraping.cli --reset         # Reset progress
 ```
 
 ## 🤝 Contributing

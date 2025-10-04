@@ -4,10 +4,10 @@ This file tracks which cities have been scraped from 50 Top Pizza.
 
 ## Statistics
 - **Total cities available:** 591
-- **Cities scraped:** 16
-- **Total pizzerias:** 148
-- **Total locations:** 212
-- **Progress:** 2.7%
+- **Cities scraped:** 21
+- **Total pizzerias:** 166
+- **Total locations:** 235
+- **Progress:** 3.6%
 
 ## Scraped Cities
 
@@ -15,6 +15,8 @@ This file tracks which cities have been scraped from 50 Top Pizza.
 - ✅ Amsterdam (Netherlands) - 4 pizzerias
 - ✅ Barcelona (Spain) - 5 pizzerias
 - ✅ Berlin (Germany) - 7 pizzerias
+- ✅ Brussels (Belgium) - 3 pizzerias
+- ✅ Copenhagen (Denmark) - 1 pizzeria
 - ✅ Florence (Italy) - 1 pizzeria
 - ✅ Lisbon (Portugal) - 6 pizzerias
 - ✅ London (UK) - 12 pizzerias
@@ -22,6 +24,7 @@ This file tracks which cities have been scraped from 50 Top Pizza.
 - ✅ Mannheim (Germany) - 3 pizzerias
 - ✅ Paris (France) - 16 pizzerias
 - ✅ Roma (Italy) - 32 pizzerias
+- ✅ Vienna (Austria) - 6 pizzerias
 
 ### Italy
 - ✅ Bologna - 5 pizzerias
@@ -31,18 +34,22 @@ This file tracks which cities have been scraped from 50 Top Pizza.
 ### North America
 - ✅ Chicago (USA) - 7 pizzerias
 - ✅ Los Angeles (USA) - 2 pizzerias
+- ✅ Mexico City (Mexico) - 1 pizzeria
 - ✅ Miami (USA) - 4 pizzerias
 - ✅ New York (USA) - 20 pizzerias
 - ✅ San Francisco (USA) - 5 pizzerias
+
+### Asia
+- ✅ Tokyo (Japan) - 6 pizzerias
 
 ## To Scrape
 
 ### Priority - Major Cities
 
 #### Europe
-- [ ] Vienna (Austria)
-- [ ] Brussels (Belgium)
-- [ ] Copenhagen (Denmark)
+- [ ] Prague (Czech Republic)
+- [ ] Stockholm (Sweden)
+- [ ] Oslo (Norway)
 
 #### Italy (High Pizza Density)
 - [ ] Naples (Napoli) - **Priority**
@@ -54,18 +61,18 @@ This file tracks which cities have been scraped from 50 Top Pizza.
 
 #### North America
 - [ ] Toronto (Canada)
-- [ ] Mexico City (Mexico)
 - [ ] Montreal (Canada)
 - [ ] Boston (USA)
 - [ ] Seattle (USA)
 - [ ] Portland (USA)
+- [ ] Philadelphia (USA)
 
 #### Asia
-- [ ] Tokyo
-- [ ] Seoul
+- [ ] Seoul (South Korea)
 - [ ] Hong Kong
 - [ ] Singapore
-- [ ] Bangkok
+- [ ] Bangkok (Thailand)
+- [ ] Shanghai (China)
 
 #### South America
 - [ ] Buenos Aires
@@ -77,7 +84,7 @@ This file tracks which cities have been scraped from 50 Top Pizza.
 - [ ] Melbourne
 
 ## Last Updated
-2025-01-04 21:00 UTC
+2025-10-04
 
 ## How to Scrape More Cities
 

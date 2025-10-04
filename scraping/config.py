@@ -15,3 +15,6 @@ RATE_LIMIT = 0.5
 
 # Data output path (single source of truth for Next.js)
 DATA_DIR = 'public/data'
+
+# Progress tracking file
+PROGRESS_FILE = f'{DATA_DIR}/cities_progress.json'
