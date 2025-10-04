@@ -1,0 +1,1427 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1725896,
+          41.3784728
+        ]
+      },
+      "properties": {
+        "city": "Barcelona",
+        "pizzeria_name": "Frankie Gallo Cha Cha Cha",
+        "address": "indirizzo: Carrer del Marquès de Barberà, 15",
+        "url": "https://www.50toppizza.it/referenza/frankie-gallo-cha-cha-cha-3/",
+        "location_index": 0,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1619315,
+          41.3981743
+        ]
+      },
+      "properties": {
+        "city": "Barcelona",
+        "pizzeria_name": "Frankie Gallo Cha Cha Cha",
+        "address": "altre sedi: Carrer de Roger de Llúria, 155, 08037 Barcelona, Spagna CARRER DE MARIÀ CUBÍ 201 08021, Sarrià-Sant Gervasi, BARCELONA",
+        "url": "https://www.50toppizza.it/referenza/frankie-gallo-cha-cha-cha-3/",
+        "location_index": 1,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1440283,
+          41.3948602
+        ]
+      },
+      "properties": {
+        "city": "Barcelona",
+        "pizzeria_name": "Frankie Gallo Cha Cha Cha",
+        "address": "altre sedi: Carrer de Roger de Llúria, 155, 08037 Barcelona, Spagna CARRER DE MARIÀ CUBÍ 201 08021, Sarrià-Sant Gervasi, BARCELONA",
+        "url": "https://www.50toppizza.it/referenza/frankie-gallo-cha-cha-cha-3/",
+        "location_index": 2,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1565876,
+          41.3977139
+        ]
+      },
+      "properties": {
+        "city": "Barcelona",
+        "pizzeria_name": "Gina Balmesina Pizza Bar",
+        "address": "indirizzo: Carrer de la Riera de Sant Miquel, 29",
+        "url": "https://www.50toppizza.it/referenza/gina-balmesina-pizza-bar-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1521893,
+          41.3969391
+        ]
+      },
+      "properties": {
+        "city": "Barcelona",
+        "pizzeria_name": "La Balmesina",
+        "address": "indirizzo: Carrer de Balmes, 193",
+        "url": "https://www.50toppizza.it/referenza/la-balmesina-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1536014,
+          41.3944143
+        ]
+      },
+      "properties": {
+        "city": "Barcelona",
+        "pizzeria_name": "Punta",
+        "address": "indirizzo: Carrer d'Enric Granados, 147",
+        "url": "https://www.50toppizza.it/referenza/punta-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1603276,
+          41.4066522
+        ]
+      },
+      "properties": {
+        "city": "Barcelona",
+        "pizzeria_name": "Sartoria Panatieri",
+        "address": "indirizzo: Carrer de l'Encarnació, 51",
+        "url": "https://www.50toppizza.it/referenza/sartoria-panatieri-3/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1650179,
+          41.3970952
+        ]
+      },
+      "properties": {
+        "city": "Barcelona",
+        "pizzeria_name": "Sartoria Panatieri",
+        "address": "altre sedi: Carrer de Provença, 330, 08037 Barcelona, Spagna",
+        "url": "https://www.50toppizza.it/referenza/sartoria-panatieri-3/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1754322,
+          41.3891065
+        ]
+      },
+      "properties": {
+        "city": "Barcelona",
+        "pizzeria_name": "TRAFALGAR",
+        "address": "indirizzo: Carrer de Trafalgar, 19",
+        "url": "https://www.50toppizza.it/referenza/trafalgar/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1352184,
+          38.7254612
+        ]
+      },
+      "properties": {
+        "city": "Lisbon",
+        "pizzeria_name": "Artigiano",
+        "address": "indirizzo: Av. Alm. Reis 59 B, 1150-020 Lisboa",
+        "url": "https://www.50toppizza.it/referenza/artigiano/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1491716,
+          38.7339088
+        ]
+      },
+      "properties": {
+        "city": "Lisbon",
+        "pizzeria_name": "BuonaPizza",
+        "address": "indirizzo: Rua Pinheiro Chagas 48A, 1050-179 Lisboa",
+        "url": "https://www.50toppizza.it/referenza/buonapizza/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.154334,
+          38.723474
+        ]
+      },
+      "properties": {
+        "city": "Lisbon",
+        "pizzeria_name": "Forno d’Oro",
+        "address": "indirizzo: Rua Artilharia 1 16b, 1250-039 Lisboa",
+        "url": "https://www.50toppizza.it/referenza/forno-doro-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1458672,
+          38.7081949
+        ]
+      },
+      "properties": {
+        "city": "Lisbon",
+        "pizzeria_name": "Lupita Pizzaria",
+        "address": "indirizzo: Rua de S. Paulo 79, 1200-058 Lisboa",
+        "url": "https://www.50toppizza.it/referenza/lupita-pizzaria-3/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1411036,
+          38.7538658
+        ]
+      },
+      "properties": {
+        "city": "Lisbon",
+        "pizzeria_name": "Lupita Pizzaria",
+        "address": "altre sedi: Av. da Igreja 15D, 1700-237 Lisboa, Portugal",
+        "url": "https://www.50toppizza.it/referenza/lupita-pizzaria-3/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1432809,
+          38.7075476
+        ]
+      },
+      "properties": {
+        "city": "Lisbon",
+        "pizzeria_name": "Mano a Mano",
+        "address": "indirizzo: R. do Alecrim 22, 1200-291 Lisboa",
+        "url": "https://www.50toppizza.it/referenza/mano-a-mano/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4846381,
+          41.9012999
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Piccolo Buco",
+        "address": "Via del Lavatore, 91",
+        "url": "https://www.50toppizza.it/referenza/piccolo-buco-4/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.9542016,
+          41.8533615
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Piccolo Buco",
+        "address": "altre sedi: 1818 Oakbrook Center, Oak Brook, IL 60523, Stati Uniti",
+        "url": "https://www.50toppizza.it/referenza/piccolo-buco-4/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5690068,
+          41.9107738
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Tiella",
+        "address": "Via Vito Giuseppe Galati, 52",
+        "url": "https://www.50toppizza.it/referenza/tiella-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2405572,
+          40.8350175
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Vincenzo Capuano",
+        "address": "Via Bisignano, 14",
+        "url": "https://www.50toppizza.it/referenza/vincenzo-capuano-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5529619,
+          41.8909749
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "180 Grammi Pizzeria Romana",
+        "address": "Via Genazzano, 32",
+        "url": "https://www.50toppizza.it/referenza/180-grammi-pizzeria-romana/",
+        "location_index": 0,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5639537,
+          41.8779627
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "180 Grammi Pizzeria Romana",
+        "address": "Via Tor de' Schiavi, 53",
+        "url": "https://www.50toppizza.it/referenza/180-grammi-pizzeria-romana/",
+        "location_index": 1,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4739478,
+          41.8541685
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "180 Grammi Pizzeria Romana",
+        "address": "Via Tor de' Schiavi, 53",
+        "url": "https://www.50toppizza.it/referenza/180-grammi-pizzeria-romana/",
+        "location_index": 2,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2202568,
+          40.8283749
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "50 Kalò",
+        "address": "indirizzo: P.za Sannazaro, 201c",
+        "url": "https://www.50toppizza.it/referenza/50-kalo-6/",
+        "location_index": 0,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2258326,
+          40.831131
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "50 Kalò",
+        "address": "Piazza della Repubblica, 2",
+        "url": "https://www.50toppizza.it/referenza/50-kalo-6/",
+        "location_index": 1,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4957453,
+          41.9060161
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "50 Kalò",
+        "address": "Piazza della Repubblica, 2",
+        "url": "https://www.50toppizza.it/referenza/50-kalo-6/",
+        "location_index": 2,
+        "total_locations": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5411217,
+          41.8749383
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "A Rota",
+        "address": "Via di Tor Pignattara, 190",
+        "url": "https://www.50toppizza.it/referenza/a-rota-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4456438,
+          41.9210212
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Al 384 Pizzeria",
+        "address": "Viale delle Medaglie d'Oro, 384a",
+        "url": "https://www.50toppizza.it/referenza/al-384-pizzeria-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5169437,
+          41.8864399
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Al Grottino",
+        "address": "Via Orvieto, 6",
+        "url": "https://www.50toppizza.it/referenza/al-grottino-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5581245,
+          41.828741
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Angelo Pezzella",
+        "address": "Via Appia Nuova, 1095",
+        "url": "https://www.50toppizza.it/referenza/angelo-pezzella-pizzeria-con-cucina-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4742838,
+          41.89464
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Antico Forno Roscioli",
+        "address": "Via dei Chiavari, 34",
+        "url": "https://www.50toppizza.it/referenza/antico-forno-roscioli-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5026624,
+          41.8939036
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Ardecore",
+        "address": "Via Buonarroti, 32",
+        "url": "https://www.50toppizza.it/referenza/ardecore/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4663896,
+          41.9325234
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Avenida Calò",
+        "address": "Viale Pinturicchio, 38",
+        "url": "https://www.50toppizza.it/referenza/avenida-calo/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4829858,
+          41.878557
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Baccio e i gradini",
+        "address": "Viale della Piramide Cestia, 25",
+        "url": "https://www.50toppizza.it/referenza/baccio-e-i-gradini-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4905589,
+          41.8961508
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Cimarra 4",
+        "address": "Via Cimarra, 4",
+        "url": "https://www.50toppizza.it/referenza/cimarra-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2363725,
+          40.8360343
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Ciro Cascella 3.0",
+        "address": "Via S. Pasquale, 68",
+        "url": "https://www.50toppizza.it/referenza/ciro-cascella-3-0-2/",
+        "location_index": 0,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2115163,
+          45.4614659
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Ciro Cascella 3.0",
+        "address": "Via Emilio Morosini, 5",
+        "url": "https://www.50toppizza.it/referenza/ciro-cascella-3-0-2/",
+        "location_index": 1,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4416712,
+          41.8585681
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Ciro Cascella 3.0",
+        "address": "Via Emilio Morosini, 5",
+        "url": "https://www.50toppizza.it/referenza/ciro-cascella-3-0-2/",
+        "location_index": 2,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1879067,
+          45.4897692
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Ciro Cascella 3.0",
+        "address": "Via Emilio Morosini, 5",
+        "url": "https://www.50toppizza.it/referenza/ciro-cascella-3-0-2/",
+        "location_index": 3,
+        "total_locations": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.455554,
+          41.8991267
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Cresci",
+        "address": "Via Alcide de Gasperi, 11",
+        "url": "https://www.50toppizza.it/referenza/cresci-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5482406,
+          41.9419345
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Crunch!",
+        "address": "Via Francesco D'Ovidio, 27",
+        "url": "https://www.50toppizza.it/referenza/crunch-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5845428,
+          41.9585382
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Dazio",
+        "address": "Via Nomentana, 1206",
+        "url": "https://www.50toppizza.it/referenza/dazio/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4769029,
+          41.8530942
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Elettroforno Frontoni",
+        "address": "Via Ostiense, 387",
+        "url": "https://www.50toppizza.it/referenza/elettroforno-frontoni-3/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4429027,
+          41.8629899
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Elettroforno Frontoni",
+        "address": "Via Adolfo Gandiglio, 123",
+        "url": "https://www.50toppizza.it/referenza/elettroforno-frontoni-3/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4750984,
+          41.8949337
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Elysium Pizza & Cocktails",
+        "address": "Via del Monte della Farina, 23",
+        "url": "https://www.50toppizza.it/referenza/elysium-pizza-cocktails/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5447548,
+          41.9280677
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Extremis",
+        "address": "Via del Casale Rocchi, 22",
+        "url": "https://www.50toppizza.it/referenza/extremis-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5139413,
+          41.8957939
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Farinè",
+        "address": "Via degli Aurunci, 6",
+        "url": "https://www.50toppizza.it/referenza/farine-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4657412,
+          41.8613764
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Fornace Stella & Muscas",
+        "address": "Via Alessandro Cruto, 9",
+        "url": "https://www.50toppizza.it/referenza/fornace-stella-muscas/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5167034,
+          41.9111815
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Fornace Stella & Muscas",
+        "address": "Piazza Lecce, 9",
+        "url": "https://www.50toppizza.it/referenza/fornace-stella-muscas/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4682316,
+          41.8974078
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Forno Monteforte",
+        "address": "Via del Pellegrino, 129",
+        "url": "https://www.50toppizza.it/referenza/forno-monteforte-3/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4836028,
+          41.8881594
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Fratelli Trecca",
+        "address": "Via dei Cerchi, 55",
+        "url": "https://www.50toppizza.it/referenza/fratelli-trecca/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5146566,
+          41.8827848
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Frumentario",
+        "address": "Via Tuscolana, 26",
+        "url": "https://www.50toppizza.it/referenza/frumentario/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5096419,
+          41.9191802
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "I Belcastro",
+        "address": "Via Ajaccio, 47",
+        "url": "https://www.50toppizza.it/referenza/i-belcastro-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4477564,
+          41.8757358
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "La Gatta Mangiona",
+        "address": "Via Federico Ozanam, 30",
+        "url": "https://www.50toppizza.it/referenza/la-gatta-mangiona-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4880648,
+          41.8300959
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Lievito – Francesco Arnesano",
+        "address": "Via Simone Martini, 6",
+        "url": "https://www.50toppizza.it/referenza/lievito-francesco-arnesano-2/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4737751,
+          41.8298316
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Lievito – Francesco Arnesano",
+        "address": "Viale Europa, 339",
+        "url": "https://www.50toppizza.it/referenza/lievito-francesco-arnesano-2/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4400187,
+          41.9155379
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Magnifica",
+        "address": "Via Ugo de Carolis, 72d",
+        "url": "https://www.50toppizza.it/referenza/magnifica-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4702636,
+          41.9411441
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Marita Pizza",
+        "address": "Via Flaminia, 515",
+        "url": "https://www.50toppizza.it/referenza/marita-pizza/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4648422,
+          41.8997774
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Masardona by Cristiano Piccirillo",
+        "address": "Piazza dell'Oro, 6",
+        "url": "https://www.50toppizza.it/referenza/masardona-by-cristiano-piccirillo/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5698058,
+          41.9017142
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Mia Pizzeria Creativa",
+        "address": "Via Collatina, 126",
+        "url": "https://www.50toppizza.it/referenza/mia-pizzeria-creativa-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.446169,
+          41.8688364
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Pane e Tempesta",
+        "address": "Via Giovanni de Calvi, 23",
+        "url": "https://www.50toppizza.it/referenza/pane-e-tempesta-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4708601,
+          41.8872832
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Peppo Al Cosimato",
+        "address": "Via Natale del Grande, 9",
+        "url": "https://www.50toppizza.it/referenza/peppo-al-cosimato-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5272466,
+          41.875228
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Pizza Chef Roma",
+        "address": "Via Clelia, 63a",
+        "url": "https://www.50toppizza.it/referenza/pizza-chef-roma-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4466605,
+          41.9066879
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Pizzarium",
+        "address": "Via della Meloria, 43",
+        "url": "https://www.50toppizza.it/referenza/pizzarium-4/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4536607,
+          41.9115619
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Pizzarium",
+        "address": "Via Trionfale, 36",
+        "url": "https://www.50toppizza.it/referenza/pizzarium-4/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4864438,
+          41.8826132
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Ruver Teglia Frazionata",
+        "address": "Viale Aventino, 46",
+        "url": "https://www.50toppizza.it/referenza/ruver-teglia-frazionata/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2291095,
+          41.771361
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Sancho",
+        "address": "Via della Torre Clementina, 142",
+        "url": "https://www.50toppizza.it/referenza/sancho-4/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4718908,
+          41.9076496
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Sancho",
+        "address": "Via Giuseppe Gioachino Belli, 3a",
+        "url": "https://www.50toppizza.it/referenza/sancho-4/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4683423,
+          41.8796558
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Seu Pizza Illuminati",
+        "address": "Via Angelo Bargoni, 10",
+        "url": "https://www.50toppizza.it/referenza/seu-pizza-illuminati-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4704395,
+          41.8720382
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Spiazzo",
+        "address": "Via Antonio Pacinotti, 83",
+        "url": "https://www.50toppizza.it/referenza/spiazzo-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5277746,
+          41.9404835
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Svario",
+        "address": "Via Val Senio, 18",
+        "url": "https://www.50toppizza.it/referenza/svario-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4387602,
+          41.8086267
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "TAC – Thin and Crunchy",
+        "address": "Via Fiume delle Perle, 136",
+        "url": "https://www.50toppizza.it/referenza/tac-thin-and-crunchy-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5290344,
+          41.9358085
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Tonda",
+        "address": "Via Valle Corteno, 31",
+        "url": "https://www.50toppizza.it/referenza/tonda-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5486694,
+          41.8634083
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Tondo",
+        "address": "Via Tuscolana, 822",
+        "url": "https://www.50toppizza.it/referenza/tondo-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4760204,
+          41.8997432
+        ]
+      },
+      "properties": {
+        "city": "Roma",
+        "pizzeria_name": "Vico Pizza & Wine",
+        "address": "Piazza Rondanini, 47",
+        "url": "https://www.50toppizza.it/referenza/vico-pizza-wine-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4576722,
+          49.4957751
+        ]
+      },
+      "properties": {
+        "city": "Mannheim",
+        "pizzeria_name": "Papi Pizza",
+        "address": "straße 74, 68159 Mannheim",
+        "url": "https://www.50toppizza.it/referenza/papi-mannheim-2/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41136,
+          37.7896627
+        ]
+      },
+      "properties": {
+        "city": "San Francisco",
+        "pizzeria_name": "Del Popolo",
+        "address": "indirizzo: 855 Bush St, San Francisco",
+        "url": "https://www.50toppizza.it/referenza/del-popolo-4/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4094286,
+          37.8000727
+        ]
+      },
+      "properties": {
+        "city": "San Francisco",
+        "pizzeria_name": "Flour + Water",
+        "address": "indirizzo: 532 Columbus Ave, San Francisco",
+        "url": "https://www.50toppizza.it/referenza/flour-water-2/",
+        "location_index": 0,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4122826,
+          37.7589374
+        ]
+      },
+      "properties": {
+        "city": "San Francisco",
+        "pizzeria_name": "Flour + Water",
+        "address": "altre sedi: 2401 Harrison St, San Francisco, CA 94110, Stati Uniti",
+        "url": "https://www.50toppizza.it/referenza/flour-water-2/",
+        "location_index": 1,
+        "total_locations": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4089838,
+          37.8003781
+        ]
+      },
+      "properties": {
+        "city": "San Francisco",
+        "pizzeria_name": "Tony’s Pizza Napoletana",
+        "address": "indirizzo: 1570 Stockton Street, San Francisco",
+        "url": "https://www.50toppizza.it/referenza/tonys-pizza-napoletana-5/",
+        "location_index": 0,
+        "total_locations": 1
+      }
+    }
+  ]
+}

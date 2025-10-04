@@ -1,0 +1,2366 @@
+[
+  {
+    "name": "Aarau",
+    "value": "Aarau"
+  },
+  {
+    "name": "Abano Terme (PD)",
+    "value": "Abano Terme (PD)"
+  },
+  {
+    "name": "Acerra (NA)",
+    "value": "Acerra (NA)"
+  },
+  {
+    "name": "Acireale (CT)",
+    "value": "Acireale (CT)"
+  },
+  {
+    "name": "Acri (CS)",
+    "value": "Acri (CS)"
+  },
+  {
+    "name": "Adeje",
+    "value": "Adeje"
+  },
+  {
+    "name": "Adelaide",
+    "value": "Adelaide"
+  },
+  {
+    "name": "Adrogué",
+    "value": "Adrogué"
+  },
+  {
+    "name": "Agrigento",
+    "value": "Agrigento"
+  },
+  {
+    "name": "Agropoli (SA)",
+    "value": "Agropoli (SA)"
+  },
+  {
+    "name": "Aguascalientes",
+    "value": "Aguascalientes"
+  },
+  {
+    "name": "Alano di Piave (BL)",
+    "value": "Alano di Piave (BL)"
+  },
+  {
+    "name": "Alassio (SV)",
+    "value": "Alassio (SV)"
+  },
+  {
+    "name": "Alba (CN)",
+    "value": "Alba (CN)"
+  },
+  {
+    "name": "Alberobello (BA)",
+    "value": "Alberobello (BA)"
+  },
+  {
+    "name": "Alcamo (TP)",
+    "value": "Alcamo (TP)"
+  },
+  {
+    "name": "Alessandria",
+    "value": "Alessandria"
+  },
+  {
+    "name": "Alicante",
+    "value": "Alicante"
+  },
+  {
+    "name": "Aljezur",
+    "value": "Aljezur"
+  },
+  {
+    "name": "Alpharetta",
+    "value": "Alpharetta"
+  },
+  {
+    "name": "Altamura (BA)",
+    "value": "Altamura (BA)"
+  },
+  {
+    "name": "Altavilla Milicia (PA)",
+    "value": "Altavilla Milicia (PA)"
+  },
+  {
+    "name": "Alvignano (CE)",
+    "value": "Alvignano (CE)"
+  },
+  {
+    "name": "Amalfi (SA)",
+    "value": "Amalfi (SA)"
+  },
+  {
+    "name": "Amersfoort",
+    "value": "Amersfoort"
+  },
+  {
+    "name": "Amsterdam",
+    "value": "Amsterdam"
+  },
+  {
+    "name": "Ancona",
+    "value": "Ancona"
+  },
+  {
+    "name": "Ankara",
+    "value": "Ankara"
+  },
+  {
+    "name": "Antwerp",
+    "value": "Antwerp"
+  },
+  {
+    "name": "Apollosa (BN)",
+    "value": "Apollosa (BN)"
+  },
+  {
+    "name": "Aprilia (LT)",
+    "value": "Aprilia (LT)"
+  },
+  {
+    "name": "Arezzo",
+    "value": "Arezzo"
+  },
+  {
+    "name": "Arielli (CH)",
+    "value": "Arielli (CH)"
+  },
+  {
+    "name": "Arlington",
+    "value": "Arlington"
+  },
+  {
+    "name": "Arpaia (BN)",
+    "value": "Arpaia (BN)"
+  },
+  {
+    "name": "Asbury Park",
+    "value": "Asbury Park"
+  },
+  {
+    "name": "Ascoli Piceno",
+    "value": "Ascoli Piceno"
+  },
+  {
+    "name": "Asti",
+    "value": "Asti"
+  },
+  {
+    "name": "Asti (AT)",
+    "value": "Asti (AT)"
+  },
+  {
+    "name": "Asunción",
+    "value": "Asunción"
+  },
+  {
+    "name": "Athens",
+    "value": "Athens"
+  },
+  {
+    "name": "Atlanta",
+    "value": "Atlanta"
+  },
+  {
+    "name": "Atri (TE)",
+    "value": "Atri (TE)"
+  },
+  {
+    "name": "Atripalda (AV)",
+    "value": "Atripalda (AV)"
+  },
+  {
+    "name": "Auckland",
+    "value": "Auckland"
+  },
+  {
+    "name": "Ave Montclair",
+    "value": "Ave Montclair"
+  },
+  {
+    "name": "Avellino",
+    "value": "Avellino"
+  },
+  {
+    "name": "Aversa (CE)",
+    "value": "Aversa (CE)"
+  },
+  {
+    "name": "Avezzano (AQ)",
+    "value": "Avezzano (AQ)"
+  },
+  {
+    "name": "Balaton",
+    "value": "Balaton"
+  },
+  {
+    "name": "Baltimore",
+    "value": "Baltimore"
+  },
+  {
+    "name": "Bandung",
+    "value": "Bandung"
+  },
+  {
+    "name": "Bangkok",
+    "value": "Bangkok"
+  },
+  {
+    "name": "Barberino Tavarnelle (FI)",
+    "value": "Barberino Tavarnelle (FI)"
+  },
+  {
+    "name": "Barcelona",
+    "value": "Barcelona"
+  },
+  {
+    "name": "Bari",
+    "value": "Bari"
+  },
+  {
+    "name": "Baselga di Piné (TN)",
+    "value": "Baselga di Piné (TN)"
+  },
+  {
+    "name": "Bassano del Grappa (VI)",
+    "value": "Bassano del Grappa (VI)"
+  },
+  {
+    "name": "Baveno (VB)",
+    "value": "Baveno (VB)"
+  },
+  {
+    "name": "Beaverton",
+    "value": "Beaverton"
+  },
+  {
+    "name": "Beijing",
+    "value": "Beijing"
+  },
+  {
+    "name": "Belgrade",
+    "value": "Belgrade"
+  },
+  {
+    "name": "Bend",
+    "value": "Bend"
+  },
+  {
+    "name": "Benevento",
+    "value": "Benevento"
+  },
+  {
+    "name": "Bento Gonçalves",
+    "value": "Bento Gonçalves"
+  },
+  {
+    "name": "Bergamo",
+    "value": "Bergamo"
+  },
+  {
+    "name": "Berkeley",
+    "value": "Berkeley"
+  },
+  {
+    "name": "Berlin",
+    "value": "Berlin"
+  },
+  {
+    "name": "Bern",
+    "value": "Bern"
+  },
+  {
+    "name": "Bilbao",
+    "value": "Bilbao"
+  },
+  {
+    "name": "Bivio (IS)",
+    "value": "Bivio (IS)"
+  },
+  {
+    "name": "Bogotá",
+    "value": "Bogotá"
+  },
+  {
+    "name": "Bologna",
+    "value": "Bologna"
+  },
+  {
+    "name": "Bolzano",
+    "value": "Bolzano"
+  },
+  {
+    "name": "Bordeaux",
+    "value": "Bordeaux"
+  },
+  {
+    "name": "Boschi Sant'Anna (VR)",
+    "value": "Boschi Sant'Anna (VR)"
+  },
+  {
+    "name": "Boscotrecase (NA)",
+    "value": "Boscotrecase (NA)"
+  },
+  {
+    "name": "Bossolasco (CN)",
+    "value": "Bossolasco (CN)"
+  },
+  {
+    "name": "Boulogne-Billancourt",
+    "value": "Boulogne-Billancourt"
+  },
+  {
+    "name": "Bournemouth",
+    "value": "Bournemouth"
+  },
+  {
+    "name": "Brasilia",
+    "value": "Brasilia"
+  },
+  {
+    "name": "Bratislava",
+    "value": "Bratislava"
+  },
+  {
+    "name": "Braunschweig",
+    "value": "Braunschweig"
+  },
+  {
+    "name": "Brescia",
+    "value": "Brescia"
+  },
+  {
+    "name": "Bruges",
+    "value": "Bruges"
+  },
+  {
+    "name": "Brussels",
+    "value": "Brussels"
+  },
+  {
+    "name": "Bruxelles",
+    "value": "Bruxelles"
+  },
+  {
+    "name": "Bucharest",
+    "value": "Bucharest"
+  },
+  {
+    "name": "Budapest",
+    "value": "Budapest"
+  },
+  {
+    "name": "Buenos Aires",
+    "value": "Buenos Aires"
+  },
+  {
+    "name": "Burges Hill",
+    "value": "Burges Hill"
+  },
+  {
+    "name": "Bursa",
+    "value": "Bursa"
+  },
+  {
+    "name": "Caggiano (SA)",
+    "value": "Caggiano (SA)"
+  },
+  {
+    "name": "Cagliari",
+    "value": "Cagliari"
+  },
+  {
+    "name": "Caguas",
+    "value": "Caguas"
+  },
+  {
+    "name": "Caiazzo (CE)",
+    "value": "Caiazzo (CE)"
+  },
+  {
+    "name": "Caldas da Rainha",
+    "value": "Caldas da Rainha"
+  },
+  {
+    "name": "Caldonazzo (TN)",
+    "value": "Caldonazzo (TN)"
+  },
+  {
+    "name": "Calgary",
+    "value": "Calgary"
+  },
+  {
+    "name": "Cali",
+    "value": "Cali"
+  },
+  {
+    "name": "Caltanissetta",
+    "value": "Caltanissetta"
+  },
+  {
+    "name": "Cambridge",
+    "value": "Cambridge"
+  },
+  {
+    "name": "Campi Bisenzio (FI)",
+    "value": "Campi Bisenzio (FI)"
+  },
+  {
+    "name": "Campodoro (PD)",
+    "value": "Campodoro (PD)"
+  },
+  {
+    "name": "Canale (CN)",
+    "value": "Canale (CN)"
+  },
+  {
+    "name": "Canford Cliffs",
+    "value": "Canford Cliffs"
+  },
+  {
+    "name": "Capaccio Paestum (SA)",
+    "value": "Capaccio Paestum (SA)"
+  },
+  {
+    "name": "Capri (NA)",
+    "value": "Capri (NA)"
+  },
+  {
+    "name": "Carlos Barbosa",
+    "value": "Carlos Barbosa"
+  },
+  {
+    "name": "Carmignano di Brenta (PD)",
+    "value": "Carmignano di Brenta (PD)"
+  },
+  {
+    "name": "Carpi (MO)",
+    "value": "Carpi (MO)"
+  },
+  {
+    "name": "Casal Velino (SA)",
+    "value": "Casal Velino (SA)"
+  },
+  {
+    "name": "Casale Monferrato (AL)",
+    "value": "Casale Monferrato (AL)"
+  },
+  {
+    "name": "Casalnuovo di Napoli (NA)",
+    "value": "Casalnuovo di Napoli (NA)"
+  },
+  {
+    "name": "Caserta",
+    "value": "Caserta"
+  },
+  {
+    "name": "Casirate d'Adda (BG)",
+    "value": "Casirate d'Adda (BG)"
+  },
+  {
+    "name": "Casoria (NA)",
+    "value": "Casoria (NA)"
+  },
+  {
+    "name": "Cassina De' Pecchi (MI)",
+    "value": "Cassina De' Pecchi (MI)"
+  },
+  {
+    "name": "Cassino (FR)",
+    "value": "Cassino (FR)"
+  },
+  {
+    "name": "Castel San Giovanni (PC)",
+    "value": "Castel San Giovanni (PC)"
+  },
+  {
+    "name": "Castel di Sangro (AQ)",
+    "value": "Castel di Sangro (AQ)"
+  },
+  {
+    "name": "Castel di Tusa (ME)",
+    "value": "Castel di Tusa (ME)"
+  },
+  {
+    "name": "Castellón de la Plana",
+    "value": "Castellón de la Plana"
+  },
+  {
+    "name": "Castelvenere (BN)",
+    "value": "Castelvenere (BN)"
+  },
+  {
+    "name": "Castiglioncello (LI)",
+    "value": "Castiglioncello (LI)"
+  },
+  {
+    "name": "Castione della Presolana (BG)",
+    "value": "Castione della Presolana (BG)"
+  },
+  {
+    "name": "Castrovillari (CS)",
+    "value": "Castrovillari (CS)"
+  },
+  {
+    "name": "Catania",
+    "value": "Catania"
+  },
+  {
+    "name": "Catanzaro",
+    "value": "Catanzaro"
+  },
+  {
+    "name": "Cava de' Tirreni (SA)",
+    "value": "Cava de' Tirreni (SA)"
+  },
+  {
+    "name": "Cebu City",
+    "value": "Cebu City"
+  },
+  {
+    "name": "Cecina (LI)",
+    "value": "Cecina (LI)"
+  },
+  {
+    "name": "Cerveteri (RM)",
+    "value": "Cerveteri (RM)"
+  },
+  {
+    "name": "Cesenatico (FC)",
+    "value": "Cesenatico (FC)"
+  },
+  {
+    "name": "Cetraro (CS)",
+    "value": "Cetraro (CS)"
+  },
+  {
+    "name": "Chacao",
+    "value": "Chacao"
+  },
+  {
+    "name": "Chandler",
+    "value": "Chandler"
+  },
+  {
+    "name": "Charlotte",
+    "value": "Charlotte"
+  },
+  {
+    "name": "Cherry Hill",
+    "value": "Cherry Hill"
+  },
+  {
+    "name": "Chester",
+    "value": "Chester"
+  },
+  {
+    "name": "Chiavari (GE)",
+    "value": "Chiavari (GE)"
+  },
+  {
+    "name": "Chicago",
+    "value": "Chicago"
+  },
+  {
+    "name": "Chieri (TO)",
+    "value": "Chieri (TO)"
+  },
+  {
+    "name": "Chieti",
+    "value": "Chieti"
+  },
+  {
+    "name": "Chișinău",
+    "value": "Chișinău"
+  },
+  {
+    "name": "Città di Castello (PG)",
+    "value": "Città di Castello (PG)"
+  },
+  {
+    "name": "Civitanova Marche (MC)",
+    "value": "Civitanova Marche (MC)"
+  },
+  {
+    "name": "Civitavecchia (RM)",
+    "value": "Civitavecchia (RM)"
+  },
+  {
+    "name": "Cleveland",
+    "value": "Cleveland"
+  },
+  {
+    "name": "Colle di Val d'Elsa (SI)",
+    "value": "Colle di Val d'Elsa (SI)"
+  },
+  {
+    "name": "Colli del Tronto (AP)",
+    "value": "Colli del Tronto (AP)"
+  },
+  {
+    "name": "Colorado Springs",
+    "value": "Colorado Springs"
+  },
+  {
+    "name": "Cona (VE)",
+    "value": "Cona (VE)"
+  },
+  {
+    "name": "Conchiglie-Alto Lido (LE)",
+    "value": "Conchiglie-Alto Lido (LE)"
+  },
+  {
+    "name": "Conversano (BA)",
+    "value": "Conversano (BA)"
+  },
+  {
+    "name": "Copenhagen",
+    "value": "Copenhagen"
+  },
+  {
+    "name": "Corciano (PG)",
+    "value": "Corciano (PG)"
+  },
+  {
+    "name": "Corigliano Calabro (CS)",
+    "value": "Corigliano Calabro (CS)"
+  },
+  {
+    "name": "Cosenza",
+    "value": "Cosenza"
+  },
+  {
+    "name": "Crema (CR)",
+    "value": "Crema (CR)"
+  },
+  {
+    "name": "Croix",
+    "value": "Croix"
+  },
+  {
+    "name": "Crotone",
+    "value": "Crotone"
+  },
+  {
+    "name": "Culver City",
+    "value": "Culver City"
+  },
+  {
+    "name": "Dakar",
+    "value": "Dakar"
+  },
+  {
+    "name": "Dallas",
+    "value": "Dallas"
+  },
+  {
+    "name": "Dana Point",
+    "value": "Dana Point"
+  },
+  {
+    "name": "Darnestown",
+    "value": "Darnestown"
+  },
+  {
+    "name": "Denver",
+    "value": "Denver"
+  },
+  {
+    "name": "Detroit",
+    "value": "Detroit"
+  },
+  {
+    "name": "Devon",
+    "value": "Devon"
+  },
+  {
+    "name": "Dietikon",
+    "value": "Dietikon"
+  },
+  {
+    "name": "Domingos Martins",
+    "value": "Domingos Martins"
+  },
+  {
+    "name": "Dortmund",
+    "value": "Dortmund"
+  },
+  {
+    "name": "Dubai",
+    "value": "Dubai"
+  },
+  {
+    "name": "Dublin",
+    "value": "Dublin"
+  },
+  {
+    "name": "East Aurora",
+    "value": "East Aurora"
+  },
+  {
+    "name": "Edinburgh",
+    "value": "Edinburgh"
+  },
+  {
+    "name": "Eindhoven",
+    "value": "Eindhoven"
+  },
+  {
+    "name": "El Campello",
+    "value": "El Campello"
+  },
+  {
+    "name": "Elche",
+    "value": "Elche"
+  },
+  {
+    "name": "Empoli (FI)",
+    "value": "Empoli (FI)"
+  },
+  {
+    "name": "Englewood",
+    "value": "Englewood"
+  },
+  {
+    "name": "Erbusco (BS)",
+    "value": "Erbusco (BS)"
+  },
+  {
+    "name": "Esch-sur-Alzette",
+    "value": "Esch-sur-Alzette"
+  },
+  {
+    "name": "Este (PD)",
+    "value": "Este (PD)"
+  },
+  {
+    "name": "Etterbeek",
+    "value": "Etterbeek"
+  },
+  {
+    "name": "Faenza (RA)",
+    "value": "Faenza (RA)"
+  },
+  {
+    "name": "Falerna Marina (CZ)",
+    "value": "Falerna Marina (CZ)"
+  },
+  {
+    "name": "Favara (AG)",
+    "value": "Favara (AG)"
+  },
+  {
+    "name": "Ferrara",
+    "value": "Ferrara"
+  },
+  {
+    "name": "Fiano Romano (RM)",
+    "value": "Fiano Romano (RM)"
+  },
+  {
+    "name": "Firenze",
+    "value": "Firenze"
+  },
+  {
+    "name": "Fiumefreddo di Sicilia (CT)",
+    "value": "Fiumefreddo di Sicilia (CT)"
+  },
+  {
+    "name": "Fiumicino (RM)",
+    "value": "Fiumicino (RM)"
+  },
+  {
+    "name": "Florence",
+    "value": "Florence"
+  },
+  {
+    "name": "Foggia",
+    "value": "Foggia"
+  },
+  {
+    "name": "Foligno (PG)",
+    "value": "Foligno (PG)"
+  },
+  {
+    "name": "Forio (NA)",
+    "value": "Forio (NA)"
+  },
+  {
+    "name": "Formia (LT)",
+    "value": "Formia (LT)"
+  },
+  {
+    "name": "Formigine (MO)",
+    "value": "Formigine (MO)"
+  },
+  {
+    "name": "Foz do Iguaçu",
+    "value": "Foz do Iguaçu"
+  },
+  {
+    "name": "Frenchtown",
+    "value": "Frenchtown"
+  },
+  {
+    "name": "Frosinone",
+    "value": "Frosinone"
+  },
+  {
+    "name": "Fuengirola",
+    "value": "Fuengirola"
+  },
+  {
+    "name": "Fuscaldo (CS)",
+    "value": "Fuscaldo (CS)"
+  },
+  {
+    "name": "Fürth",
+    "value": "Fürth"
+  },
+  {
+    "name": "Gaeta (LT)",
+    "value": "Gaeta (LT)"
+  },
+  {
+    "name": "Galatina (LE)",
+    "value": "Galatina (LE)"
+  },
+  {
+    "name": "Gallipoli (LE)",
+    "value": "Gallipoli (LE)"
+  },
+  {
+    "name": "Galway",
+    "value": "Galway"
+  },
+  {
+    "name": "Gdańsk",
+    "value": "Gdańsk"
+  },
+  {
+    "name": "Gela (CL)",
+    "value": "Gela (CL)"
+  },
+  {
+    "name": "Geneva",
+    "value": "Geneva"
+  },
+  {
+    "name": "Genova",
+    "value": "Genova"
+  },
+  {
+    "name": "Gioia Tauro (RC)",
+    "value": "Gioia Tauro (RC)"
+  },
+  {
+    "name": "Gioiosa Ionica (RC)",
+    "value": "Gioiosa Ionica (RC)"
+  },
+  {
+    "name": "Girona",
+    "value": "Girona"
+  },
+  {
+    "name": "Giungano (SA)",
+    "value": "Giungano (SA)"
+  },
+  {
+    "name": "Glasgow",
+    "value": "Glasgow"
+  },
+  {
+    "name": "Gorizia",
+    "value": "Gorizia"
+  },
+  {
+    "name": "Governador Valadares",
+    "value": "Governador Valadares"
+  },
+  {
+    "name": "Grado (GO)",
+    "value": "Grado (GO)"
+  },
+  {
+    "name": "Greve in Chianti (FI)",
+    "value": "Greve in Chianti (FI)"
+  },
+  {
+    "name": "Grottaminarda (AV)",
+    "value": "Grottaminarda (AV)"
+  },
+  {
+    "name": "Guardia Piemontese (CS)",
+    "value": "Guardia Piemontese (CS)"
+  },
+  {
+    "name": "Guardiagrele (CH)",
+    "value": "Guardiagrele (CH)"
+  },
+  {
+    "name": "Guatemala City",
+    "value": "Guatemala City"
+  },
+  {
+    "name": "Gurugram",
+    "value": "Gurugram"
+  },
+  {
+    "name": "Haddon Township",
+    "value": "Haddon Township"
+  },
+  {
+    "name": "Haifa",
+    "value": "Haifa"
+  },
+  {
+    "name": "Helsinki",
+    "value": "Helsinki"
+  },
+  {
+    "name": "Henderson,",
+    "value": "Henderson,"
+  },
+  {
+    "name": "Ho Chi Minh City",
+    "value": "Ho Chi Minh City"
+  },
+  {
+    "name": "Hong Kong",
+    "value": "Hong Kong"
+  },
+  {
+    "name": "Hove",
+    "value": "Hove"
+  },
+  {
+    "name": "Huntington Beach",
+    "value": "Huntington Beach"
+  },
+  {
+    "name": "Iași",
+    "value": "Iași"
+  },
+  {
+    "name": "Imperia",
+    "value": "Imperia"
+  },
+  {
+    "name": "Indianapolis",
+    "value": "Indianapolis"
+  },
+  {
+    "name": "Isernia",
+    "value": "Isernia"
+  },
+  {
+    "name": "Ispica (RG)",
+    "value": "Ispica (RG)"
+  },
+  {
+    "name": "Istanbul",
+    "value": "Istanbul"
+  },
+  {
+    "name": "Ixelles",
+    "value": "Ixelles"
+  },
+  {
+    "name": "Jakarta",
+    "value": "Jakarta"
+  },
+  {
+    "name": "Jersey City",
+    "value": "Jersey City"
+  },
+  {
+    "name": "Jerusalem",
+    "value": "Jerusalem"
+  },
+  {
+    "name": "Jesolo (VE)",
+    "value": "Jesolo (VE)"
+  },
+  {
+    "name": "Kadıköy/İstanbul",
+    "value": "Kadıköy/İstanbul"
+  },
+  {
+    "name": "Kenmore",
+    "value": "Kenmore"
+  },
+  {
+    "name": "Key West",
+    "value": "Key West"
+  },
+  {
+    "name": "Kirkland",
+    "value": "Kirkland"
+  },
+  {
+    "name": "Kisfaludy",
+    "value": "Kisfaludy"
+  },
+  {
+    "name": "Krefeld",
+    "value": "Krefeld"
+  },
+  {
+    "name": "Kuala Lumpur",
+    "value": "Kuala Lumpur"
+  },
+  {
+    "name": "Kuwait City",
+    "value": "Kuwait City"
+  },
+  {
+    "name": "Kyoto",
+    "value": "Kyoto"
+  },
+  {
+    "name": "La Paz",
+    "value": "La Paz"
+  },
+  {
+    "name": "La Spezia",
+    "value": "La Spezia"
+  },
+  {
+    "name": "Laguna Beach",
+    "value": "Laguna Beach"
+  },
+  {
+    "name": "Lana (BZ)",
+    "value": "Lana (BZ)"
+  },
+  {
+    "name": "Lancy",
+    "value": "Lancy"
+  },
+  {
+    "name": "Lapu-lapu City",
+    "value": "Lapu-lapu City"
+  },
+  {
+    "name": "Laredo",
+    "value": "Laredo"
+  },
+  {
+    "name": "Las Condes",
+    "value": "Las Condes"
+  },
+  {
+    "name": "Las Palmas",
+    "value": "Las Palmas"
+  },
+  {
+    "name": "Las Vegas",
+    "value": "Las Vegas"
+  },
+  {
+    "name": "Latiano (BR)",
+    "value": "Latiano (BR)"
+  },
+  {
+    "name": "Latina",
+    "value": "Latina"
+  },
+  {
+    "name": "Lavello (PZ)",
+    "value": "Lavello (PZ)"
+  },
+  {
+    "name": "Lecce",
+    "value": "Lecce"
+  },
+  {
+    "name": "Legnago (VR)",
+    "value": "Legnago (VR)"
+  },
+  {
+    "name": "Legnano (MI)",
+    "value": "Legnano (MI)"
+  },
+  {
+    "name": "Lendinara (RO)",
+    "value": "Lendinara (RO)"
+  },
+  {
+    "name": "Lerici (SP)",
+    "value": "Lerici (SP)"
+  },
+  {
+    "name": "Lesina (FG)",
+    "value": "Lesina (FG)"
+  },
+  {
+    "name": "Levanto (SP)",
+    "value": "Levanto (SP)"
+  },
+  {
+    "name": "Lidingö",
+    "value": "Lidingö"
+  },
+  {
+    "name": "Lido di Camaiore (LU)",
+    "value": "Lido di Camaiore (LU)"
+  },
+  {
+    "name": "Lido di Fermo (FM)",
+    "value": "Lido di Fermo (FM)"
+  },
+  {
+    "name": "Lille",
+    "value": "Lille"
+  },
+  {
+    "name": "Lillestrøm",
+    "value": "Lillestrøm"
+  },
+  {
+    "name": "Lisbon",
+    "value": "Lisbon"
+  },
+  {
+    "name": "Lissone (MB)",
+    "value": "Lissone (MB)"
+  },
+  {
+    "name": "Ljubljana",
+    "value": "Ljubljana"
+  },
+  {
+    "name": "Lloret de Mar",
+    "value": "Lloret de Mar"
+  },
+  {
+    "name": "Lo Barnechea",
+    "value": "Lo Barnechea"
+  },
+  {
+    "name": "London",
+    "value": "London"
+  },
+  {
+    "name": "Longmont",
+    "value": "Longmont"
+  },
+  {
+    "name": "Los Angeles",
+    "value": "Los Angeles"
+  },
+  {
+    "name": "Louisville",
+    "value": "Louisville"
+  },
+  {
+    "name": "Lucca",
+    "value": "Lucca"
+  },
+  {
+    "name": "Lugano",
+    "value": "Lugano"
+  },
+  {
+    "name": "Maceió",
+    "value": "Maceió"
+  },
+  {
+    "name": "Maddaloni (CE)",
+    "value": "Maddaloni (CE)"
+  },
+  {
+    "name": "Madison",
+    "value": "Madison"
+  },
+  {
+    "name": "Madrid",
+    "value": "Madrid"
+  },
+  {
+    "name": "Magione (PG)",
+    "value": "Magione (PG)"
+  },
+  {
+    "name": "Makarska",
+    "value": "Makarska"
+  },
+  {
+    "name": "Makati",
+    "value": "Makati"
+  },
+  {
+    "name": "Malaga",
+    "value": "Malaga"
+  },
+  {
+    "name": "Malmö",
+    "value": "Malmö"
+  },
+  {
+    "name": "Manchester",
+    "value": "Manchester"
+  },
+  {
+    "name": "Mandaue",
+    "value": "Mandaue"
+  },
+  {
+    "name": "Mannheim",
+    "value": "Mannheim"
+  },
+  {
+    "name": "Marano Vicentino (VI)",
+    "value": "Marano Vicentino (VI)"
+  },
+  {
+    "name": "Margherita di Savoia (BT)",
+    "value": "Margherita di Savoia (BT)"
+  },
+  {
+    "name": "Marin-Epagnier",
+    "value": "Marin-Epagnier"
+  },
+  {
+    "name": "Marradi (FI)",
+    "value": "Marradi (FI)"
+  },
+  {
+    "name": "Marsaskala",
+    "value": "Marsaskala"
+  },
+  {
+    "name": "Marseille",
+    "value": "Marseille"
+  },
+  {
+    "name": "Martellago (VE)",
+    "value": "Martellago (VE)"
+  },
+  {
+    "name": "Martina Franca (TA)",
+    "value": "Martina Franca (TA)"
+  },
+  {
+    "name": "Marzana (VR)",
+    "value": "Marzana (VR)"
+  },
+  {
+    "name": "Massa",
+    "value": "Massa"
+  },
+  {
+    "name": "Massapequa Park",
+    "value": "Massapequa Park"
+  },
+  {
+    "name": "Massarosa (LU)",
+    "value": "Massarosa (LU)"
+  },
+  {
+    "name": "Matera",
+    "value": "Matera"
+  },
+  {
+    "name": "Melbourne",
+    "value": "Melbourne"
+  },
+  {
+    "name": "Melegnano (MI)",
+    "value": "Melegnano (MI)"
+  },
+  {
+    "name": "Merano (BZ)",
+    "value": "Merano (BZ)"
+  },
+  {
+    "name": "Messina",
+    "value": "Messina"
+  },
+  {
+    "name": "Mestre (VE)",
+    "value": "Mestre (VE)"
+  },
+  {
+    "name": "Metro Manila",
+    "value": "Metro Manila"
+  },
+  {
+    "name": "Mexico City",
+    "value": "Mexico City"
+  },
+  {
+    "name": "Miami",
+    "value": "Miami"
+  },
+  {
+    "name": "Milano",
+    "value": "Milano"
+  },
+  {
+    "name": "Milazzo (ME)",
+    "value": "Milazzo (ME)"
+  },
+  {
+    "name": "Mineola",
+    "value": "Mineola"
+  },
+  {
+    "name": "Minervino Murge (BT)",
+    "value": "Minervino Murge (BT)"
+  },
+  {
+    "name": "Mira (VE)",
+    "value": "Mira (VE)"
+  },
+  {
+    "name": "Miraflores",
+    "value": "Miraflores"
+  },
+  {
+    "name": "Mirano (VE)",
+    "value": "Mirano (VE)"
+  },
+  {
+    "name": "Modena",
+    "value": "Modena"
+  },
+  {
+    "name": "Modica (RG)",
+    "value": "Modica (RG)"
+  },
+  {
+    "name": "Molfetta (BA)",
+    "value": "Molfetta (BA)"
+  },
+  {
+    "name": "Monopoli (BA)",
+    "value": "Monopoli (BA)"
+  },
+  {
+    "name": "Monsampolo del Tronto (AP)",
+    "value": "Monsampolo del Tronto (AP)"
+  },
+  {
+    "name": "Montecatini-Terme (PT)",
+    "value": "Montecatini-Terme (PT)"
+  },
+  {
+    "name": "Montepaone (CZ)",
+    "value": "Montepaone (CZ)"
+  },
+  {
+    "name": "Montepaone Lido (CZ)",
+    "value": "Montepaone Lido (CZ)"
+  },
+  {
+    "name": "Monteroduni (IS)",
+    "value": "Monteroduni (IS)"
+  },
+  {
+    "name": "Monterosso al Mare (SP)",
+    "value": "Monterosso al Mare (SP)"
+  },
+  {
+    "name": "Montesano Scalo (SA)",
+    "value": "Montesano Scalo (SA)"
+  },
+  {
+    "name": "Montesarchio (BN)",
+    "value": "Montesarchio (BN)"
+  },
+  {
+    "name": "Montesilvano (PE)",
+    "value": "Montesilvano (PE)"
+  },
+  {
+    "name": "Montpellier",
+    "value": "Montpellier"
+  },
+  {
+    "name": "Monza",
+    "value": "Monza"
+  },
+  {
+    "name": "Morton Grove",
+    "value": "Morton Grove"
+  },
+  {
+    "name": "Mosciano Sant'Angelo (TE)",
+    "value": "Mosciano Sant'Angelo (TE)"
+  },
+  {
+    "name": "Mottola (TA)",
+    "value": "Mottola (TA)"
+  },
+  {
+    "name": "Mount Vernon",
+    "value": "Mount Vernon"
+  },
+  {
+    "name": "Munich",
+    "value": "Munich"
+  },
+  {
+    "name": "Murcia",
+    "value": "Murcia"
+  },
+  {
+    "name": "Naantaliin",
+    "value": "Naantaliin"
+  },
+  {
+    "name": "Nagoya",
+    "value": "Nagoya"
+  },
+  {
+    "name": "Napa",
+    "value": "Napa"
+  },
+  {
+    "name": "Napoli",
+    "value": "Napoli"
+  },
+  {
+    "name": "Neudorf-Weimershof",
+    "value": "Neudorf-Weimershof"
+  },
+  {
+    "name": "New Delhi",
+    "value": "New Delhi"
+  },
+  {
+    "name": "New Haven",
+    "value": "New Haven"
+  },
+  {
+    "name": "New Orleans",
+    "value": "New Orleans"
+  },
+  {
+    "name": "New York",
+    "value": "New York"
+  },
+  {
+    "name": "Newport",
+    "value": "Newport"
+  },
+  {
+    "name": "Nice",
+    "value": "Nice"
+  },
+  {
+    "name": "Nichelino (TO)",
+    "value": "Nichelino (TO)"
+  },
+  {
+    "name": "Nimes",
+    "value": "Nimes"
+  },
+  {
+    "name": "Niseko",
+    "value": "Niseko"
+  },
+  {
+    "name": "Nocera Inferiore (SA)",
+    "value": "Nocera Inferiore (SA)"
+  },
+  {
+    "name": "Nociglia (LE)",
+    "value": "Nociglia (LE)"
+  },
+  {
+    "name": "Nola (NA)",
+    "value": "Nola (NA)"
+  },
+  {
+    "name": "Nonantola (MO)",
+    "value": "Nonantola (MO)"
+  },
+  {
+    "name": "Nova Gorica",
+    "value": "Nova Gorica"
+  },
+  {
+    "name": "Novara",
+    "value": "Novara"
+  },
+  {
+    "name": "Nucetto (CN)",
+    "value": "Nucetto (CN)"
+  },
+  {
+    "name": "Nuremberg",
+    "value": "Nuremberg"
+  },
+  {
+    "name": "Oakland",
+    "value": "Oakland"
+  },
+  {
+    "name": "Ortezzano (FM)",
+    "value": "Ortezzano (FM)"
+  },
+  {
+    "name": "Orvieto (TR)",
+    "value": "Orvieto (TR)"
+  },
+  {
+    "name": "Osaka",
+    "value": "Osaka"
+  },
+  {
+    "name": "Oslo",
+    "value": "Oslo"
+  },
+  {
+    "name": "Ottaviano (NA)",
+    "value": "Ottaviano (NA)"
+  },
+  {
+    "name": "Oulx (TO)",
+    "value": "Oulx (TO)"
+  },
+  {
+    "name": "Ourinhos",
+    "value": "Ourinhos"
+  },
+  {
+    "name": "Oviedo",
+    "value": "Oviedo"
+  },
+  {
+    "name": "Pabianice",
+    "value": "Pabianice"
+  },
+  {
+    "name": "Padova",
+    "value": "Padova"
+  },
+  {
+    "name": "Palata Pepoli (BO)",
+    "value": "Palata Pepoli (BO)"
+  },
+  {
+    "name": "Palermo",
+    "value": "Palermo"
+  },
+  {
+    "name": "Palinuro (SA)",
+    "value": "Palinuro (SA)"
+  },
+  {
+    "name": "Palma Campania (NA)",
+    "value": "Palma Campania (NA)"
+  },
+  {
+    "name": "Pampatar",
+    "value": "Pampatar"
+  },
+  {
+    "name": "Paracuellos de Jarama",
+    "value": "Paracuellos de Jarama"
+  },
+  {
+    "name": "Paris",
+    "value": "Paris"
+  },
+  {
+    "name": "Parma",
+    "value": "Parma"
+  },
+  {
+    "name": "Passo Fundo",
+    "value": "Passo Fundo"
+  },
+  {
+    "name": "Pedro Juan Caballero",
+    "value": "Pedro Juan Caballero"
+  },
+  {
+    "name": "Perth",
+    "value": "Perth"
+  },
+  {
+    "name": "Perugia",
+    "value": "Perugia"
+  },
+  {
+    "name": "Pesaro",
+    "value": "Pesaro"
+  },
+  {
+    "name": "Pescara",
+    "value": "Pescara"
+  },
+  {
+    "name": "Pesche (IS)",
+    "value": "Pesche (IS)"
+  },
+  {
+    "name": "Petah Tikva",
+    "value": "Petah Tikva"
+  },
+  {
+    "name": "Philadelphia",
+    "value": "Philadelphia"
+  },
+  {
+    "name": "Phoenix",
+    "value": "Phoenix"
+  },
+  {
+    "name": "Phuket",
+    "value": "Phuket"
+  },
+  {
+    "name": "Piacenza",
+    "value": "Piacenza"
+  },
+  {
+    "name": "Pietrasanta (LU)",
+    "value": "Pietrasanta (LU)"
+  },
+  {
+    "name": "Pieve a Nievole (PT)",
+    "value": "Pieve a Nievole (PT)"
+  },
+  {
+    "name": "Pineda de Mar",
+    "value": "Pineda de Mar"
+  },
+  {
+    "name": "Pistoia",
+    "value": "Pistoia"
+  },
+  {
+    "name": "Pittsburgh",
+    "value": "Pittsburgh"
+  },
+  {
+    "name": "Plzen",
+    "value": "Plzen"
+  },
+  {
+    "name": "Policoro (MT)",
+    "value": "Policoro (MT)"
+  },
+  {
+    "name": "Polistena (RC)",
+    "value": "Polistena (RC)"
+  },
+  {
+    "name": "Pomigliano d'Arco (NA)",
+    "value": "Pomigliano d'Arco (NA)"
+  },
+  {
+    "name": "Pompei (NA)",
+    "value": "Pompei (NA)"
+  },
+  {
+    "name": "Pontassieve (FI)",
+    "value": "Pontassieve (FI)"
+  },
+  {
+    "name": "Pontecagnano Faiano (SA)",
+    "value": "Pontecagnano Faiano (SA)"
+  },
+  {
+    "name": "Pontedera (PI)",
+    "value": "Pontedera (PI)"
+  },
+  {
+    "name": "Pontinia (LT)",
+    "value": "Pontinia (LT)"
+  },
+  {
+    "name": "Portland",
+    "value": "Portland"
+  },
+  {
+    "name": "Porto",
+    "value": "Porto"
+  },
+  {
+    "name": "Porto Alegre",
+    "value": "Porto Alegre"
+  },
+  {
+    "name": "Porto Sant'Elpidio (FM)",
+    "value": "Porto Sant'Elpidio (FM)"
+  },
+  {
+    "name": "Potenza",
+    "value": "Potenza"
+  },
+  {
+    "name": "Pozzuoli (NA)",
+    "value": "Pozzuoli (NA)"
+  },
+  {
+    "name": "Prague",
+    "value": "Prague"
+  },
+  {
+    "name": "Praia a Mare (CS)",
+    "value": "Praia a Mare (CS)"
+  },
+  {
+    "name": "Prato",
+    "value": "Prato"
+  },
+  {
+    "name": "Priverno (LT)",
+    "value": "Priverno (LT)"
+  },
+  {
+    "name": "Providence",
+    "value": "Providence"
+  },
+  {
+    "name": "Providencia",
+    "value": "Providencia"
+  },
+  {
+    "name": "Punta del Este",
+    "value": "Punta del Este"
+  },
+  {
+    "name": "Puteaux",
+    "value": "Puteaux"
+  },
+  {
+    "name": "Quart (AO)",
+    "value": "Quart (AO)"
+  },
+  {
+    "name": "Quarto (NA)",
+    "value": "Quarto (NA)"
+  },
+  {
+    "name": "Quartu Sant'Elena (CA)",
+    "value": "Quartu Sant'Elena (CA)"
+  },
+  {
+    "name": "Quattromiglia (CS)",
+    "value": "Quattromiglia (CS)"
+  },
+  {
+    "name": "Querceta (LU)",
+    "value": "Querceta (LU)"
+  },
+  {
+    "name": "Quezon",
+    "value": "Quezon"
+  },
+  {
+    "name": "Racconigi (CN)",
+    "value": "Racconigi (CN)"
+  },
+  {
+    "name": "Raffadali (AG)",
+    "value": "Raffadali (AG)"
+  },
+  {
+    "name": "Redmond",
+    "value": "Redmond"
+  },
+  {
+    "name": "Reggio Emilia",
+    "value": "Reggio Emilia"
+  },
+  {
+    "name": "Rende (CS)",
+    "value": "Rende (CS)"
+  },
+  {
+    "name": "Rexburg",
+    "value": "Rexburg"
+  },
+  {
+    "name": "Reykjavík",
+    "value": "Reykjavík"
+  },
+  {
+    "name": "Rezzato (BS)",
+    "value": "Rezzato (BS)"
+  },
+  {
+    "name": "Richardson",
+    "value": "Richardson"
+  },
+  {
+    "name": "Riga",
+    "value": "Riga"
+  },
+  {
+    "name": "Rio de Janeiro",
+    "value": "Rio de Janeiro"
+  },
+  {
+    "name": "Rionero In Vulture (PZ)",
+    "value": "Rionero In Vulture (PZ)"
+  },
+  {
+    "name": "Rizziconi (RC)",
+    "value": "Rizziconi (RC)"
+  },
+  {
+    "name": "Rodia (ME)",
+    "value": "Rodia (ME)"
+  },
+  {
+    "name": "Roma",
+    "value": "Roma"
+  },
+  {
+    "name": "Roseto degli Abruzzi (TE)",
+    "value": "Roseto degli Abruzzi (TE)"
+  },
+  {
+    "name": "Rovereto (TN)",
+    "value": "Rovereto (TN)"
+  },
+  {
+    "name": "Royal Oak",
+    "value": "Royal Oak"
+  },
+  {
+    "name": "Rutherford",
+    "value": "Rutherford"
+  },
+  {
+    "name": "Rīga",
+    "value": "Rīga"
+  },
+  {
+    "name": "Sabadell",
+    "value": "Sabadell"
+  },
+  {
+    "name": "Sagres",
+    "value": "Sagres"
+  },
+  {
+    "name": "Salerno",
+    "value": "Salerno"
+  },
+  {
+    "name": "San Antonio",
+    "value": "San Antonio"
+  },
+  {
+    "name": "San Benedetto del Tronto (AP)",
+    "value": "San Benedetto del Tronto (AP)"
+  },
+  {
+    "name": "San Bonifacio (VR)",
+    "value": "San Bonifacio (VR)"
+  },
+  {
+    "name": "San Diego",
+    "value": "San Diego"
+  },
+  {
+    "name": "San Donato di Lecce (LE)",
+    "value": "San Donato di Lecce (LE)"
+  },
+  {
+    "name": "San Francisco",
+    "value": "San Francisco"
+  },
+  {
+    "name": "San Giorgio a Cremano (NA)",
+    "value": "San Giorgio a Cremano (NA)"
+  },
+  {
+    "name": "San Giovanni Lupatoto (VR)",
+    "value": "San Giovanni Lupatoto (VR)"
+  },
+  {
+    "name": "San Giuseppe Vesuviano (NA)",
+    "value": "San Giuseppe Vesuviano (NA)"
+  },
+  {
+    "name": "San Juan",
+    "value": "San Juan"
+  },
+  {
+    "name": "San Lazzaro di Savena (BO)",
+    "value": "San Lazzaro di Savena (BO)"
+  },
+  {
+    "name": "San Lorenzo del Vallo (CS)",
+    "value": "San Lorenzo del Vallo (CS)"
+  },
+  {
+    "name": "San Luis Obispo",
+    "value": "San Luis Obispo"
+  },
+  {
+    "name": "San Marco Argentano (CS)",
+    "value": "San Marco Argentano (CS)"
+  },
+  {
+    "name": "San Martino Buon Albergo (VR)",
+    "value": "San Martino Buon Albergo (VR)"
+  },
+  {
+    "name": "San Nicola Arcella (CS)",
+    "value": "San Nicola Arcella (CS)"
+  },
+  {
+    "name": "San Salvador",
+    "value": "San Salvador"
+  },
+  {
+    "name": "San Salvo (CH)",
+    "value": "San Salvo (CH)"
+  },
+  {
+    "name": "San Vito al Tagliamento (PN)",
+    "value": "San Vito al Tagliamento (PN)"
+  },
+  {
+    "name": "Sanremo (IM)",
+    "value": "Sanremo (IM)"
+  },
+  {
+    "name": "Sant Cugat del Vallès",
+    "value": "Sant Cugat del Vallès"
+  },
+  {
+    "name": "Sant'Agata Bolognese (BO)",
+    "value": "Sant'Agata Bolognese (BO)"
+  },
+  {
+    "name": "Santa Cruz de Tenerife",
+    "value": "Santa Cruz de Tenerife"
+  },
+  {
+    "name": "Santa Fe",
+    "value": "Santa Fe"
+  },
+  {
+    "name": "Santa Maria",
+    "value": "Santa Maria"
+  },
+  {
+    "name": "Santa Maria Navarrese (NU)",
+    "value": "Santa Maria Navarrese (NU)"
+  },
+  {
+    "name": "Santa Maria degli Angeli (PG)",
+    "value": "Santa Maria degli Angeli (PG)"
+  },
+  {
+    "name": "Santa Maria del Cedro (CS)",
+    "value": "Santa Maria del Cedro (CS)"
+  },
+  {
+    "name": "Santo André",
+    "value": "Santo André"
+  },
+  {
+    "name": "Santo Domingo",
+    "value": "Santo Domingo"
+  },
+  {
+    "name": "Santos",
+    "value": "Santos"
+  },
+  {
+    "name": "Sarzana (SP)",
+    "value": "Sarzana (SP)"
+  },
+  {
+    "name": "Sarıyer - Istanbul",
+    "value": "Sarıyer - Istanbul"
+  },
+  {
+    "name": "Sassari",
+    "value": "Sassari"
+  },
+  {
+    "name": "Sasso Marconi (BO)",
+    "value": "Sasso Marconi (BO)"
+  },
+  {
+    "name": "Scalera (PZ)",
+    "value": "Scalera (PZ)"
+  },
+  {
+    "name": "Scarperia e San Piero (FI)",
+    "value": "Scarperia e San Piero (FI)"
+  },
+  {
+    "name": "Scerni (CH)",
+    "value": "Scerni (CH)"
+  },
+  {
+    "name": "Schaerbeek",
+    "value": "Schaerbeek"
+  },
+  {
+    "name": "Schlieren",
+    "value": "Schlieren"
+  },
+  {
+    "name": "Scottsdale",
+    "value": "Scottsdale"
+  },
+  {
+    "name": "Seattle",
+    "value": "Seattle"
+  },
+  {
+    "name": "Senigallia (AN)",
+    "value": "Senigallia (AN)"
+  },
+  {
+    "name": "Seoul",
+    "value": "Seoul"
+  },
+  {
+    "name": "Seregno (MB)",
+    "value": "Seregno (MB)"
+  },
+  {
+    "name": "Sesto Fiorentino (FI)",
+    "value": "Sesto Fiorentino (FI)"
+  },
+  {
+    "name": "Seville",
+    "value": "Seville"
+  },
+  {
+    "name": "Shanghai",
+    "value": "Shanghai"
+  },
+  {
+    "name": "Shenzhen",
+    "value": "Shenzhen"
+  },
+  {
+    "name": "Siderno (RC)",
+    "value": "Siderno (RC)"
+  },
+  {
+    "name": "Siena",
+    "value": "Siena"
+  },
+  {
+    "name": "Signa (FI)",
+    "value": "Signa (FI)"
+  },
+  {
+    "name": "Singapore",
+    "value": "Singapore"
+  },
+  {
+    "name": "Sinnai (CA)",
+    "value": "Sinnai (CA)"
+  },
+  {
+    "name": "Siracusa",
+    "value": "Siracusa"
+  },
+  {
+    "name": "Skopje",
+    "value": "Skopje"
+  },
+  {
+    "name": "Sofia",
+    "value": "Sofia"
+  },
+  {
+    "name": "Somerville",
+    "value": "Somerville"
+  },
+  {
+    "name": "Somma Vesuviana (NA)",
+    "value": "Somma Vesuviana (NA)"
+  },
+  {
+    "name": "South Kingstown",
+    "value": "South Kingstown"
+  },
+  {
+    "name": "Soverato (CZ)",
+    "value": "Soverato (CZ)"
+  },
+  {
+    "name": "Sperlonga (LT)",
+    "value": "Sperlonga (LT)"
+  },
+  {
+    "name": "Spinetoli (AP)",
+    "value": "Spinetoli (AP)"
+  },
+  {
+    "name": "Split",
+    "value": "Split"
+  },
+  {
+    "name": "Statte (TA)",
+    "value": "Statte (TA)"
+  },
+  {
+    "name": "Stockholm",
+    "value": "Stockholm"
+  },
+  {
+    "name": "Succivo (CE)",
+    "value": "Succivo (CE)"
+  },
+  {
+    "name": "Sydney",
+    "value": "Sydney"
+  },
+  {
+    "name": "São Paulo",
+    "value": "São Paulo"
+  },
+  {
+    "name": "Taguig",
+    "value": "Taguig"
+  },
+  {
+    "name": "Taipei City",
+    "value": "Taipei City"
+  },
+  {
+    "name": "Tallinn",
+    "value": "Tallinn"
+  },
+  {
+    "name": "Tampa",
+    "value": "Tampa"
+  },
+  {
+    "name": "Tampere",
+    "value": "Tampere"
+  },
+  {
+    "name": "Taranto",
+    "value": "Taranto"
+  },
+  {
+    "name": "Teleferik",
+    "value": "Teleferik"
+  },
+  {
+    "name": "Tempio Pausania (SS)",
+    "value": "Tempio Pausania (SS)"
+  },
+  {
+    "name": "Termoli (CB)",
+    "value": "Termoli (CB)"
+  },
+  {
+    "name": "Terni",
+    "value": "Terni"
+  },
+  {
+    "name": "Terrassa",
+    "value": "Terrassa"
+  },
+  {
+    "name": "Tetti Valfrè (TO)",
+    "value": "Tetti Valfrè (TO)"
+  },
+  {
+    "name": "Thiene (VI)",
+    "value": "Thiene (VI)"
+  },
+  {
+    "name": "Tirana",
+    "value": "Tirana"
+  },
+  {
+    "name": "Tokyo",
+    "value": "Tokyo"
+  },
+  {
+    "name": "Torino",
+    "value": "Torino"
+  },
+  {
+    "name": "Torre Annunziata (NA)",
+    "value": "Torre Annunziata (NA)"
+  },
+  {
+    "name": "Torre del Greco (NA)",
+    "value": "Torre del Greco (NA)"
+  },
+  {
+    "name": "Tramonti (SA)",
+    "value": "Tramonti (SA)"
+  },
+  {
+    "name": "Trani (BT)",
+    "value": "Trani (BT)"
+  },
+  {
+    "name": "Tremestieri Etneo (CT)",
+    "value": "Tremestieri Etneo (CT)"
+  },
+  {
+    "name": "Trento",
+    "value": "Trento"
+  },
+  {
+    "name": "Treviso",
+    "value": "Treviso"
+  },
+  {
+    "name": "Trieste",
+    "value": "Trieste"
+  },
+  {
+    "name": "Triuggio (MB)",
+    "value": "Triuggio (MB)"
+  },
+  {
+    "name": "Tropea (VV)",
+    "value": "Tropea (VV)"
+  },
+  {
+    "name": "Tropea, (VV)",
+    "value": "Tropea, (VV)"
+  },
+  {
+    "name": "Tucker",
+    "value": "Tucker"
+  },
+  {
+    "name": "Tucson",
+    "value": "Tucson"
+  },
+  {
+    "name": "Turku",
+    "value": "Turku"
+  },
+  {
+    "name": "Uccle",
+    "value": "Uccle"
+  },
+  {
+    "name": "Udine",
+    "value": "Udine"
+  },
+  {
+    "name": "Umbertide (PG)",
+    "value": "Umbertide (PG)"
+  },
+  {
+    "name": "Utrecht",
+    "value": "Utrecht"
+  },
+  {
+    "name": "Uvita",
+    "value": "Uvita"
+  },
+  {
+    "name": "Vale da Telha",
+    "value": "Vale da Telha"
+  },
+  {
+    "name": "Varese",
+    "value": "Varese"
+  },
+  {
+    "name": "Venaria Reale (TO)",
+    "value": "Venaria Reale (TO)"
+  },
+  {
+    "name": "Verona",
+    "value": "Verona"
+  },
+  {
+    "name": "Vibo Valentia",
+    "value": "Vibo Valentia"
+  },
+  {
+    "name": "Vicenza",
+    "value": "Vicenza"
+  },
+  {
+    "name": "Vienna",
+    "value": "Vienna"
+  },
+  {
+    "name": "Villaricca (NA)",
+    "value": "Villaricca (NA)"
+  },
+  {
+    "name": "Vilnius",
+    "value": "Vilnius"
+  },
+  {
+    "name": "Vinovo (TO)",
+    "value": "Vinovo (TO)"
+  },
+  {
+    "name": "Vitacura",
+    "value": "Vitacura"
+  },
+  {
+    "name": "Volla (NA)",
+    "value": "Volla (NA)"
+  },
+  {
+    "name": "Warsaw",
+    "value": "Warsaw"
+  },
+  {
+    "name": "Warwick",
+    "value": "Warwick"
+  },
+  {
+    "name": "Washington",
+    "value": "Washington"
+  },
+  {
+    "name": "Weert",
+    "value": "Weert"
+  },
+  {
+    "name": "West Palm Beach",
+    "value": "West Palm Beach"
+  },
+  {
+    "name": "Winston-Salem",
+    "value": "Winston-Salem"
+  },
+  {
+    "name": "Zagreb",
+    "value": "Zagreb"
+  },
+  {
+    "name": "Zero Branco (TV)",
+    "value": "Zero Branco (TV)"
+  },
+  {
+    "name": "Zug",
+    "value": "Zug"
+  },
+  {
+    "name": "Zurich",
+    "value": "Zurich"
+  },
+  {
+    "name": "Zürich",
+    "value": "Zürich"
+  },
+  {
+    "name": "Ñuñoa",
+    "value": "Ñuñoa"
+  }
+]
