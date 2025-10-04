@@ -1,8 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
+import type L from 'leaflet';
 
 interface Location {
   address: string | null;
@@ -16,12 +15,24 @@ interface Pizzeria {
   locations: Location[];
 }
 
+interface BookmarkedLocation {
+  pizzeriaName: string;
+  city: string;
+  locationIndex: number;
+  address: string | null;
+  lat: number;
+  lng: number;
+  url: string;
+  bookmarkedAt: string;
+}
+
 interface MapProps {
   cityData?: Record<string, { pizzerias: Pizzeria[] }>;
   selectedCity?: string;
   selectedLocation?: string | null;
   autoTriggerLocation?: boolean;
   maxDistance?: number;
+  bookmarks?: BookmarkedLocation[];
   onNearestPizzeriasUpdate?: (pizzerias: Array<{
     name: string;
     city: string;
@@ -32,38 +43,68 @@ interface MapProps {
   }>) => void;
 }
 
-export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLocation, maxDistance = 30, onNearestPizzeriasUpdate }: MapProps) =>{
+export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLocation, maxDistance = 30, bookmarks = [], onNearestPizzeriasUpdate }: MapProps) =>{
   const mapRef = useRef<L.Map | null>(null);
   const markersRef = useRef<L.Marker[]>([]);
   const markersMapRef = useRef<Map<string, L.Marker>>(new Map());
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const pizzaIconRef = useRef<L.DivIcon | null>(null);
+  const bookmarkedIconRef = useRef<L.DivIcon | null>(null);
   const userLocationMarkerRef = useRef<L.Marker | null>(null);
+  const LeafletRef = useRef<typeof L | null>(null);
 
   const [locating, setLocating] = useState(false);
   const [locationError, setLocationError] = useState<string | null>(null);
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
+  const [isLeafletReady, setIsLeafletReady] = useState(false);
 
   // Initialize map once
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return;
 
-    // Create custom icon
-    pizzaIconRef.current = L.divIcon({
-      className: 'custom-pizza-marker',
-      html: '<div style="background: #dc2626; width: 14px; height: 14px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.4);"></div>',
-      iconSize: [20, 20],
-      iconAnchor: [10, 10],
+    // Dynamically import Leaflet only on client side
+    import('leaflet').then((LeafletModule) => {
+      const L = LeafletModule.default || LeafletModule;
+      LeafletRef.current = L;
+
+      // Dynamically load CSS
+      if (typeof document !== 'undefined' && !document.querySelector('link[href*="leaflet.css"]')) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+        link.integrity = 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=';
+        link.crossOrigin = '';
+        document.head.appendChild(link);
+      }
+
+      // Create custom icons
+      pizzaIconRef.current = L.divIcon({
+        className: 'custom-pizza-marker',
+        html: '<div style="background: #dc2626; width: 14px; height: 14px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.4);"></div>',
+        iconSize: [20, 20],
+        iconAnchor: [10, 10],
+      });
+
+      // Create bookmarked icon (gold/yellow)
+      bookmarkedIconRef.current = L.divIcon({
+        className: 'custom-bookmarked-marker',
+        html: '<div style="background: #eab308; width: 14px; height: 14px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 6px rgba(234, 179, 8, 0.6);"></div>',
+        iconSize: [20, 20],
+        iconAnchor: [10, 10],
+      });
+
+      // Initialize map
+      mapRef.current = L.map(mapContainerRef.current!).setView([41.9, 12.5], 6);
+
+      // Add OpenStreetMap tiles
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors',
+        maxZoom: 19,
+      }).addTo(mapRef.current);
+
+      // Mark Leaflet as ready
+      setIsLeafletReady(true);
     });
-
-    // Initialize map
-    mapRef.current = L.map(mapContainerRef.current).setView([41.9, 12.5], 6);
-
-    // Add OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap contributors',
-      maxZoom: 19,
-    }).addTo(mapRef.current);
 
     return () => {
       if (mapRef.current) {
@@ -73,9 +114,16 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
     };
   }, []);
 
+  // Helper function to check if a location is bookmarked
+  const isLocationBookmarked = (pizzeriaName: string, cityName: string, locationIndex: number): boolean => {
+    return bookmarks.some(
+      b => b.pizzeriaName === pizzeriaName && b.city === cityName && b.locationIndex === locationIndex
+    );
+  };
+
   // Update markers when cityData or selectedCity changes
   useEffect(() => {
-    if (!mapRef.current || !pizzaIconRef.current) return;
+    if (!isLeafletReady || !mapRef.current || !pizzaIconRef.current || !bookmarkedIconRef.current) return;
     if (!cityData || Object.keys(cityData).length === 0) return;
 
     // Clear existing markers
@@ -99,8 +147,13 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
 
         pizzeria.locations.forEach((location, idx) => {
           if (!location || !location.lat || !location.lng) return;
+          if (!LeafletRef.current) return;
 
-          const marker = L.marker([location.lat, location.lng], { icon: pizzaIconRef.current! });
+          // Check if this location is bookmarked and use appropriate icon
+          const isBookmarked = isLocationBookmarked(pizzeria.name, cityName, idx);
+          const icon = isBookmarked ? bookmarkedIconRef.current! : pizzaIconRef.current!;
+
+          const marker = LeafletRef.current.marker([location.lat, location.lng], { icon });
 
           // Create popup content
           const popupContent = `
@@ -117,11 +170,17 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
                     Location ${idx + 1} of ${pizzeria.locations.length}
                   </p>`
                 : ''}
-              <p style="margin-top: 10px;">
+              <div style="margin-top: 10px; display: flex; gap: 12px; flex-wrap: wrap;">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=${location.lat},${location.lng}" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none; font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 4px;">
+                  <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                  </svg>
+                  Navigate
+                </a>
                 <a href="${pizzeria.url}" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: none; font-size: 13px;">
                   More info →
                 </a>
-              </p>
+              </div>
             </div>
           `;
 
@@ -151,7 +210,7 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
         }, 100);
       }
     }
-  }, [cityData, selectedCity]);
+  }, [isLeafletReady, cityData, selectedCity, bookmarks]);
 
   // Handle selected location change
   useEffect(() => {
@@ -186,7 +245,9 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
           }
 
           // Create blue marker for user location
-          const userIcon = L.divIcon({
+          if (!LeafletRef.current) return;
+
+          const userIcon = LeafletRef.current.divIcon({
             className: 'user-location-marker',
             html: '<div style="background: #3b82f6; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 8px rgba(59, 130, 246, 0.6);"></div>',
             iconSize: [22, 22],
@@ -194,7 +255,7 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
           });
 
           // Add user location marker
-          userLocationMarkerRef.current = L.marker([latitude, longitude], { icon: userIcon })
+          userLocationMarkerRef.current = LeafletRef.current.marker([latitude, longitude], { icon: userIcon })
             .addTo(mapRef.current!)
             .bindPopup('<div style="padding: 8px;"><strong>📍 Your Location</strong></div>');
 
@@ -300,7 +361,9 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
           }
 
           // Create blue marker for user location
-          const userIcon = L.divIcon({
+          if (!LeafletRef.current) return;
+
+          const userIcon = LeafletRef.current.divIcon({
             className: 'user-location-marker',
             html: '<div style="background: #3b82f6; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 8px rgba(59, 130, 246, 0.6);"></div>',
             iconSize: [22, 22],
@@ -308,7 +371,7 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
           });
 
           // Add user location marker
-          userLocationMarkerRef.current = L.marker([latitude, longitude], { icon: userIcon })
+          userLocationMarkerRef.current = LeafletRef.current.marker([latitude, longitude], { icon: userIcon })
             .addTo(mapRef.current!)
             .bindPopup('<div style="padding: 8px;"><strong>📍 Your Location</strong></div>');
 

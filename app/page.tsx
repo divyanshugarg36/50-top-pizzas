@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Select from 'react-select';
 import {FullMap } from './components/FullMap';
+import { getBookmarks, toggleBookmark, isBookmarked, type BookmarkedLocation } from './utils/bookmarks';
 
 interface Location {
   address: string | null;
@@ -33,7 +34,7 @@ export default function Home() {
   const [expandedPizzeria, setExpandedPizzeria] = useState<string | null>(null);
   const [stats, setStats] = useState<string>('Loading data...');
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
-  const [activeTab, setActiveTab] = useState<'all' | 'nearest'>('all');
+  const [activeTab, setActiveTab] = useState<'all' | 'nearest' | 'bookmarks'>('all');
   const [nearestPizzerias, setNearestPizzerias] = useState<Array<{
     name: string;
     city: string;
@@ -44,6 +45,8 @@ export default function Home() {
   }>>([]);
   const [autoTriggerLocation, setAutoTriggerLocation] = useState(false);
   const [maxDistance, setMaxDistance] = useState(30); // km
+  const [searchQuery, setSearchQuery] = useState('');
+  const [bookmarks, setBookmarks] = useState<BookmarkedLocation[]>([]);
 
   // Load data and check for location permissions
   useEffect(() => {
@@ -69,6 +72,11 @@ export default function Home() {
         console.error('Error loading data:', error);
         setStats('Error loading data');
       });
+  }, []);
+
+  // Load bookmarks from localStorage
+  useEffect(() => {
+    setBookmarks(getBookmarks());
   }, []);
 
   // Update stats
@@ -112,6 +120,19 @@ export default function Home() {
     setSelectedPizzeria(`${cityName}-${pizzeria.name}-${locationIndex}`);
   };
 
+  const handleBookmarkToggle = (pizzeriaName: string, city: string, locationIndex: number, location: Location, url: string) => {
+    const result = toggleBookmark({
+      pizzeriaName,
+      city,
+      locationIndex,
+      address: location.address,
+      lat: location.lat,
+      lng: location.lng,
+      url
+    });
+    setBookmarks(result.bookmarks);
+  };
+
   const renderPizzeriaList = () => {
     if (selectedCity && !cityData[selectedCity]) {
       return (
@@ -129,9 +150,31 @@ export default function Home() {
       ? { [selectedCity]: cityData[selectedCity] }
       : cityData;
 
+    // Filter by search query
+    const filteredData = Object.entries(citiesToDisplay).reduce((acc, [cityName, cityInfo]) => {
+      const filteredPizzerias = cityInfo.pizzerias.filter(pizzeria =>
+        pizzeria.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        cityName.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+
+      if (filteredPizzerias.length > 0) {
+        acc[cityName] = { pizzerias: filteredPizzerias };
+      }
+      return acc;
+    }, {} as Record<string, CityData>);
+
+    if (searchQuery && Object.keys(filteredData).length === 0) {
+      return (
+        <div className="flex flex-col items-center justify-center h-full text-center p-8 text-gray-500">
+          <p className="text-lg mb-2">🔍 No results found</p>
+          <p className="text-sm">Try a different search term</p>
+        </div>
+      );
+    }
+
     return (
       <div className="space-y-3">
-        {Object.entries(citiesToDisplay).map(([cityName, cityInfo]) =>
+        {Object.entries(filteredData).map(([cityName, cityInfo]) =>
           cityInfo.pizzerias.map((pizzeria) => {
             const pizzeriaKey = `${cityName}-${pizzeria.name}`;
             const isExpanded = expandedPizzeria === pizzeriaKey;
@@ -166,9 +209,42 @@ export default function Home() {
                       </div>
                       {/* Show address for single location */}
                       {!hasMultipleLocations && pizzeria.locations[0] && (
-                        <p className="text-xs text-gray-600 mt-2">
-                          📍 {pizzeria.locations[0].address || 'Location 1'}
-                        </p>
+                        <>
+                          <p className="text-xs text-gray-600 mt-2">
+                            📍 {pizzeria.locations[0].address || 'Location 1'}
+                          </p>
+                          <div className="flex items-center gap-3 mt-2">
+                            <a
+                              href={`https://www.google.com/maps/dir/?api=1&destination=${pizzeria.locations[0].lat},${pizzeria.locations[0].lng}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={(e) => e.stopPropagation()}
+                              className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium"
+                            >
+                              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                              </svg>
+                              Navigate
+                            </a>
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleBookmarkToggle(pizzeria.name, cityName, 0, pizzeria.locations[0], pizzeria.url);
+                              }}
+                              className={`inline-flex items-center gap-1 text-xs font-medium transition-colors ${
+                                isBookmarked(pizzeria.name, cityName, 0)
+                                  ? 'text-yellow-600 hover:text-yellow-700'
+                                  : 'text-gray-400 hover:text-yellow-600'
+                              }`}
+                              title={isBookmarked(pizzeria.name, cityName, 0) ? 'Remove bookmark' : 'Add bookmark'}
+                            >
+                              <svg className="w-4 h-4" fill={isBookmarked(pizzeria.name, cityName, 0) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                              </svg>
+                              {isBookmarked(pizzeria.name, cityName, 0) ? 'Saved' : 'Save'}
+                            </button>
+                          </div>
+                        </>
                       )}
                     </div>
                     {/* Expand/Collapse icon for multiple locations */}
@@ -214,9 +290,42 @@ export default function Home() {
                                 📍 {location.address || `Location ${idx + 1}`}
                               </p>
                               {location.lat && location.lng && (
-                                <p className="text-xs text-gray-400 mt-1">
-                                  {location.lat.toFixed(6)}, {location.lng.toFixed(6)}
-                                </p>
+                                <>
+                                  <p className="text-xs text-gray-400 mt-1">
+                                    {location.lat.toFixed(6)}, {location.lng.toFixed(6)}
+                                  </p>
+                                  <div className="flex items-center gap-3 mt-1">
+                                    <a
+                                      href={`https://www.google.com/maps/dir/?api=1&destination=${location.lat},${location.lng}`}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      onClick={(e) => e.stopPropagation()}
+                                      className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium"
+                                    >
+                                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                                      </svg>
+                                      Navigate
+                                    </a>
+                                    <button
+                                      onClick={(e) => {
+                                        e.stopPropagation();
+                                        handleBookmarkToggle(pizzeria.name, cityName, idx, location, pizzeria.url);
+                                      }}
+                                      className={`inline-flex items-center gap-1 text-xs font-medium transition-colors ${
+                                        isBookmarked(pizzeria.name, cityName, idx)
+                                          ? 'text-yellow-600 hover:text-yellow-700'
+                                          : 'text-gray-400 hover:text-yellow-600'
+                                      }`}
+                                      title={isBookmarked(pizzeria.name, cityName, idx) ? 'Remove bookmark' : 'Add bookmark'}
+                                    >
+                                      <svg className="w-4 h-4" fill={isBookmarked(pizzeria.name, cityName, idx) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                      </svg>
+                                      {isBookmarked(pizzeria.name, cityName, idx) ? 'Saved' : 'Save'}
+                                    </button>
+                                  </div>
+                                </>
                               )}
                             </div>
                             {isSelected && (
@@ -250,7 +359,12 @@ export default function Home() {
       );
     }
 
-    const filteredPizzerias = nearestPizzerias.filter(p => p.distance <= maxDistance);
+    // Filter by distance and search query
+    const filteredPizzerias = nearestPizzerias.filter(p =>
+      p.distance <= maxDistance &&
+      (p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+       p.city.toLowerCase().includes(searchQuery.toLowerCase()))
+    );
 
     return (
       <>
@@ -327,6 +441,50 @@ export default function Home() {
                       {pizzeria.location.address}
                     </p>
                   )}
+                  <div className="flex items-center gap-3 mt-2">
+                    <a
+                      href={`https://www.google.com/maps/dir/?api=1&destination=${pizzeria.location.lat},${pizzeria.location.lng}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium"
+                    >
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                      </svg>
+                      Navigate
+                    </a>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const locationIndex = parseInt(pizzeria.markerKey.split('-').pop() || '0');
+                        handleBookmarkToggle(pizzeria.name, pizzeria.city, locationIndex, pizzeria.location, pizzeria.url);
+                      }}
+                      className={`inline-flex items-center gap-1 text-xs font-medium transition-colors ${
+                        (() => {
+                          const locationIndex = parseInt(pizzeria.markerKey.split('-').pop() || '0');
+                          return isBookmarked(pizzeria.name, pizzeria.city, locationIndex)
+                            ? 'text-yellow-600 hover:text-yellow-700'
+                            : 'text-gray-400 hover:text-yellow-600';
+                        })()
+                      }`}
+                      title={(() => {
+                        const locationIndex = parseInt(pizzeria.markerKey.split('-').pop() || '0');
+                        return isBookmarked(pizzeria.name, pizzeria.city, locationIndex) ? 'Remove bookmark' : 'Add bookmark';
+                      })()}
+                    >
+                      <svg className="w-4 h-4" fill={(() => {
+                        const locationIndex = parseInt(pizzeria.markerKey.split('-').pop() || '0');
+                        return isBookmarked(pizzeria.name, pizzeria.city, locationIndex) ? 'currentColor' : 'none';
+                      })()} stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                      </svg>
+                      {(() => {
+                        const locationIndex = parseInt(pizzeria.markerKey.split('-').pop() || '0');
+                        return isBookmarked(pizzeria.name, pizzeria.city, locationIndex) ? 'Saved' : 'Save';
+                      })()}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -335,6 +493,97 @@ export default function Home() {
           )}
         </div>
       </>
+    );
+  };
+
+  const renderBookmarksList = () => {
+    // Filter by search query
+    const filteredBookmarks = bookmarks.filter(b =>
+      b.pizzeriaName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      b.city.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
+    if (filteredBookmarks.length === 0) {
+      return (
+        <div className="flex flex-col items-center justify-center h-full text-center p-8 text-gray-500">
+          <p className="text-lg mb-2">🔖 No bookmarks yet</p>
+          <p className="text-sm">Save your favorite pizzerias to see them here.</p>
+        </div>
+      );
+    }
+
+    return (
+      <div className="space-y-3">
+        {filteredBookmarks.map((bookmark) => {
+          const markerKey = `${bookmark.city}-${bookmark.pizzeriaName}-${bookmark.locationIndex}`;
+          const isSelected = selectedPizzeria === markerKey;
+
+          return (
+            <div
+              key={`${bookmark.pizzeriaName}-${bookmark.city}-${bookmark.locationIndex}`}
+              onClick={() => setSelectedPizzeria(markerKey)}
+              className={`bg-white border rounded-lg p-4 cursor-pointer transition-all hover:shadow-md ${
+                isSelected ? 'border-red-600 shadow-lg bg-red-50' : 'border-gray-200'
+              }`}
+            >
+              <div className="flex items-start justify-between">
+                <div className="flex-1">
+                  <h3 className="text-red-600 font-semibold text-base mb-2">
+                    {bookmark.pizzeriaName}
+                  </h3>
+                  <div className="flex gap-2 mb-2">
+                    <span className="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">
+                      {bookmark.city}
+                    </span>
+                    <span className="inline-block bg-yellow-100 text-yellow-700 text-xs px-2 py-1 rounded">
+                      ⭐ Bookmarked
+                    </span>
+                  </div>
+                  <p className="text-xs text-gray-600 mt-2">
+                    📍 {bookmark.address || `Location ${bookmark.locationIndex + 1}`}
+                  </p>
+                  <div className="flex items-center gap-3 mt-2">
+                    <a
+                      href={`https://www.google.com/maps/dir/?api=1&destination=${bookmark.lat},${bookmark.lng}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium"
+                    >
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                      </svg>
+                      Navigate
+                    </a>
+                    <a
+                      href={bookmark.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center gap-1 text-xs text-red-600 hover:text-red-800 font-medium"
+                    >
+                      More info →
+                    </a>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleBookmarkToggle(bookmark.pizzeriaName, bookmark.city, bookmark.locationIndex, { address: bookmark.address, lat: bookmark.lat, lng: bookmark.lng }, bookmark.url);
+                      }}
+                      className="inline-flex items-center gap-1 text-xs text-yellow-600 hover:text-yellow-700 font-medium"
+                      title="Remove bookmark"
+                    >
+                      <svg className="w-4 h-4" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                      </svg>
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     );
   };
 
@@ -374,6 +623,49 @@ export default function Home() {
               >
                 Nearest ({nearestPizzerias.length})
               </button>
+              {bookmarks.length > 0 && (
+                <button
+                  onClick={() => setActiveTab('bookmarks')}
+                  className={`flex-1 px-4 py-3 text-sm font-semibold transition-all ${
+                    activeTab === 'bookmarks'
+                      ? 'bg-white text-red-600 border-b-2 border-red-600'
+                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                  }`}
+                >
+                  Bookmarks ({bookmarks.length})
+                </button>
+              )}
+            </div>
+
+            {/* Search Bar */}
+            <div className="p-4 bg-gray-50 border-b border-gray-200">
+              <label className="block text-xs font-semibold text-gray-600 mb-2 uppercase">
+                Search Pizzerias
+              </label>
+              <div className="relative">
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search by name or city..."
+                  className="w-full px-3 py-2 pr-8 text-sm text-gray-900 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent placeholder:text-gray-400"
+                />
+                {searchQuery && (
+                  <button
+                    onClick={() => setSearchQuery('')}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                )}
+                {!searchQuery && (
+                  <svg className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                )}
+              </div>
             </div>
 
             {/* City Selector - Only show for "All" tab */}
@@ -432,7 +724,7 @@ export default function Home() {
 
             {/* Content - Conditional based on active tab */}
             <div className="flex-1 overflow-y-auto p-4">
-              {activeTab === 'all' ? renderPizzeriaList() : renderNearestList()}
+              {activeTab === 'all' ? renderPizzeriaList() : activeTab === 'nearest' ? renderNearestList() : renderBookmarksList()}
             </div>
           </>
         )}
@@ -461,6 +753,7 @@ export default function Home() {
         selectedLocation={selectedPizzeria}
         autoTriggerLocation={autoTriggerLocation}
         maxDistance={maxDistance}
+        bookmarks={bookmarks}
         onNearestPizzeriasUpdate={(pizzerias) => {
           setNearestPizzerias(pizzerias);
         }}

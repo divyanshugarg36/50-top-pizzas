@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-10-04T23:00:02.775767",
+  "last_updated": "2025-10-04T23:40:11.096005",
   "cities": {
     "Barcelona": {
       "status": "scraped",
@@ -543,214 +543,214 @@
       "location_count": 1
     },
     "Bolzano": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:00:11.078355",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Bordeaux": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:00:19.724486",
+      "pizzeria_count": 1,
+      "location_count": 4
     },
     "Boschi Sant'Anna (VR)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:00:24.289981",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Boscotrecase (NA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:00:29.912968",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Bossolasco (CN)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:00:35.713138",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Boulogne-Billancourt": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:00:42.546953",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Bournemouth": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:00:47.527765",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Brasilia": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:00:54.861997",
+      "pizzeria_count": 2,
+      "location_count": 3
     },
     "Bratislava": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:01:01.974765",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Braunschweig": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:01:06.980228",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Brescia": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:01:25.317344",
+      "pizzeria_count": 3,
+      "location_count": 3
     },
     "Bruges": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:01:30.289607",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Bruxelles": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:01:40.521026",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "Bucharest": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:01:47.469872",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Budapest": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:01:58.182741",
+      "pizzeria_count": 4,
+      "location_count": 9
     },
     "Buenos Aires": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:02:07.601605",
+      "pizzeria_count": 3,
+      "location_count": 4
     },
     "Burges Hill": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:02:12.645976",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Bursa": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:02:17.664026",
+      "pizzeria_count": 1,
+      "location_count": 4
     },
     "Caggiano (SA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:02:22.901573",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Cagliari": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:02:49.347987",
+      "pizzeria_count": 8,
+      "location_count": 9
     },
     "Caguas": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:02:54.408984",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Caiazzo (CE)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:03:01.281967",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Caldas da Rainha": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:03:06.394712",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Caldonazzo (TN)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:03:11.239394",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Calgary": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:03:16.008524",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Cali": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:03:21.283823",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Caltanissetta": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:03:26.405803",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Cambridge": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:03:33.603144",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Campi Bisenzio (FI)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:03:38.572004",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Campodoro (PD)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:03:44.343771",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Canale (CN)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:03:50.943007",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Canford Cliffs": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:03:55.983361",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Capaccio Paestum (SA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:04:03.107704",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Capri (NA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:04:08.067067",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Carlos Barbosa": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:04:13.131441",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Carmignano di Brenta (PD)": {
       "status": "pending",
@@ -759,184 +759,184 @@
       "location_count": 0
     },
     "Carpi (MO)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:04:23.465672",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Casal Velino (SA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:04:28.530813",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Casale Monferrato (AL)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:04:33.683408",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Casalnuovo di Napoli (NA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:04:39.024636",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Caserta": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:04:59.041526",
+      "pizzeria_count": 7,
+      "location_count": 7
     },
     "Casirate d'Adda (BG)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:05:04.028190",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Casoria (NA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:05:10.972420",
+      "pizzeria_count": 2,
+      "location_count": 3
     },
     "Cassina De' Pecchi (MI)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:05:16.318932",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Cassino (FR)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:05:21.293419",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Castel San Giovanni (PC)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:05:26.570451",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Castel di Sangro (AQ)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:05:31.357636",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Castel di Tusa (ME)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:05:36.530540",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Castellón de la Plana": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:05:41.729039",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Castelvenere (BN)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:05:47.723712",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Castiglioncello (LI)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:05:53.644310",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Castione della Presolana (BG)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:06:01.824880",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Castrovillari (CS)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:06:06.999340",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Catania": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:06:18.555453",
+      "pizzeria_count": 4,
+      "location_count": 6
     },
     "Catanzaro": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:06:32.692198",
+      "pizzeria_count": 2,
+      "location_count": 3
     },
     "Cava de' Tirreni (SA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:06:41.577073",
+      "pizzeria_count": 2,
+      "location_count": 3
     },
     "Cebu City": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:06:47.005369",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "Cecina (LI)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:06:54.426151",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Cerveteri (RM)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:06:59.239963",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Cesenatico (FC)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:07:05.423305",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Cetraro (CS)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:07:10.387426",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Chacao": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:07:15.600633",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Chandler": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:07:20.620176",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Charlotte": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:07:26.382922",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Cherry Hill": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:07:31.423080",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Chester": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:07:41.445790",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Chiavari (GE)": {
       "status": "pending",
@@ -945,1570 +945,1570 @@
       "location_count": 0
     },
     "Chieri (TO)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:07:51.987363",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Chieti": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:07:59.328839",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Chișinău": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:08:05.482170",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Città di Castello (PG)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:08:10.942512",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Civitanova Marche (MC)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:08:17.900050",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Civitavecchia (RM)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:08:22.848230",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Cleveland": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:08:28.739494",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Colle di Val d'Elsa (SI)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:08:34.271601",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Colli del Tronto (AP)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:08:39.358100",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Colorado Springs": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:08:44.392586",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Cona (VE)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:08:49.464892",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Conchiglie-Alto Lido (LE)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:08:59.373650",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Conversano (BA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:09:08.599283",
+      "pizzeria_count": 3,
+      "location_count": 3
     },
     "Corciano (PG)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:09:13.685558",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Corigliano Calabro (CS)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:09:19.257323",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Cosenza": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:09:26.117603",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Crema (CR)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:09:31.053934",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Croix": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:09:36.607503",
+      "pizzeria_count": 1,
+      "location_count": 4
     },
     "Crotone": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:09:45.311483",
+      "pizzeria_count": 2,
+      "location_count": 3
     },
     "Culver City": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:09:52.184925",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Dakar": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:09:57.174754",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Dallas": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:10:07.469184",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Dana Point": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:10:17.879731",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Darnestown": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:10:22.821461",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Denver": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:10:27.618609",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Detroit": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:10:33.025732",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Devon": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:10:38.197335",
+      "pizzeria_count": 1,
+      "location_count": 4
     },
     "Dietikon": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:10:45.321392",
+      "pizzeria_count": 2,
+      "location_count": 3
     },
     "Domingos Martins": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:10:50.315559",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Dortmund": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:10:55.718783",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Dubai": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:11:09.219161",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Dublin": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:11:14.466063",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "East Aurora": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:11:19.328088",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Edinburgh": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:11:24.049677",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Eindhoven": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:11:28.878910",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "El Campello": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:11:33.751778",
+      "pizzeria_count": 1,
+      "location_count": 4
     },
     "Elche": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:11:38.590461",
+      "pizzeria_count": 1,
+      "location_count": 4
     },
     "Empoli (FI)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:11:43.329742",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Englewood": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:11:48.152176",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Erbusco (BS)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:11:54.671852",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Esch-sur-Alzette": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:11:59.510139",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Este (PD)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:12:04.425098",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Etterbeek": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:12:11.510786",
+      "pizzeria_count": 2,
+      "location_count": 5
     },
     "Faenza (RA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:12:17.085308",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Falerna Marina (CZ)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:12:22.584020",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Favara (AG)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:12:27.673610",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Ferrara": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:12:38.746964",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Fiano Romano (RM)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:12:43.727654",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Firenze": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:13:14.580908",
+      "pizzeria_count": 8,
+      "location_count": 10
     },
     "Fiumefreddo di Sicilia (CT)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:13:20.176042",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Fiumicino (RM)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:13:32.780580",
+      "pizzeria_count": 3,
+      "location_count": 4
     },
     "Foggia": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:13:38.452782",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Foligno (PG)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:13:43.851344",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Forio (NA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:13:49.049449",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Formia (LT)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:13:58.121705",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Formigine (MO)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:14:02.877992",
+      "pizzeria_count": 1,
+      "location_count": 4
     },
     "Foz do Iguaçu": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:14:07.929581",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Frenchtown": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:14:13.135753",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Frosinone": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:14:18.490601",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Fuengirola": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:14:23.859690",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Fuscaldo (CS)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:14:29.410814",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Fürth": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:14:36.382904",
+      "pizzeria_count": 2,
+      "location_count": 3
     },
     "Gaeta (LT)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:14:41.069903",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Galatina (LE)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:14:46.022922",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Gallipoli (LE)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:14:51.459919",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Galway": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:14:56.675850",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "Gdańsk": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:15:01.649867",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Gela (CL)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:15:06.361962",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Geneva": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:15:12.704769",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Genova": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:15:41.188311",
+      "pizzeria_count": 4,
+      "location_count": 4
     },
     "Gioia Tauro (RC)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:15:45.988079",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Gioiosa Ionica (RC)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:15:50.993977",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Girona": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:15:58.361783",
+      "pizzeria_count": 2,
+      "location_count": 4
     },
     "Giungano (SA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:16:03.263690",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Glasgow": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:16:08.267177",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Gorizia": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:16:13.595091",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Governador Valadares": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:16:18.689458",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Grado (GO)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:16:23.646337",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Greve in Chianti (FI)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:16:29.352781",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Grottaminarda (AV)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:16:34.202357",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Guardia Piemontese (CS)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:16:39.318671",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Guardiagrele (CH)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:16:44.408520",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Guatemala City": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:16:49.318988",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Gurugram": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:16:54.383964",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Haddon Township": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:16:59.231146",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Haifa": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:17:04.486695",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Helsinki": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:17:15.181983",
+      "pizzeria_count": 3,
+      "location_count": 4
     },
     "Henderson,": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:17:20.246830",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "Ho Chi Minh City": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:17:25.383720",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Hong Kong": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:17:38.501721",
+      "pizzeria_count": 4,
+      "location_count": 4
     },
     "Hove": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:17:43.891179",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Huntington Beach": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:17:48.799197",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Iași": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:17:53.666346",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Imperia": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:18:00.816633",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Indianapolis": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:18:05.827169",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Isernia": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:18:10.905291",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Ispica (RG)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:18:16.028179",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Istanbul": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:18:24.998175",
+      "pizzeria_count": 3,
+      "location_count": 3
     },
     "Ixelles": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:18:31.865914",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Jakarta": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:18:37.484113",
+      "pizzeria_count": 1,
+      "location_count": 4
     },
     "Jersey City": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:18:44.128205",
+      "pizzeria_count": 2,
+      "location_count": 4
     },
     "Jerusalem": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:18:48.898006",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "Jesolo (VE)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:18:53.772028",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Kadıköy/İstanbul": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:18:58.696371",
+      "pizzeria_count": 1,
+      "location_count": 4
     },
     "Kenmore": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:19:03.715089",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Key West": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:19:08.741785",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Kirkland": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:19:16.141320",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "Kisfaludy": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:19:21.947719",
+      "pizzeria_count": 1,
+      "location_count": 4
     },
     "Krefeld": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:19:27.197709",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Kuala Lumpur": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:19:34.232088",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Kuwait City": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:19:40.318927",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Kyoto": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:19:45.490046",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "La Paz": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:19:50.294372",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "La Spezia": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:20:02.657832",
+      "pizzeria_count": 2,
+      "location_count": 6
     },
     "Laguna Beach": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:20:07.777054",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Lana (BZ)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:20:12.832131",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Lancy": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:20:17.969631",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Lapu-lapu City": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:20:22.973286",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "Laredo": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:20:27.938550",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Las Condes": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:20:41.255460",
+      "pizzeria_count": 2,
+      "location_count": 4
     },
     "Las Palmas": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:20:48.725546",
+      "pizzeria_count": 2,
+      "location_count": 5
     },
     "Las Vegas": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:21:03.000960",
+      "pizzeria_count": 3,
+      "location_count": 6
     },
     "Latiano (BR)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:21:08.526270",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Latina": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:21:15.803243",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Lavello (PZ)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:21:23.203940",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Lecce": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:21:36.225728",
+      "pizzeria_count": 4,
+      "location_count": 6
     },
     "Legnago (VR)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:21:41.339316",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Legnano (MI)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:21:47.788757",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Lendinara (RO)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:21:53.312623",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Lerici (SP)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:21:58.338529",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Lesina (FG)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:22:03.721816",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Levanto (SP)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:22:11.041363",
+      "pizzeria_count": 2,
+      "location_count": 3
     },
     "Lidingö": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:22:16.142979",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Lido di Camaiore (LU)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:22:21.766574",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Lido di Fermo (FM)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:22:26.626004",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Lille": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:22:33.875757",
+      "pizzeria_count": 1,
+      "location_count": 4
     },
     "Lillestrøm": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:22:38.981116",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "Lissone (MB)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:22:44.100264",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Ljubljana": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:22:52.257332",
+      "pizzeria_count": 2,
+      "location_count": 3
     },
     "Lloret de Mar": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:22:57.495330",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "Lo Barnechea": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:23:02.649800",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Longmont": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:23:08.097259",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Louisville": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:23:13.666006",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Lucca": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:23:25.694775",
+      "pizzeria_count": 3,
+      "location_count": 3
     },
     "Lugano": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:23:35.299614",
+      "pizzeria_count": 3,
+      "location_count": 3
     },
     "Maceió": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:23:40.384046",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Maddaloni (CE)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:23:45.791616",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Madison": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:23:51.502559",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Magione (PG)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:23:56.521217",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Makarska": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:24:01.264085",
+      "pizzeria_count": 1,
+      "location_count": 4
     },
     "Makati": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:24:08.606549",
+      "pizzeria_count": 2,
+      "location_count": 7
     },
     "Malaga": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:24:13.985972",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Malmö": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:24:19.152037",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Manchester": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:24:27.506788",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Mandaue": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:24:32.656074",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "Marano Vicentino (VI)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:24:37.617122",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Margherita di Savoia (BT)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:24:42.430813",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Marin-Epagnier": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:24:47.356591",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Marradi (FI)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:24:52.490634",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Marsaskala": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:24:57.786408",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Marseille": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:25:04.372851",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Martellago (VE)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:25:09.147642",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Martina Franca (TA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:25:14.389508",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Marzana (VR)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:25:19.991931",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Massa": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:25:24.680082",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Massapequa Park": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:25:29.555343",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Massarosa (LU)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:25:34.758255",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Matera": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:25:41.963461",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Melbourne": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:25:56.341743",
+      "pizzeria_count": 4,
+      "location_count": 5
     },
     "Melegnano (MI)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:26:04.175608",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Merano (BZ)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:26:11.272580",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Messina": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:26:24.412311",
+      "pizzeria_count": 4,
+      "location_count": 5
     },
     "Mestre (VE)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:26:36.010969",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Metro Manila": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:26:43.389203",
+      "pizzeria_count": 1,
+      "location_count": 4
     },
     "Milano": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:28:39.955791",
+      "pizzeria_count": 29,
+      "location_count": 52
     },
     "Milazzo (ME)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:28:44.972648",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Mineola": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:28:49.963574",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Minervino Murge (BT)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:28:54.561561",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Mira (VE)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:28:59.532209",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Miraflores": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:29:04.574793",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Mirano (VE)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:29:09.630130",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Modena": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:29:26.437464",
+      "pizzeria_count": 2,
+      "location_count": 5
     },
     "Modica (RG)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:29:31.342650",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "Molfetta (BA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:29:36.092351",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Monopoli (BA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:29:41.003324",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Monsampolo del Tronto (AP)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:29:45.879220",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Montecatini-Terme (PT)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:29:50.887426",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Montepaone (CZ)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:29:55.479538",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Montepaone Lido (CZ)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:30:00.380419",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Monteroduni (IS)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:30:05.253384",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Monterosso al Mare (SP)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:30:10.469954",
+      "pizzeria_count": 1,
+      "location_count": 5
     },
     "Montesano Scalo (SA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:30:15.362493",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Montesarchio (BN)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:30:20.261271",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Montesilvano (PE)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:30:25.121594",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Montpellier": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:30:30.657942",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Monza": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:30:44.929619",
+      "pizzeria_count": 3,
+      "location_count": 5
     },
     "Morton Grove": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:30:49.636387",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Mosciano Sant'Angelo (TE)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:30:54.587134",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Mottola (TA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:30:59.713717",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Mount Vernon": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:31:04.778836",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Munich": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:31:09.603932",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Murcia": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:31:16.811266",
+      "pizzeria_count": 1,
+      "location_count": 4
     },
     "Naantaliin": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:31:22.076096",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "Nagoya": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:31:28.842301",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Napa": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:31:34.021354",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Napoli": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:33:15.920692",
+      "pizzeria_count": 37,
+      "location_count": 52
     },
     "Neudorf-Weimershof": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:33:22.282803",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "New Delhi": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:33:27.496278",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "New Haven": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:33:34.843856",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "New Orleans": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:33:42.510644",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Newport": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:33:47.331543",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Nice": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:33:52.586150",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Nichelino (TO)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:33:58.127223",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Nimes": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:34:03.150590",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Niseko": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:34:08.169980",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "Nocera Inferiore (SA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:34:19.472886",
+      "pizzeria_count": 2,
+      "location_count": 4
     },
     "Nociglia (LE)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:34:24.731510",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Nola (NA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:34:38.538710",
+      "pizzeria_count": 3,
+      "location_count": 5
     },
     "Nonantola (MO)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:34:43.580484",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Nova Gorica": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:34:48.652295",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Novara": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:34:57.612425",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Nucetto (CN)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:35:02.474048",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Nuremberg": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:35:07.447665",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Oakland": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:35:12.295206",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Ortezzano (FM)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:35:17.762561",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Orvieto (TR)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:35:23.510235",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Osaka": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:35:30.800101",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Oslo": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:35:43.915427",
+      "pizzeria_count": 4,
+      "location_count": 7
     },
     "Ottaviano (NA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:35:49.123480",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Oulx (TO)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:35:54.526826",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Ourinhos": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:35:59.690015",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Oviedo": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:36:05.684856",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Pabianice": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:36:15.859805",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Padova": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:36:27.203850",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Palata Pepoli (BO)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:36:37.214828",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Palermo": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:37:16.824757",
+      "pizzeria_count": 14,
+      "location_count": 18
     },
     "Palinuro (SA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:37:22.277086",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Palma Campania (NA)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:37:27.897522",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Pampatar": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:37:32.952261",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Paracuellos de Jarama": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:37:38.222483",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Parma": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:37:52.866112",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Passo Fundo": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:37:58.405058",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Pedro Juan Caballero": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:38:03.614747",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Perth": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:38:09.106630",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Perugia": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:38:31.176430",
+      "pizzeria_count": 4,
+      "location_count": 4
     },
     "Pesaro": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:38:36.508884",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Pescara": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:38:43.664480",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Pesche (IS)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:38:48.830198",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Petah Tikva": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:38:53.834927",
+      "pizzeria_count": 1,
+      "location_count": 3
     },
     "Philadelphia": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:39:04.992560",
+      "pizzeria_count": 2,
+      "location_count": 5
     },
     "Phoenix": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:39:12.170869",
+      "pizzeria_count": 2,
+      "location_count": 7
     },
     "Phuket": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:39:19.368762",
+      "pizzeria_count": 2,
+      "location_count": 2
     },
     "Piacenza": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:39:30.106559",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Pietrasanta (LU)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:39:35.529874",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Pieve a Nievole (PT)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:39:40.250743",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Pineda de Mar": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:39:45.315192",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Pistoia": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:39:50.075694",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Pittsburgh": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:39:54.987513",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Plzen": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:40:00.844870",
+      "pizzeria_count": 1,
+      "location_count": 2
     },
     "Policoro (MT)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:40:05.921352",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Polistena (RC)": {
-      "status": "pending",
-      "scraped_at": null,
-      "pizzeria_count": 0,
-      "location_count": 0
+      "status": "scraped",
+      "scraped_at": "2025-10-04T23:40:11.095722",
+      "pizzeria_count": 1,
+      "location_count": 1
     },
     "Pomigliano d'Arco (NA)": {
       "status": "pending",
@@ -3551,9 +3551,9 @@
   },
   "stats": {
     "total_cities": 591,
-    "scraped_cities": 89,
-    "pending_cities": 502,
-    "total_pizzerias": 258,
-    "total_locations": 376
+    "scraped_cities": 415,
+    "pending_cities": 176,
+    "total_pizzerias": 769,
+    "total_locations": 1129
   }
 }

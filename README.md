@@ -186,8 +186,6 @@ deactivate
 - 🇵🇹 Portugal: Lisbon
 - 🇳🇱 Netherlands: Amsterdam
 
-See [SCRAPED_CITIES.md](./SCRAPED_CITIES.md) for detailed tracking.
-
 ## 🚢 Deploy
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
