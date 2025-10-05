@@ -118,10 +118,81 @@ def extract_pizzeria_details(pizzeria_url):
         soup = BeautifulSoup(response.content, 'html.parser')
 
         result = {
-            'locations': []
+            'locations': [],
+            'awards': []
         }
 
-        # Find all Google Maps links
+        # Extract awards (e.g., "3° 50 Top World Artisan Pizza Chains 2024" or "50 Top Pizza Europa 2025")
+        # Look for text patterns that match award rankings
+        # Remove navigation, footer, and other non-content areas to avoid false matches
+        for element in soup.find_all(['nav', 'footer', 'header']):
+            element.decompose()
+
+        # Also remove common navigation classes
+        for element in soup.find_all(class_=lambda x: x and any(term in str(x).lower() for term in ['menu', 'nav', 'footer', 'header', 'sidebar'])):
+            element.decompose()
+
+        text_content = soup.get_text()
+
+        # Patterns with rankings
+        ranked_patterns = [
+            r'(\d+)°\s+([^\n]+(?:Top|Award|Prize)[^\n]+\d{4})',  # Matches "3° 50 Top World... 2024"
+            r'(\d+)°\s+([^\n]+(?:Top|Award|Prize)[^\n]+)',       # Without year
+        ]
+
+        # Patterns without rankings (just awards/recognitions)
+        unranked_patterns = [
+            r'(50\s+Top\s+Pizza[^\n]+\d{4}(?:\s*-[^\n]+)?)',     # "50 Top Pizza Europa 2025 - Excellent Pizzerias"
+            r'(50\s+Top\s+[^\n]+\d{4}(?:\s*-[^\n]+)?)',          # "50 Top World... 2024 - Special mention"
+        ]
+
+        seen_awards = set()
+        seen_award_names = set()  # Track award names to avoid ranked/unranked duplicates
+
+        # Extract ranked awards (priority over unranked)
+        for pattern in ranked_patterns:
+            matches = re.finditer(pattern, text_content, re.I)
+            for match in matches:
+                rank = match.group(1)
+                award_name = match.group(2).strip()
+                # Clean up the award name (remove extra whitespace)
+                award_name = ' '.join(award_name.split())
+                award_name_normalized = award_name.lower()
+
+                # Deduplicate awards
+                award_key = (int(rank), award_name)
+                if award_key not in seen_awards:
+                    seen_awards.add(award_key)
+                    seen_award_names.add(award_name_normalized)
+                    result['awards'].append({
+                        'rank': int(rank),
+                        'name': award_name
+                    })
+
+        # Extract unranked awards (only if not already found as ranked)
+        for pattern in unranked_patterns:
+            matches = re.finditer(pattern, text_content, re.I)
+            for match in matches:
+                award_name = match.group(1).strip()
+                # Clean up the award name (remove extra whitespace)
+                award_name = ' '.join(award_name.split())
+                award_name_normalized = award_name.lower()
+
+                # Skip if we already have this award (ranked or unranked)
+                if award_name_normalized in seen_award_names:
+                    continue
+
+                # Deduplicate awards (use None for rank)
+                award_key = (None, award_name)
+                if award_key not in seen_awards:
+                    seen_awards.add(award_key)
+                    seen_award_names.add(award_name_normalized)
+                    result['awards'].append({
+                        'rank': None,
+                        'name': award_name
+                    })
+
+        # Find all Google Maps links (standard format)
         maps_links = soup.find_all('a', href=re.compile(r'google\.com/maps/dir'))
 
         for maps_link in maps_links:
@@ -160,6 +231,37 @@ def extract_pizzeria_details(pizzeria_url):
 
             if location['lat'] and location['lng']:
                 result['locations'].append(location)
+
+        # Also extract JavaScript map data (for pages with embedded maps)
+        scripts = soup.find_all('script')
+        for script in scripts:
+            script_text = script.string
+            if script_text and ('lat:' in script_text or 'lng:' in script_text):
+                # Find all lat/lng/address groups in JavaScript
+                js_locations = re.finditer(
+                    r'lat:\s*(-?\d+\.\d+),\s*lng:\s*(-?\d+\.\d+),\s*address:\s*["\']([^"\']+)["\']',
+                    script_text,
+                    re.MULTILINE
+                )
+
+                for match in js_locations:
+                    location = {
+                        'lat': float(match.group(1)),
+                        'lng': float(match.group(2)),
+                        'address': match.group(3)
+                    }
+                    result['locations'].append(location)
+
+        # Deduplicate locations by coordinates (same lat/lng = same place)
+        seen_coords = set()
+        unique_locations = []
+        for location in result['locations']:
+            coord_key = (location['lat'], location['lng'])
+            if coord_key not in seen_coords:
+                seen_coords.add(coord_key)
+                unique_locations.append(location)
+
+        result['locations'] = unique_locations
 
         return result
 
@@ -200,7 +302,8 @@ def save_data(data_by_city):
                             "address": location['address'],
                             "url": pizzeria['url'],
                             "location_index": location_idx,
-                            "total_locations": len(pizzeria['locations'])
+                            "total_locations": len(pizzeria['locations']),
+                            "awards": pizzeria.get('awards', [])
                         }
                     }
                     geojson['features'].append(feature)
@@ -266,14 +369,19 @@ def scrape_cities(cities_to_scrape, progress=None):
 
             details = extract_pizzeria_details(pizzeria['url'])
 
-            if details and details['locations']:
+            if details:
                 pizzeria_data = {
                     'name': pizzeria['name'],
                     'url': pizzeria['url'],
-                    'locations': details['locations']
+                    'locations': details['locations'],
+                    'awards': details.get('awards', [])
                 }
                 city_data['pizzerias'].append(pizzeria_data)
-                print(f"        {len(details['locations'])} location(s)")
+
+                # Show info
+                location_info = f"{len(details['locations'])} location(s)" if details['locations'] else "no locations"
+                awards_info = f", {len(details['awards'])} award(s)" if details.get('awards') else ""
+                print(f"        {location_info}{awards_info}")
 
             time.sleep(RATE_LIMIT)
 
@@ -334,6 +442,9 @@ def auto_scrape_cities():
     for city in all_cities:
         progress_module.mark_city_pending(progress, city['name'])
 
+    # Save progress after marking all cities
+    progress_module.save_progress(progress)
+
     # Get pending cities
     pending_cities = progress_module.get_pending_cities(progress, all_cities)
 
@@ -381,14 +492,19 @@ def auto_scrape_cities():
 
                 details = extract_pizzeria_details(pizzeria['url'])
 
-                if details and details['locations']:
+                if details:
                     pizzeria_data = {
                         'name': pizzeria['name'],
                         'url': pizzeria['url'],
-                        'locations': details['locations']
+                        'locations': details['locations'],
+                        'awards': details.get('awards', [])
                     }
                     city_data['pizzerias'].append(pizzeria_data)
-                    print(f"        {len(details['locations'])} location(s)")
+
+                    # Show info
+                    location_info = f"{len(details['locations'])} location(s)" if details['locations'] else "no locations"
+                    awards_info = f", {len(details['awards'])} award(s)" if details.get('awards') else ""
+                    print(f"        {location_info}{awards_info}")
 
                 time.sleep(RATE_LIMIT)
 
