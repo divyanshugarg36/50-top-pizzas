@@ -255,7 +255,24 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
         }, 100);
       }
     }
-  }, [isLeafletReady, cityData, selectedCity, bookmarks]);
+  }, [isLeafletReady, cityData, selectedCity]);
+
+  // Update marker icons when bookmarks change (without recreating all markers)
+  useEffect(() => {
+    if (!isLeafletReady || !pizzaIconRef.current || !bookmarkedIconRef.current) return;
+    if (markersMapRef.current.size === 0) return;
+
+    // Update each marker's icon based on bookmark status
+    markersMapRef.current.forEach((marker, markerKey) => {
+      const parts = markerKey.split('-');
+      const idx = parseInt(parts[parts.length - 1]);
+      const pizzeriaName = parts.slice(1, -1).join('-');
+      const cityName = parts[0];
+      const isBookmarked = isLocationBookmarked(pizzeriaName, cityName, idx);
+      const icon = isBookmarked ? bookmarkedIconRef.current! : pizzaIconRef.current!;
+      marker.setIcon(icon);
+    });
+  }, [bookmarks, isLeafletReady]);
 
   // Handle selected location change
   useEffect(() => {
