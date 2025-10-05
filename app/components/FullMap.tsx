@@ -4,6 +4,11 @@ import { useEffect, useRef, useState } from 'react';
 import type L from 'leaflet';
 import { SpinnerIcon, LocationIcon } from '../icons';
 
+interface Award {
+  rank: number | null;
+  name: string;
+}
+
 interface Location {
   address: string | null;
   lat: number;
@@ -14,6 +19,7 @@ interface Pizzeria {
   name: string;
   url: string;
   locations: Location[];
+  awards?: Award[];
 }
 
 interface BookmarkedLocation {
@@ -42,6 +48,7 @@ interface MapProps {
     location: Location;
     url: string;
     markerKey: string;
+    awards?: Award[];
   }>) => void;
 }
 
@@ -171,6 +178,19 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
               <h3 style="margin: 0 0 10px 0; color: #dc2626; font-size: 16px; font-weight: bold;">
                 ${pizzeria.name}
               </h3>
+              ${pizzeria.awards && pizzeria.awards.length > 0
+                ? pizzeria.awards.map(award => `
+                    <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 6px;">
+                      <span style="color: #ca8a04; font-weight: bold; font-size: 13px;">
+                        ${award.rank ? `#${award.rank}` : '🏆'}
+                      </span>
+                      <span style="font-size: 12px; color: #374151; font-weight: 500;">
+                        ${award.name}
+                      </span>
+                    </div>
+                  `).join('')
+                : ''
+              }
               <p style="margin: 5px 0; font-size: 13px; color: #555;">
                 🏙️ ${cityName}
               </p>
@@ -373,7 +393,7 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
         break;
     }
 
-    const tileOptions: any = {
+    const tileOptions: Record<string, unknown> = {
       attribution,
       maxZoom: 19,
       updateWhenIdle: false,
@@ -423,6 +443,7 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
       location: Location;
       url: string;
       markerKey: string;
+      awards?: Award[];
     }> = [];
 
     Object.entries(cityData).forEach(([cityName, cityInfo]) => {
@@ -441,7 +462,8 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
             distance,
             location,
             url: pizzeria.url,
-            markerKey: `${cityName}-${pizzeria.name}-${idx}`
+            markerKey: `${cityName}-${pizzeria.name}-${idx}`,
+            awards: pizzeria.awards
           });
         });
       });

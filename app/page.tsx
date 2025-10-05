@@ -7,6 +7,11 @@ import { getBookmarks, toggleBookmark, isBookmarked, type BookmarkedLocation } f
 import { useLocalState } from './hooks/useLocalState';
 import { SettingsIcon, CloseIcon, SearchIcon, ChevronRightIcon, ChevronDownIcon, MenuIcon, NavigationIcon, BookmarkIcon, CheckCircleIcon } from './icons';
 
+interface Award {
+  rank: number | null;
+  name: string;
+}
+
 interface Location {
   address: string | null;
   lat: number;
@@ -17,6 +22,7 @@ interface Pizzeria {
   name: string;
   url: string;
   locations: Location[];
+  awards?: Award[];
 }
 
 interface CityData {
@@ -36,7 +42,7 @@ export default function Home() {
   const [expandedPizzeria, setExpandedPizzeria] = useState<string | null>(null);
   const [stats, setStats] = useState<string>('Loading data...');
   const [sidebarCollapsed, setSidebarCollapsed] = useState(true);
-  const [activeTab, setActiveTab] = useState<'all' | 'nearest' | 'bookmarks'>('all');
+  const [activeTab, setActiveTab] = useState<'all' | 'nearest' | 'bookmarks'>('nearest');
   const [nearestPizzerias, setNearestPizzerias] = useState<Array<{
     name: string;
     city: string;
@@ -44,6 +50,7 @@ export default function Home() {
     location: Location;
     url: string;
     markerKey: string;
+    awards?: Award[];
   }>>([]);
   const [autoTriggerLocation, setAutoTriggerLocation] = useState(false);
   const [maxDistance, setMaxDistance] = useState(30); // km
@@ -234,6 +241,21 @@ export default function Home() {
                       <h3 className="text-red-600 font-semibold text-base mb-2">
                         {pizzeria.name}
                       </h3>
+                      {/* Awards */}
+                      {pizzeria.awards && pizzeria.awards.length > 0 && (
+                        <div className="mb-2 space-y-1">
+                          {pizzeria.awards.map((award, idx) => (
+                            <div key={idx} className="flex items-center gap-1.5">
+                              <span className="text-yellow-600 font-bold text-sm">
+                                {award.rank ? `#${award.rank}` : '🏆'}
+                              </span>
+                              <span className="text-xs text-gray-700 font-medium">
+                                {award.name}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
                       <div className="flex gap-2 mb-2">
                         <span className="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">
                           {cityName}
@@ -446,6 +468,21 @@ export default function Home() {
                   <h3 className="text-red-600 font-semibold text-sm mb-1 truncate">
                     {pizzeria.name}
                   </h3>
+                  {/* Awards */}
+                  {pizzeria.awards && pizzeria.awards.length > 0 && (
+                    <div className="mb-1 space-y-0.5">
+                      {pizzeria.awards.map((award, idx) => (
+                        <div key={idx} className="flex items-center gap-1">
+                          <span className="text-yellow-600 font-bold text-xs">
+                            {award.rank ? `#${award.rank}` : '🏆'}
+                          </span>
+                          <span className="text-xs text-gray-700 font-medium truncate">
+                            {award.name}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                   <div className="flex gap-2 flex-wrap mb-1">
                     <span className="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-0.5 rounded">
                       📍 {pizzeria.city}
@@ -621,17 +658,6 @@ export default function Home() {
             {/* Tabs */}
             <div className="flex border-b border-gray-200 bg-gray-50">
               <button
-                onClick={() => setActiveTab('all')}
-                className={`flex-1 px-2 md:px-4 py-3 text-xs md:text-sm font-semibold transition-all ${
-                  activeTab === 'all'
-                    ? 'bg-white text-red-600 border-b-2 border-red-600'
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                }`}
-              >
-                <span className="hidden sm:inline">All Pizzerias</span>
-                <span className="sm:hidden">All</span>
-              </button>
-              <button
                 onClick={() => setActiveTab('nearest')}
                 className={`flex-1 px-2 md:px-4 py-3 text-xs md:text-sm font-semibold transition-all ${
                   activeTab === 'nearest'
@@ -641,6 +667,17 @@ export default function Home() {
               >
                 <span className="hidden sm:inline">Nearest</span>
                 <span className="sm:hidden">Near</span> ({nearestPizzerias.length})
+              </button>
+              <button
+                onClick={() => setActiveTab('all')}
+                className={`flex-1 px-2 md:px-4 py-3 text-xs md:text-sm font-semibold transition-all ${
+                  activeTab === 'all'
+                    ? 'bg-white text-red-600 border-b-2 border-red-600'
+                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                }`}
+              >
+                <span className="hidden sm:inline">All Pizzerias</span>
+                <span className="sm:hidden">All</span>
               </button>
               {bookmarks.length > 0 && (
                 <button
