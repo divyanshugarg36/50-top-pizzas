@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Select from 'react-select';
 import {FullMap } from './components/FullMap';
 import { getBookmarks, toggleBookmark, isBookmarked, type BookmarkedLocation } from './utils/bookmarks';
+import { useLocalState } from './hooks/useLocalState';
 
 interface Location {
   address: string | null;
@@ -29,11 +30,13 @@ interface City {
 export default function Home() {
   const [cityData, setCityData] = useState<Record<string, CityData>>({});
   const [allCities, setAllCities] = useState<City[]>([]);
-  const [selectedCity, setSelectedCity] = useState<string>('');
+  const [selectedCity, setSelectedCity] = useLocalState<string>('50toppizza_selected_city', '');
   const [selectedPizzeria, setSelectedPizzeria] = useState<string | null>(null);
   const [expandedPizzeria, setExpandedPizzeria] = useState<string | null>(null);
   const [stats, setStats] = useState<string>('Loading data...');
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(
+    typeof window !== 'undefined' ? window.innerWidth < 768 : true
+  );
   const [activeTab, setActiveTab] = useState<'all' | 'nearest' | 'bookmarks'>('all');
   const [nearestPizzerias, setNearestPizzerias] = useState<Array<{
     name: string;
@@ -588,57 +591,60 @@ export default function Home() {
   };
 
   return (
-    <div className="flex h-screen">
+    <div className="flex flex-col md:flex-row h-screen fixed inset-0 md:static overflow-hidden">
       {/* Sidebar */}
       <div className={`bg-white flex flex-col border-r border-gray-200 transition-all duration-300 ${
-        sidebarCollapsed ? 'w-0' : 'w-96'
+        sidebarCollapsed ? 'hidden md:w-0' : 'h-screen md:h-full w-full md:w-96'
       }`}>
         {!sidebarCollapsed && (
           <>
             {/* Header */}
-            <div className="bg-red-600 text-white p-5">
-              <h1 className="text-2xl font-bold mb-1">🍕 50 Top Pizza</h1>
-              <p className="text-sm opacity-90">Explore the world&apos;s best pizzerias</p>
+            <div className="bg-red-600 text-white p-3 md:p-5">
+              <h1 className="text-xl md:text-2xl font-bold mb-1">🍕 50 Top Pizza</h1>
+              <p className="text-xs md:text-sm opacity-90">Explore the world&apos;s best pizzerias</p>
             </div>
 
             {/* Tabs */}
             <div className="flex border-b border-gray-200 bg-gray-50">
               <button
                 onClick={() => setActiveTab('all')}
-                className={`flex-1 px-4 py-3 text-sm font-semibold transition-all ${
+                className={`flex-1 px-2 md:px-4 py-3 text-xs md:text-sm font-semibold transition-all ${
                   activeTab === 'all'
                     ? 'bg-white text-red-600 border-b-2 border-red-600'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                 }`}
               >
-                All Pizzerias
+                <span className="hidden sm:inline">All Pizzerias</span>
+                <span className="sm:hidden">All</span>
               </button>
               <button
                 onClick={() => setActiveTab('nearest')}
-                className={`flex-1 px-4 py-3 text-sm font-semibold transition-all ${
+                className={`flex-1 px-2 md:px-4 py-3 text-xs md:text-sm font-semibold transition-all ${
                   activeTab === 'nearest'
                     ? 'bg-white text-red-600 border-b-2 border-red-600'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                 }`}
               >
-                Nearest ({nearestPizzerias.length})
+                <span className="hidden sm:inline">Nearest</span>
+                <span className="sm:hidden">Near</span> ({nearestPizzerias.length})
               </button>
               {bookmarks.length > 0 && (
                 <button
                   onClick={() => setActiveTab('bookmarks')}
-                  className={`flex-1 px-4 py-3 text-sm font-semibold transition-all ${
+                  className={`flex-1 px-2 md:px-4 py-3 text-xs md:text-sm font-semibold transition-all ${
                     activeTab === 'bookmarks'
                       ? 'bg-white text-red-600 border-b-2 border-red-600'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                   }`}
                 >
-                  Bookmarks ({bookmarks.length})
+                  <span className="hidden sm:inline">Bookmarks</span>
+                  <span className="sm:hidden">Saved</span> ({bookmarks.length})
                 </button>
               )}
             </div>
 
             {/* Search Bar */}
-            <div className="p-4 bg-gray-50 border-b border-gray-200">
+            <div className="p-3 md:p-4 bg-gray-50 border-b border-gray-200">
               <label className="block text-xs font-semibold text-gray-600 mb-2 uppercase">
                 Search Pizzerias
               </label>
@@ -670,7 +676,7 @@ export default function Home() {
 
             {/* City Selector - Only show for "All" tab */}
             {activeTab === 'all' && (
-              <div className="p-4 bg-gray-50 border-b border-gray-200">
+              <div className="p-3 md:p-4 bg-gray-50 border-b border-gray-200">
                 <label className="block text-xs font-semibold text-gray-600 mb-2 uppercase">
                   Select City
                 </label>
@@ -718,22 +724,22 @@ export default function Home() {
             )}
 
             {/* Stats */}
-            <div className="p-4 bg-gray-50 border-b border-gray-200 text-sm text-gray-600">
+            <div className="p-2 md:p-4 bg-gray-50 border-b border-gray-200 text-xs md:text-sm text-gray-600">
               {stats}
             </div>
 
             {/* Content - Conditional based on active tab */}
-            <div className="flex-1 overflow-y-auto p-4">
+            <div className="flex-1 overflow-y-auto p-2 md:p-4">
               {activeTab === 'all' ? renderPizzeriaList() : activeTab === 'nearest' ? renderNearestList() : renderBookmarksList()}
             </div>
           </>
         )}
       </div>
 
-      {/* Collapse/Expand Button */}
+      {/* Collapse/Expand Button - Desktop only, mobile uses full screen toggle */}
       <button
         onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
-        className="absolute left-0 top-1/2 -translate-y-1/2 bg-red-600 text-white p-2 rounded-r-md shadow-lg hover:bg-red-700 transition-all z-[1000]"
+        className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 bg-red-600 text-white p-2 rounded-r-md shadow-lg hover:bg-red-700 transition-all z-[1000]"
         style={{ left: sidebarCollapsed ? '0' : '384px' }}
       >
         <svg
@@ -743,6 +749,25 @@ export default function Home() {
           viewBox="0 0 24 24"
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      {/* Mobile Toggle Button - Bottom of screen */}
+      <button
+        onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
+        className="md:hidden fixed bottom-4 right-4 bg-red-600 text-white p-4 rounded-full shadow-lg hover:bg-red-700 transition-all z-[9999]"
+      >
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          {sidebarCollapsed ? (
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          ) : (
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          )}
         </svg>
       </button>
 
