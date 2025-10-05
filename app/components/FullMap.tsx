@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import type L from 'leaflet';
+import { SpinnerIcon, LocationIcon } from '../icons';
 
 interface Location {
   address: string | null;
@@ -33,6 +34,7 @@ interface MapProps {
   autoTriggerLocation?: boolean;
   maxDistance?: number;
   bookmarks?: BookmarkedLocation[];
+  mapStyle?: 'default' | 'light' | 'dark' | 'satellite';
   onNearestPizzeriasUpdate?: (pizzerias: Array<{
     name: string;
     city: string;
@@ -43,7 +45,7 @@ interface MapProps {
   }>) => void;
 }
 
-export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLocation, maxDistance = 30, bookmarks = [], onNearestPizzeriasUpdate }: MapProps) =>{
+export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLocation, maxDistance = 30, bookmarks = [], mapStyle = 'default', onNearestPizzeriasUpdate }: MapProps) =>{
   const mapRef = useRef<L.Map | null>(null);
   const markersRef = useRef<L.Marker[]>([]);
   const markersMapRef = useRef<Map<string, L.Marker>>(new Map());
@@ -57,6 +59,7 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
   const [locationError, setLocationError] = useState<string | null>(null);
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [isLeafletReady, setIsLeafletReady] = useState(false);
+  const tileLayerRef = useRef<L.TileLayer | null>(null);
 
   // Initialize map once
   useEffect(() => {
@@ -96,9 +99,9 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
       // Initialize map
       mapRef.current = L.map(mapContainerRef.current!).setView([41.9, 12.5], 6);
 
-      // Add OpenStreetMap tiles
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors',
+      // Add initial tile layer (Default OpenStreetMap)
+      tileLayerRef.current = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         maxZoom: 19,
       }).addTo(mapRef.current);
 
@@ -155,7 +158,10 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
 
           const marker = LeafletRef.current.marker([location.lat, location.lng], { icon });
 
-          // Create popup content
+          // Create popup content with bookmark button
+          const newMarkerKey = `${cityName}-${pizzeria.name}-${idx}`;
+          const bookmarkButtonId = `bookmark-${newMarkerKey}`;
+
           const popupContent = `
             <div style="padding: 10px; min-width: 200px;">
               <h3 style="margin: 0 0 10px 0; color: #dc2626; font-size: 16px; font-weight: bold;">
@@ -170,21 +176,56 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
                     Location ${idx + 1} of ${pizzeria.locations.length}
                   </p>`
                 : ''}
-              <div style="margin-top: 10px; display: flex; gap: 12px; flex-wrap: wrap;">
+              <div style="margin-top: 10px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
                 <a href="https://www.google.com/maps/dir/?api=1&destination=${location.lat},${location.lng}" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none; font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 4px;">
                   <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                   </svg>
                   Navigate
                 </a>
-                <a href="${pizzeria.url}" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: none; font-size: 13px;">
+                <a href="${pizzeria.url}" target="_blank" rel="noopener noreferrer" style="color: #dc2626; text-decoration: none; font-size: 13px; font-weight: 600;">
                   More info →
                 </a>
+                <button
+                  id="${bookmarkButtonId}"
+                  style="background: none; border: none; cursor: pointer; color: ${isBookmarked ? '#eab308' : '#9ca3af'}; display: inline-flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 600; padding: 0; transition: color 0.2s;"
+                  title="${isBookmarked ? 'Remove bookmark' : 'Add bookmark'}"
+                >
+                  <svg style="width: 16px; height: 16px;" fill="${isBookmarked ? 'currentColor' : 'none'}" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                  </svg>
+                  ${isBookmarked ? 'Saved' : 'Save'}
+                </button>
               </div>
             </div>
           `;
 
           marker.bindPopup(popupContent);
+
+          // Add click handler for bookmark button after popup opens
+          marker.on('popupopen', () => {
+            const bookmarkBtn = document.getElementById(bookmarkButtonId);
+            if (bookmarkBtn) {
+              bookmarkBtn.onclick = (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+
+                // Dispatch custom event to parent
+                window.dispatchEvent(new CustomEvent('toggleBookmark', {
+                  detail: {
+                    pizzeriaName: pizzeria.name,
+                    city: cityName,
+                    locationIndex: idx,
+                    address: location.address,
+                    lat: location.lat,
+                    lng: location.lng,
+                    url: pizzeria.url
+                  }
+                }));
+              };
+            }
+          });
+
           marker.addTo(mapRef.current!);
 
           // Store marker with key
@@ -280,6 +321,43 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
     if (!userLocation || !cityData) return;
     findNearestPizzerias(userLocation.lat, userLocation.lng);
   }, [maxDistance]);
+
+  // Update map style when prop changes
+  useEffect(() => {
+    if (!mapRef.current || !tileLayerRef.current || !LeafletRef.current || !isLeafletReady) return;
+
+    // Remove current tile layer
+    tileLayerRef.current.remove();
+
+    // Add new tile layer based on style
+    let tileUrl = '';
+    let attribution = '';
+
+    switch (mapStyle) {
+      case 'default':
+        tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+        attribution = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+        break;
+      case 'light':
+        tileUrl = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+        attribution = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a>';
+        break;
+      case 'dark':
+        tileUrl = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+        attribution = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a>';
+        break;
+      case 'satellite':
+        tileUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
+        attribution = '© Esri, Maxar, Earthstar Geographics, and the GIS User Community';
+        break;
+    }
+
+    tileLayerRef.current = LeafletRef.current.tileLayer(tileUrl, {
+      attribution,
+      maxZoom: 19,
+      subdomains: mapStyle === 'satellite' ? '' : 'abcd',
+    }).addTo(mapRef.current);
+  }, [mapStyle, isLeafletReady]);
 
   // Calculate distance between two coordinates (Haversine formula)
   const calculateDistance = (lat1: number, lon1: number, lat2: number, lon2: number): number => {
@@ -415,15 +493,9 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
         title={locating ? "Locating..." : "Show my location"}
       >
         {locating ? (
-          <svg className="animate-spin h-6 w-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-          </svg>
+          <SpinnerIcon className="h-6 w-6 text-blue-600" />
         ) : (
-          <svg className="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
+          <LocationIcon className="h-6 w-6 text-blue-600" />
         )}
       </button>
 

@@ -5,6 +5,7 @@ import Select from 'react-select';
 import {FullMap } from './components/FullMap';
 import { getBookmarks, toggleBookmark, isBookmarked, type BookmarkedLocation } from './utils/bookmarks';
 import { useLocalState } from './hooks/useLocalState';
+import { SettingsIcon, CloseIcon, SearchIcon, ChevronRightIcon, ChevronDownIcon, MenuIcon, NavigationIcon, BookmarkIcon, CheckCircleIcon } from './icons';
 
 interface Location {
   address: string | null;
@@ -50,6 +51,8 @@ export default function Home() {
   const [maxDistance, setMaxDistance] = useState(30); // km
   const [searchQuery, setSearchQuery] = useState('');
   const [bookmarks, setBookmarks] = useState<BookmarkedLocation[]>([]);
+  const [mapStyle, setMapStyle] = useLocalState<'default' | 'light' | 'dark' | 'satellite'>('50toppizza_map_style', 'default');
+  const [showSettings, setShowSettings] = useState(false);
 
   // Load data and check for location permissions
   useEffect(() => {
@@ -80,6 +83,28 @@ export default function Home() {
   // Load bookmarks from localStorage
   useEffect(() => {
     setBookmarks(getBookmarks());
+  }, []);
+
+  // Listen for bookmark toggle events from map
+  useEffect(() => {
+    const handleToggleBookmark = (event: CustomEvent) => {
+      const { pizzeriaName, city, locationIndex, address, lat, lng, url } = event.detail;
+      const result = toggleBookmark({
+        pizzeriaName,
+        city,
+        locationIndex,
+        address,
+        lat,
+        lng,
+        url
+      });
+      setBookmarks(result.bookmarks);
+    };
+
+    window.addEventListener('toggleBookmark', handleToggleBookmark as EventListener);
+    return () => {
+      window.removeEventListener('toggleBookmark', handleToggleBookmark as EventListener);
+    };
   }, []);
 
   // Update stats
@@ -224,9 +249,7 @@ export default function Home() {
                               onClick={(e) => e.stopPropagation()}
                               className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium"
                             >
-                              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                              </svg>
+                              <NavigationIcon className="w-3 h-3" />
                               Navigate
                             </a>
                             <button
@@ -241,9 +264,7 @@ export default function Home() {
                               }`}
                               title={isBookmarked(pizzeria.name, cityName, 0) ? 'Remove bookmark' : 'Add bookmark'}
                             >
-                              <svg className="w-4 h-4" fill={isBookmarked(pizzeria.name, cityName, 0) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                              </svg>
+                              <BookmarkIcon className="w-4 h-4" filled={isBookmarked(pizzeria.name, cityName, 0)} />
                               {isBookmarked(pizzeria.name, cityName, 0) ? 'Saved' : 'Save'}
                             </button>
                           </div>
@@ -253,14 +274,7 @@ export default function Home() {
                     {/* Expand/Collapse icon for multiple locations */}
                     {hasMultipleLocations && (
                       <div className="ml-2 text-gray-400">
-                        <svg
-                          className={`w-5 h-5 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
+                        <ChevronDownIcon className={`w-5 h-5 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
                       </div>
                     )}
                   </div>
@@ -305,9 +319,7 @@ export default function Home() {
                                       onClick={(e) => e.stopPropagation()}
                                       className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium"
                                     >
-                                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                                      </svg>
+                                      <NavigationIcon className="w-3 h-3" />
                                       Navigate
                                     </a>
                                     <button
@@ -322,9 +334,7 @@ export default function Home() {
                                       }`}
                                       title={isBookmarked(pizzeria.name, cityName, idx) ? 'Remove bookmark' : 'Add bookmark'}
                                     >
-                                      <svg className="w-4 h-4" fill={isBookmarked(pizzeria.name, cityName, idx) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                                      </svg>
+                                      <BookmarkIcon className="w-4 h-4" filled={isBookmarked(pizzeria.name, cityName, idx)} />
                                       {isBookmarked(pizzeria.name, cityName, idx) ? 'Saved' : 'Save'}
                                     </button>
                                   </div>
@@ -333,9 +343,7 @@ export default function Home() {
                             </div>
                             {isSelected && (
                               <span className="text-red-600">
-                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                                </svg>
+                                <CheckCircleIcon className="w-4 h-4" />
                               </span>
                             )}
                           </div>
@@ -452,9 +460,7 @@ export default function Home() {
                       onClick={(e) => e.stopPropagation()}
                       className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium"
                     >
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                      </svg>
+                      <NavigationIcon className="w-3 h-3" />
                       Navigate
                     </a>
                     <button
@@ -476,12 +482,10 @@ export default function Home() {
                         return isBookmarked(pizzeria.name, pizzeria.city, locationIndex) ? 'Remove bookmark' : 'Add bookmark';
                       })()}
                     >
-                      <svg className="w-4 h-4" fill={(() => {
+                      <BookmarkIcon className="w-4 h-4" filled={(() => {
                         const locationIndex = parseInt(pizzeria.markerKey.split('-').pop() || '0');
-                        return isBookmarked(pizzeria.name, pizzeria.city, locationIndex) ? 'currentColor' : 'none';
-                      })()} stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                      </svg>
+                        return isBookmarked(pizzeria.name, pizzeria.city, locationIndex);
+                      })()} />
                       {(() => {
                         const locationIndex = parseInt(pizzeria.markerKey.split('-').pop() || '0');
                         return isBookmarked(pizzeria.name, pizzeria.city, locationIndex) ? 'Saved' : 'Save';
@@ -553,9 +557,7 @@ export default function Home() {
                       onClick={(e) => e.stopPropagation()}
                       className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 font-medium"
                     >
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                      </svg>
+                      <NavigationIcon className="w-3 h-3" />
                       Navigate
                     </a>
                     <a
@@ -575,9 +577,7 @@ export default function Home() {
                       className="inline-flex items-center gap-1 text-xs text-yellow-600 hover:text-yellow-700 font-medium"
                       title="Remove bookmark"
                     >
-                      <svg className="w-4 h-4" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                      </svg>
+                      <BookmarkIcon className="w-4 h-4" filled={true} />
                       Remove
                     </button>
                   </div>
@@ -599,9 +599,16 @@ export default function Home() {
         {!sidebarCollapsed && (
           <>
             {/* Header */}
-            <div className="bg-red-600 text-white p-3 md:p-5">
+            <div className="bg-red-600 text-white p-3 md:p-5 relative">
               <h1 className="text-xl md:text-2xl font-bold mb-1">🍕 50 Top Pizza</h1>
-              <p className="text-xs md:text-sm opacity-90">Explore the world&apos;s best pizzerias</p>
+              <p className="text-xs md:text-sm opacity-90 pr-8">Explore the world&apos;s best pizzerias</p>
+              <button
+                onClick={() => setShowSettings(true)}
+                className="absolute top-1/2 -translate-y-1/2 right-3 md:right-5 p-2 hover:bg-red-700 rounded-full transition-colors"
+                title="Settings"
+              >
+                <SettingsIcon className="w-6 h-6" />
+              </button>
             </div>
 
             {/* Tabs */}
@@ -661,15 +668,11 @@ export default function Home() {
                     onClick={() => setSearchQuery('')}
                     className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
                   >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
+                    <CloseIcon className="w-4 h-4" />
                   </button>
                 )}
                 {!searchQuery && (
-                  <svg className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
+                  <SearchIcon className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                 )}
               </div>
             </div>
@@ -742,14 +745,7 @@ export default function Home() {
         className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 bg-red-600 text-white p-2 rounded-r-md shadow-lg hover:bg-red-700 transition-all z-[1000]"
         style={{ left: sidebarCollapsed ? '0' : '384px' }}
       >
-        <svg
-          className={`w-5 h-5 transition-transform ${sidebarCollapsed ? '' : 'rotate-180'}`}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
+        <ChevronRightIcon className={`w-5 h-5 transition-transform ${sidebarCollapsed ? '' : 'rotate-180'}`} />
       </button>
 
       {/* Mobile Toggle Button - Bottom of screen */}
@@ -757,18 +753,11 @@ export default function Home() {
         onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
         className="md:hidden fixed bottom-4 right-4 bg-red-600 text-white p-4 rounded-full shadow-lg hover:bg-red-700 transition-all z-[9999]"
       >
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          {sidebarCollapsed ? (
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          ) : (
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          )}
-        </svg>
+        {sidebarCollapsed ? (
+          <MenuIcon className="w-6 h-6" />
+        ) : (
+          <CloseIcon className="w-6 h-6" />
+        )}
       </button>
 
       {/* Map */}
@@ -779,10 +768,114 @@ export default function Home() {
         autoTriggerLocation={autoTriggerLocation}
         maxDistance={maxDistance}
         bookmarks={bookmarks}
+        mapStyle={mapStyle}
         onNearestPizzeriasUpdate={(pizzerias) => {
           setNearestPizzerias(pizzerias);
         }}
       />
+
+      {/* Settings Modal */}
+      {showSettings && (
+        <div className="fixed inset-0 flex items-center justify-center z-[10000] p-4" style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}>
+          <div className="bg-white rounded-lg shadow-xl max-w-md w-full max-h-[80vh] overflow-y-auto">
+            {/* Modal Header */}
+            <div className="bg-red-600 text-white p-4 rounded-t-lg flex items-center justify-between">
+              <h2 className="text-lg font-bold">⚙️ Settings</h2>
+              <button
+                onClick={() => setShowSettings(false)}
+                className="p-1 hover:bg-red-700 rounded-full transition-colors"
+              >
+                <CloseIcon className="w-6 h-6" />
+              </button>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-6 space-y-6">
+              {/* Map Style Setting */}
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-3">
+                  Map Style
+                </label>
+                <div className="grid grid-cols-2 gap-3">
+                  <button
+                    onClick={() => setMapStyle('default')}
+                    className={`flex flex-col items-center gap-2 p-4 rounded-lg border-2 transition-all ${
+                      mapStyle === 'default'
+                        ? 'border-red-600 bg-red-50'
+                        : 'border-gray-200 hover:border-gray-300'
+                    }`}
+                  >
+                    <span className="text-3xl">🗺️</span>
+                    <span className={`text-sm font-medium ${
+                      mapStyle === 'default' ? 'text-red-600' : 'text-gray-700'
+                    }`}>Default</span>
+                  </button>
+                  <button
+                    onClick={() => setMapStyle('light')}
+                    className={`flex flex-col items-center gap-2 p-4 rounded-lg border-2 transition-all ${
+                      mapStyle === 'light'
+                        ? 'border-red-600 bg-red-50'
+                        : 'border-gray-200 hover:border-gray-300'
+                    }`}
+                  >
+                    <span className="text-3xl">☀️</span>
+                    <span className={`text-sm font-medium ${
+                      mapStyle === 'light' ? 'text-red-600' : 'text-gray-700'
+                    }`}>Light</span>
+                  </button>
+                  <button
+                    onClick={() => setMapStyle('dark')}
+                    className={`flex flex-col items-center gap-2 p-4 rounded-lg border-2 transition-all ${
+                      mapStyle === 'dark'
+                        ? 'border-red-600 bg-red-50'
+                        : 'border-gray-200 hover:border-gray-300'
+                    }`}
+                  >
+                    <span className="text-3xl">🌙</span>
+                    <span className={`text-sm font-medium ${
+                      mapStyle === 'dark' ? 'text-red-600' : 'text-gray-700'
+                    }`}>Dark</span>
+                  </button>
+                  <button
+                    onClick={() => setMapStyle('satellite')}
+                    className={`flex flex-col items-center gap-2 p-4 rounded-lg border-2 transition-all ${
+                      mapStyle === 'satellite'
+                        ? 'border-red-600 bg-red-50'
+                        : 'border-gray-200 hover:border-gray-300'
+                    }`}
+                  >
+                    <span className="text-3xl">🛰️</span>
+                    <span className={`text-sm font-medium ${
+                      mapStyle === 'satellite' ? 'text-red-600' : 'text-gray-700'
+                    }`}>Satellite</span>
+                  </button>
+                </div>
+              </div>
+
+              {/* App Info */}
+              <div className="pt-4 border-t border-gray-200">
+                <h3 className="text-sm font-semibold text-gray-700 mb-2">About</h3>
+                <p className="text-xs text-gray-600 leading-relaxed">
+                  Explore the world&apos;s best pizzerias from 50 Top Pizza. Find nearby locations, save your favorites, and discover top-rated pizza spots worldwide.
+                </p>
+                <p className="text-xs text-gray-500 mt-2">
+                  Data source: <a href="https://www.50toppizza.it/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">50toppizza.it</a>
+                </p>
+              </div>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="p-4 bg-gray-50 rounded-b-lg border-t border-gray-200">
+              <button
+                onClick={() => setShowSettings(false)}
+                className="w-full px-4 py-2 bg-red-600 text-white rounded-lg font-medium hover:bg-red-700 transition-colors"
+              >
+                Done
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
