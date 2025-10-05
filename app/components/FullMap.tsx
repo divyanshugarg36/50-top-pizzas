@@ -63,12 +63,16 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
 
   // Initialize map once
   useEffect(() => {
-    if (!mapContainerRef.current || mapRef.current) return;
+    if (!mapContainerRef.current) return;
+    if (mapRef.current) return; // Already initialized
 
     // Dynamically import Leaflet only on client side
     import('leaflet').then((LeafletModule) => {
       const L = LeafletModule.default || LeafletModule;
       LeafletRef.current = L;
+
+      // Double check map hasn't been initialized in the meantime
+      if (mapRef.current) return;
 
       // Dynamically load CSS
       if (typeof document !== 'undefined' && !document.querySelector('link[href*="leaflet.css"]')) {
@@ -352,11 +356,30 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
         break;
     }
 
-    tileLayerRef.current = LeafletRef.current.tileLayer(tileUrl, {
+    const tileOptions: any = {
       attribution,
       maxZoom: 19,
-      subdomains: mapStyle === 'satellite' ? '' : 'abcd',
-    }).addTo(mapRef.current);
+      updateWhenIdle: false,
+      updateWhenZooming: false,
+      keepBuffer: 2,
+    };
+
+    // Only add subdomains if not satellite
+    if (mapStyle !== 'satellite') {
+      tileOptions.subdomains = ['a', 'b', 'c'];
+    }
+
+    tileLayerRef.current = LeafletRef.current.tileLayer(tileUrl, tileOptions).addTo(mapRef.current);
+
+    // Force map to invalidate size and redraw
+    setTimeout(() => {
+      if (mapRef.current) {
+        mapRef.current.invalidateSize(true);
+        // Trigger a slight pan to force tile reload
+        const center = mapRef.current.getCenter();
+        mapRef.current.panTo(center, { animate: false });
+      }
+    }, 50);
   }, [mapStyle, isLeafletReady]);
 
   // Calculate distance between two coordinates (Haversine formula)

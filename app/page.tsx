@@ -35,9 +35,7 @@ export default function Home() {
   const [selectedPizzeria, setSelectedPizzeria] = useState<string | null>(null);
   const [expandedPizzeria, setExpandedPizzeria] = useState<string | null>(null);
   const [stats, setStats] = useState<string>('Loading data...');
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(
-    typeof window !== 'undefined' ? window.innerWidth < 768 : true
-  );
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(true);
   const [activeTab, setActiveTab] = useState<'all' | 'nearest' | 'bookmarks'>('all');
   const [nearestPizzerias, setNearestPizzerias] = useState<Array<{
     name: string;
@@ -53,6 +51,15 @@ export default function Home() {
   const [bookmarks, setBookmarks] = useState<BookmarkedLocation[]>([]);
   const [mapStyle, setMapStyle] = useLocalState<'default' | 'light' | 'dark' | 'satellite'>('50toppizza_map_style', 'default');
   const [showSettings, setShowSettings] = useState(false);
+
+  // Set initial sidebar state based on screen width (after hydration)
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setSidebarCollapsed(true);
+    } else {
+      setSidebarCollapsed(false);
+    }
+  }, []);
 
   // Load data and check for location permissions
   useEffect(() => {
