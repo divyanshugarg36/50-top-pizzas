@@ -349,6 +349,23 @@ def scrape_cities(cities_to_scrape, progress=None):
     if progress is None:
         progress = progress_module.load_progress()
 
+    # Global deduplication tracker: track (pizzeria_name, lat, lng) across all cities
+    global_location_tracker = {}  # key: (pizzeria_name, lat, lng) -> value: city_name (first occurrence)
+
+    # Build tracker from existing data
+    for city_name, city_data in data_by_city.items():
+        for pizzeria in city_data.get('pizzerias', []):
+            pizzeria_name = pizzeria['name']
+            for location in pizzeria.get('locations', []):
+                lat = location.get('lat')
+                lng = location.get('lng')
+                if lat and lng:
+                    location_key = (pizzeria_name, lat, lng)
+                    if location_key not in global_location_tracker:
+                        global_location_tracker[location_key] = city_name
+
+    duplicates_skipped = 0
+
     for i, city in enumerate(all_cities):
         city_name = city['name']
         print(f"\n[{i+1}/{len(all_cities)}] {city_name}")
@@ -370,18 +387,43 @@ def scrape_cities(cities_to_scrape, progress=None):
             details = extract_pizzeria_details(pizzeria['url'])
 
             if details:
+                # Filter out duplicate locations using global tracker
+                unique_locations = []
+                for location in details['locations']:
+                    lat = location.get('lat')
+                    lng = location.get('lng')
+                    if lat and lng:
+                        location_key = (pizzeria['name'], lat, lng)
+
+                        # Check if this location already exists in another city
+                        if location_key in global_location_tracker:
+                            existing_city = global_location_tracker[location_key]
+                            if existing_city != city_name:
+                                # Duplicate found - skip it
+                                duplicates_skipped += 1
+                                print(f"        ⚠ Skipping duplicate location (already in {existing_city})")
+                                continue
+                        else:
+                            # New location - track it
+                            global_location_tracker[location_key] = city_name
+
+                        unique_locations.append(location)
+
                 pizzeria_data = {
                     'name': pizzeria['name'],
                     'url': pizzeria['url'],
-                    'locations': details['locations'],
+                    'locations': unique_locations,
                     'awards': details.get('awards', [])
                 }
-                city_data['pizzerias'].append(pizzeria_data)
 
-                # Show info
-                location_info = f"{len(details['locations'])} location(s)" if details['locations'] else "no locations"
-                awards_info = f", {len(details['awards'])} award(s)" if details.get('awards') else ""
-                print(f"        {location_info}{awards_info}")
+                # Only add pizzeria if it has locations OR awards (keep award-only pizzerias)
+                if unique_locations or details.get('awards'):
+                    city_data['pizzerias'].append(pizzeria_data)
+
+                    # Show info
+                    location_info = f"{len(unique_locations)} location(s)" if unique_locations else "no locations"
+                    awards_info = f", {len(details['awards'])} award(s)" if details.get('awards') else ""
+                    print(f"        {location_info}{awards_info}")
 
             time.sleep(RATE_LIMIT)
 
@@ -414,6 +456,8 @@ def scrape_cities(cities_to_scrape, progress=None):
 
     print(f"Total pizzerias: {total_pizzerias}")
     print(f"Total locations: {total_locations}")
+    if duplicates_skipped > 0:
+        print(f"Duplicates skipped: {duplicates_skipped}")
     print(f"{'='*60}")
 
 
@@ -464,6 +508,23 @@ def auto_scrape_cities():
         with open(existing_file, 'r', encoding='utf-8') as f:
             data_by_city = json.load(f)
 
+    # Global deduplication tracker: track (pizzeria_name, lat, lng) across all cities
+    global_location_tracker = {}  # key: (pizzeria_name, lat, lng) -> value: city_name (first occurrence)
+
+    # Build tracker from existing data
+    for city_name, city_data in data_by_city.items():
+        for pizzeria in city_data.get('pizzerias', []):
+            pizzeria_name = pizzeria['name']
+            for location in pizzeria.get('locations', []):
+                lat = location.get('lat')
+                lng = location.get('lng')
+                if lat and lng:
+                    location_key = (pizzeria_name, lat, lng)
+                    if location_key not in global_location_tracker:
+                        global_location_tracker[location_key] = city_name
+
+    duplicates_skipped = 0
+
     # Scrape each pending city
     for i, city in enumerate(pending_cities):
         if interrupted['flag']:
@@ -493,18 +554,43 @@ def auto_scrape_cities():
                 details = extract_pizzeria_details(pizzeria['url'])
 
                 if details:
+                    # Filter out duplicate locations using global tracker
+                    unique_locations = []
+                    for location in details['locations']:
+                        lat = location.get('lat')
+                        lng = location.get('lng')
+                        if lat and lng:
+                            location_key = (pizzeria['name'], lat, lng)
+
+                            # Check if this location already exists in another city
+                            if location_key in global_location_tracker:
+                                existing_city = global_location_tracker[location_key]
+                                if existing_city != city_name:
+                                    # Duplicate found - skip it
+                                    duplicates_skipped += 1
+                                    print(f"        ⚠ Skipping duplicate location (already in {existing_city})")
+                                    continue
+                            else:
+                                # New location - track it
+                                global_location_tracker[location_key] = city_name
+
+                            unique_locations.append(location)
+
                     pizzeria_data = {
                         'name': pizzeria['name'],
                         'url': pizzeria['url'],
-                        'locations': details['locations'],
+                        'locations': unique_locations,
                         'awards': details.get('awards', [])
                     }
-                    city_data['pizzerias'].append(pizzeria_data)
 
-                    # Show info
-                    location_info = f"{len(details['locations'])} location(s)" if details['locations'] else "no locations"
-                    awards_info = f", {len(details['awards'])} award(s)" if details.get('awards') else ""
-                    print(f"        {location_info}{awards_info}")
+                    # Only add pizzeria if it has locations OR awards (keep award-only pizzerias)
+                    if unique_locations or details.get('awards'):
+                        city_data['pizzerias'].append(pizzeria_data)
+
+                        # Show info
+                        location_info = f"{len(unique_locations)} location(s)" if unique_locations else "no locations"
+                        awards_info = f", {len(details['awards'])} award(s)" if details.get('awards') else ""
+                        print(f"        {location_info}{awards_info}")
 
                 time.sleep(RATE_LIMIT)
 
@@ -540,4 +626,6 @@ def auto_scrape_cities():
     print(f"  Pending cities: {progress['stats']['pending_cities']}")
     print(f"  Total pizzerias: {progress['stats']['total_pizzerias']}")
     print(f"  Total locations: {progress['stats']['total_locations']}")
+    if duplicates_skipped > 0:
+        print(f"  Duplicates skipped: {duplicates_skipped}")
     print(f"{'='*60}")

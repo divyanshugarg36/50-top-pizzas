@@ -56,6 +56,7 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
   const mapRef = useRef<L.Map | null>(null);
   const markersRef = useRef<L.Marker[]>([]);
   const markersMapRef = useRef<Map<string, L.Marker>>(new Map());
+  const clusterMarkersRef = useRef<L.Marker[]>([]);
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const pizzaIconRef = useRef<L.DivIcon | null>(null);
   const bookmarkedIconRef = useRef<L.DivIcon | null>(null);
@@ -66,6 +67,9 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
   const [locationError, setLocationError] = useState<string | null>(null);
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [isLeafletReady, setIsLeafletReady] = useState(false);
+  const [zoomLevel, setZoomLevel] = useState(2);
+  const [viewportBounds, setViewportBounds] = useState<L.LatLngBounds | null>(null);
+  const shouldFitBoundsRef = useRef(true);
   const tileLayerRef = useRef<L.TileLayer | null>(null);
 
   // Initialize map once
@@ -135,6 +139,72 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
     );
   };
 
+  // Clustering algorithm
+  const clusterMarkers = (markers: Array<{
+    lat: number;
+    lng: number;
+    isBookmarked: boolean;
+    data: {
+      cityName: string;
+      pizzeria: Pizzeria;
+      location: Location;
+      idx: number;
+    };
+  }>, zoom: number) => {
+    // Distance threshold in pixels (adjusted by zoom level)
+    // Lower zoom = larger clusters, more aggressive clustering
+    const pixelDistance =
+      zoom < 4 ? 150 :  // World view - very large clusters
+      zoom < 6 ? 100 :  // Continental view
+      zoom < 8 ? 80 :   // Country view
+      zoom < 10 ? 60 :  // Regional view
+      zoom < 12 ? 40 :  // City view
+      zoom < 14 ? 25 :  // District view
+      zoom < 16 ? 15 :  // Street view
+      0;                // Max zoom - show all
+
+    if (pixelDistance === 0) return markers.map(m => [m]); // No clustering at max zoom
+
+    const clusters: Array<Array<typeof markers[0]>> = [];
+    const used = new Set<number>();
+
+    for (let i = 0; i < markers.length; i++) {
+      if (used.has(i)) continue;
+
+      const cluster = [markers[i]];
+      used.add(i);
+
+      // Always prioritize bookmarked markers
+      if (markers[i].isBookmarked) {
+        clusters.push(cluster);
+        continue;
+      }
+
+      // Find nearby markers
+      for (let j = i + 1; j < markers.length; j++) {
+        if (used.has(j)) continue;
+        if (markers[j].isBookmarked) continue; // Don't cluster bookmarked markers
+
+        const distance = Math.sqrt(
+          Math.pow(markers[i].lat - markers[j].lat, 2) +
+          Math.pow(markers[i].lng - markers[j].lng, 2)
+        );
+
+        // Convert lat/lng distance to approximate pixel distance at this zoom
+        const approxPixelDistance = distance * Math.pow(2, zoom) * 256 / 360;
+
+        if (approxPixelDistance < pixelDistance) {
+          cluster.push(markers[j]);
+          used.add(j);
+        }
+      }
+
+      clusters.push(cluster);
+    }
+
+    return clusters;
+  };
+
   // Update markers when cityData or selectedCity changes
   useEffect(() => {
     if (!isLeafletReady || !mapRef.current || !pizzaIconRef.current || !bookmarkedIconRef.current) return;
@@ -144,15 +214,30 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
     markersRef.current.forEach(marker => marker.remove());
     markersRef.current = [];
     markersMapRef.current.clear();
+    clusterMarkersRef.current.forEach(marker => marker.remove());
+    clusterMarkersRef.current = [];
 
     const bounds: L.LatLngBoundsLiteral = [];
+    const currentZoom = mapRef.current.getZoom();
 
     // Determine which cities to display
     const citiesToDisplay = selectedCity && cityData[selectedCity]
       ? { [selectedCity]: cityData[selectedCity] }
       : cityData;
 
-    // Add markers
+    // Collect all markers first
+    const allMarkers: Array<{
+      lat: number;
+      lng: number;
+      isBookmarked: boolean;
+      data: {
+        cityName: string;
+        pizzeria: Pizzeria;
+        location: Location;
+        idx: number;
+      };
+    }> = [];
+
     Object.entries(citiesToDisplay).forEach(([cityName, cityInfo]) => {
       if (!cityInfo || !cityInfo.pizzerias) return;
 
@@ -161,13 +246,41 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
 
         pizzeria.locations.forEach((location, idx) => {
           if (!location || !location.lat || !location.lng) return;
-          if (!LeafletRef.current) return;
 
-          // Check if this location is bookmarked and use appropriate icon
+          // Viewport culling: skip markers outside viewport (with buffer for smooth panning)
+          if (viewportBounds) {
+            const bounds = viewportBounds.pad(0.5); // 50% buffer around viewport
+            if (!bounds.contains([location.lat, location.lng])) {
+              return; // Skip this marker
+            }
+          }
+
           const isBookmarked = isLocationBookmarked(pizzeria.name, cityName, idx);
-          const icon = isBookmarked ? bookmarkedIconRef.current! : pizzaIconRef.current!;
 
-          const marker = LeafletRef.current.marker([location.lat, location.lng], { icon });
+          allMarkers.push({
+            lat: location.lat,
+            lng: location.lng,
+            isBookmarked,
+            data: { cityName, pizzeria, location, idx }
+          });
+        });
+      });
+    });
+
+    // Cluster markers based on zoom level
+    const clusters = clusterMarkers(allMarkers, currentZoom);
+
+    // Create markers for each cluster
+    clusters.forEach(cluster => {
+      if (!LeafletRef.current) return;
+
+      if (cluster.length === 1) {
+        // Single marker - render normally
+        const { lat, lng, isBookmarked, data } = cluster[0];
+        const { cityName, pizzeria, location, idx } = data;
+        const icon = isBookmarked ? bookmarkedIconRef.current! : pizzaIconRef.current!;
+
+        const marker = LeafletRef.current.marker([lat, lng], { icon });
 
           // Create popup content with bookmark button
           const newMarkerKey = `${cityName}-${pizzeria.name}-${idx}`;
@@ -250,20 +363,90 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
             }
           });
 
-          marker.addTo(mapRef.current!);
+        marker.addTo(mapRef.current!);
 
-          // Store marker with key
-          const markerKey = `${cityName}-${pizzeria.name}-${idx}`;
-          markersRef.current.push(marker);
-          markersMapRef.current.set(markerKey, marker);
+        // Store marker with key
+        const markerKey = `${cityName}-${pizzeria.name}-${idx}`;
+        markersRef.current.push(marker);
+        markersMapRef.current.set(markerKey, marker);
 
-          bounds.push([location.lat, location.lng]);
+        bounds.push([lat, lng]);
+      } else {
+        // Cluster marker - show count and create custom icon
+        const centerLat = cluster.reduce((sum, m) => sum + m.lat, 0) / cluster.length;
+        const centerLng = cluster.reduce((sum, m) => sum + m.lng, 0) / cluster.length;
+
+        const clusterIcon = LeafletRef.current.divIcon({
+          html: `
+            <div style="
+              background: #dc2626;
+              border: 3px solid white;
+              border-radius: 50%;
+              width: 40px;
+              height: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-weight: bold;
+              font-size: 14px;
+              box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+              cursor: pointer;
+            ">
+              ${cluster.length}
+            </div>
+          `,
+          className: '',
+          iconSize: [40, 40],
+          iconAnchor: [20, 20],
         });
-      });
+
+        const clusterMarker = LeafletRef.current.marker([centerLat, centerLng], { icon: clusterIcon });
+
+        // Create popup showing list of pizzerias in cluster
+        const clusterPopupContent = `
+          <div style="padding: 10px; max-width: 250px;">
+            <h3 style="margin: 0 0 10px 0; color: #dc2626; font-size: 14px; font-weight: bold;">
+              ${cluster.length} Pizzerias in this area
+            </h3>
+            <div style="max-height: 200px; overflow-y: auto;">
+              ${cluster.map(m => `
+                <div style="padding: 6px 0; border-bottom: 1px solid #eee;">
+                  <div style="font-weight: 600; font-size: 13px; color: #374151;">
+                    ${m.data.pizzeria.name}
+                  </div>
+                  <div style="font-size: 11px; color: #6b7280;">
+                    📍 ${m.data.cityName}
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+            <p style="margin: 10px 0 0 0; font-size: 11px; color: #9ca3af; text-align: center;">
+              Zoom in to see individual markers
+            </p>
+          </div>
+        `;
+
+        clusterMarker.bindPopup(clusterPopupContent);
+
+        // Zoom in on cluster click
+        clusterMarker.on('click', () => {
+          if (mapRef.current) {
+            mapRef.current.setView([centerLat, centerLng], Math.min(currentZoom + 2, 18), {
+              animate: true
+            });
+          }
+        });
+
+        clusterMarker.addTo(mapRef.current!);
+        clusterMarkersRef.current.push(clusterMarker);
+
+        bounds.push([centerLat, centerLng]);
+      }
     });
 
-    // Fit bounds if we have markers
-    if (bounds.length > 0 && mapRef.current) {
+    // Fit bounds only when data changes, not when zooming
+    if (bounds.length > 0 && mapRef.current && shouldFitBoundsRef.current) {
       mapRef.current.fitBounds(bounds, { padding: [50, 50] });
 
       // For single city, limit max zoom
@@ -275,7 +458,42 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
         }, 100);
       }
     }
-  }, [isLeafletReady, cityData, selectedCity]);
+  }, [isLeafletReady, cityData, selectedCity, bookmarks, zoomLevel, viewportBounds]);
+
+  // Track when data changes vs zoom changes
+  useEffect(() => {
+    shouldFitBoundsRef.current = true;
+  }, [cityData, selectedCity]);
+
+  useEffect(() => {
+    shouldFitBoundsRef.current = false;
+  }, [zoomLevel]);
+
+  // Re-cluster on zoom change and update viewport
+  useEffect(() => {
+    if (!mapRef.current || !isLeafletReady) return;
+
+    const updateViewport = () => {
+      if (mapRef.current) {
+        setZoomLevel(mapRef.current.getZoom());
+        setViewportBounds(mapRef.current.getBounds());
+      }
+    };
+
+    // Set initial zoom and viewport
+    updateViewport();
+
+    // Update on zoom and move
+    mapRef.current.on('zoomend', updateViewport);
+    mapRef.current.on('moveend', updateViewport);
+
+    return () => {
+      if (mapRef.current) {
+        mapRef.current.off('zoomend', updateViewport);
+        mapRef.current.off('moveend', updateViewport);
+      }
+    };
+  }, [isLeafletReady]);
 
   // Update marker icons when bookmarks change (without recreating all markers)
   useEffect(() => {
@@ -298,6 +516,7 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
   useEffect(() => {
     if (!mapRef.current || !selectedLocation) return;
 
+    // Check if marker exists (in viewport)
     const marker = markersMapRef.current.get(selectedLocation);
     if (marker) {
       const latlng = marker.getLatLng();
@@ -306,8 +525,36 @@ export const FullMap=({ cityData, selectedCity, selectedLocation, autoTriggerLoc
         duration: 0.5
       });
       marker.openPopup();
+    } else {
+      // Marker not in viewport - need to parse location from key and move there
+      // Format: cityName-pizzeriaName-locationIndex
+      const parts = selectedLocation.split('-');
+      const locationIndex = parseInt(parts[parts.length - 1]);
+      const pizzeriaName = parts.slice(1, -1).join('-');
+      const cityName = parts[0];
+
+      // Find the location in data
+      const cityInfo = cityData?.[cityName];
+      if (cityInfo) {
+        const pizzeria = cityInfo.pizzerias.find(p => p.name === pizzeriaName);
+        if (pizzeria && pizzeria.locations[locationIndex]) {
+          const location = pizzeria.locations[locationIndex];
+          mapRef.current.setView([location.lat, location.lng], 15, {
+            animate: true,
+            duration: 0.5
+          });
+
+          // Wait for viewport to update and marker to be created, then open popup
+          setTimeout(() => {
+            const newMarker = markersMapRef.current.get(selectedLocation);
+            if (newMarker) {
+              newMarker.openPopup();
+            }
+          }, 600); // Wait for animation + re-render
+        }
+      }
     }
-  }, [selectedLocation]);
+  }, [selectedLocation, cityData]);
 
   // Auto-trigger location if permission is already granted
   useEffect(() => {
